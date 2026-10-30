@@ -10,3 +10,4 @@ Original research report and run status were preserved, and original absolute lo
 The earlier product-comparison label “作业三” was incorrect; that document belongs to assignment 2 section 2.3.
 The learner must review and personally explain the six responsibilities and, if required by the instructor's handwritten rule, rewrite assignment 1 independently.
 Passing automated tests verifies these examples and program invariants; it does not establish independent factual correctness, educational mastery, or instructor acceptance.
+Follow-up work added a REIWA quotation-based subtask, success/conflict traces, and an actual pinned HyperResearch citecheck module ablation on a temporary fixture database. AI authored the test mutations and added the field-binding rule; these mutations are not attributed to the original report.

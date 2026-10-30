@@ -112,6 +112,27 @@ class FrameworkTests(unittest.TestCase):
         self.assertIsNone(after["selected"]["negative_equity"])
         self.assertEqual(after["stop_reason"], "conflict")
 
+    def test_same_frozen_reiwa_task_two_outcomes(self):
+        fixture = json.loads((ROOT / "fixtures/reiwa-binding.json").read_text())
+        excerpt = json.loads((ROOT / "evidence/source-excerpt.json").read_text())
+        self.assertEqual(fixture["sources"]["reiwa-record"]["text"], excerpt["excerpt"])
+        success = run_framework(fixture["task"], fixture["sources"], fixture["proposals"])
+        failure = run_framework(fixture["task"], fixture["sources"], fixture["conflict_proposals"])
+        self.assertEqual(success["task_id"], failure["task_id"])
+        self.assertEqual(success["claims"], failure["claims"])
+        self.assertEqual(success["spent"], failure["spent"])
+        self.assertEqual(success["spent"], 6)
+        self.assertEqual(success["stop_reason"], "completed")
+        self.assertEqual(failure["stop_reason"], "conflict")
+        self.assertFalse(failure["deliverable"])
+        self.assertEqual([r["verdict"]["status"] for r in success["trace"] if r["step"] == "bind_verify"], ["conflict", "conflict", "supported"])
+
+    def test_wrong_field_even_with_same_number(self):
+        fixture = json.loads((ROOT / "fixtures/reiwa-binding.json").read_text())
+        claim = fixture["task"]["claims"][0]
+        wrong = fixture["proposals"]["recorded_price"][0]
+        self.assertEqual(verify_candidate(claim, wrong, fixture["sources"])["status"], "conflict")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

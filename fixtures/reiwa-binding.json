@@ -1,0 +1,19 @@
+{
+  "provenance": "Explicitly narrowed subtask from assignment 2's original address/history check. Source quotation is preserved in evidence/source-excerpt.json. This is not a successful rerun of the whole house-purchase question.",
+  "task": {
+    "task_id": "reiwa-recorded-price-binding-v1",
+    "question": "根据已保存的 REIWA 记录，核对 11 Furlong Street 的历史成交价；不得把它写成当前市场估值。只做已冻结原文的字段与取值核验，不重新联网。",
+    "claims": [{"claim_key": "recorded_price", "completion_condition": "One candidate binds the saved source quotation to the sold_price field and matching AUD value; current valuation remains unknown.", "query": "11 Furlong Street REIWA sold price", "source_type": "frozen webpage quotation from assignment 2", "rule": "sold_price", "field": "sold_price"}]
+  },
+  "sources": {"reiwa-record": {"text": "Sold price: $768,000 **Sold: 13 May 2025**", "pointer": "evidence/source-excerpt.json#/excerpt", "original_note_id": "11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025"}},
+  "proposals": {"recorded_price": [
+    {"claim_key": "recorded_price", "field": "current_market_value", "source_id": "reiwa-record", "quote": "Sold price: $768,000 **Sold: 13 May 2025**", "value": 768000, "sentence": "Current market value is $768,000 [[reiwa-record]]."},
+    {"claim_key": "recorded_price", "field": "sold_price", "source_id": "reiwa-record", "quote": "Sold price: $768,000 **Sold: 13 May 2025**", "value": 876000, "sentence": "Sold price was $876,000 [[reiwa-record]]."},
+    {"claim_key": "recorded_price", "field": "sold_price", "source_id": "reiwa-record", "quote": "Sold price: $768,000 **Sold: 13 May 2025**", "value": 768000, "sentence": "Sold price was $768,000 [[reiwa-record]]."}
+  ]},
+  "conflict_proposals": {"recorded_price": [
+    {"claim_key": "recorded_price", "field": "current_market_value", "source_id": "reiwa-record", "quote": "Sold price: $768,000 **Sold: 13 May 2025**", "value": 768000, "sentence": "Current market value is $768,000 [[reiwa-record]]."},
+    {"claim_key": "recorded_price", "field": "sold_price", "source_id": "reiwa-record", "quote": "Sold price: $768,000 **Sold: 13 May 2025**", "value": 876000, "sentence": "Sold price was $876,000 [[reiwa-record]]."},
+    {"claim_key": "recorded_price", "field": "sold_price", "source_id": "unavailable-record", "quote": "Sold price: $768,000", "value": 768000, "sentence": "Sold price was $768,000 [[unavailable-record]]."}
+  ]}
+}

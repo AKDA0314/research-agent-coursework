@@ -1,7 +1,7 @@
 {
   "passed": true,
   "test_exit_code": 0,
-  "test_output": "test_ablation_same_budget_and_different_selection (test_framework.FrameworkTests) ... ok\ntest_binding_not_only_citation (test_framework.FrameworkTests) ... ok\ntest_budget_never_negative_or_half_pair (test_framework.FrameworkTests) ... ok\ntest_no_mutation_or_scoring_labels (test_framework.FrameworkTests) ... ok\ntest_property_gaps_preserved (test_framework.FrameworkTests) ... ok\ntest_react_body_under_30_physical_lines (test_framework.FrameworkTests) ... ok\ntest_react_empty_and_illegal (test_framework.FrameworkTests) ... ok\ntest_react_error_is_recorded (test_framework.FrameworkTests) ... ok\ntest_react_inverted_value (test_framework.FrameworkTests) ... ok\ntest_react_limits (test_framework.FrameworkTests) ... ok\ntest_react_success (test_framework.FrameworkTests) ... ok\ntest_six_conflict (test_framework.FrameworkTests) ... ok\ntest_six_success_full_six_units (test_framework.FrameworkTests) ... ok\ntest_wrong_numeric_threshold_rejected (test_framework.FrameworkTests) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.003s\n\nOK\n",
+  "test_output": "test_ablation_same_budget_and_different_selection (test_framework.FrameworkTests) ... ok\ntest_binding_not_only_citation (test_framework.FrameworkTests) ... ok\ntest_budget_never_negative_or_half_pair (test_framework.FrameworkTests) ... ok\ntest_no_mutation_or_scoring_labels (test_framework.FrameworkTests) ... ok\ntest_property_gaps_preserved (test_framework.FrameworkTests) ... ok\ntest_react_body_under_30_physical_lines (test_framework.FrameworkTests) ... ok\ntest_react_empty_and_illegal (test_framework.FrameworkTests) ... ok\ntest_react_error_is_recorded (test_framework.FrameworkTests) ... ok\ntest_react_inverted_value (test_framework.FrameworkTests) ... ok\ntest_react_limits (test_framework.FrameworkTests) ... ok\ntest_react_success (test_framework.FrameworkTests) ... ok\ntest_same_frozen_reiwa_task_two_outcomes (test_framework.FrameworkTests) ... ok\ntest_six_conflict (test_framework.FrameworkTests) ... ok\ntest_six_success_full_six_units (test_framework.FrameworkTests) ... ok\ntest_wrong_field_even_with_same_number (test_framework.FrameworkTests) ... ok\ntest_wrong_numeric_threshold_rejected (test_framework.FrameworkTests) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.003s\n\nOK\n",
   "react_function_body_lines": 29,
   "problems": [],
   "scan_scope": "Submission text, heuristic credential-pattern checks, relative Markdown targets, exported hashes, original blocked status. Not a formal security audit or teacher acceptance.",
@@ -12,11 +12,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "0c0e4ced9907bf8afd98e548d30f72716ef982e955ca817b802d82fdd09eab13"
+      "sha256": "4ae5bb8e65df2165cc84c06bd652b76f7646d7701f399ab4fb07f3ef4e955c21"
     },
     {
       "path": "docs/AI_USE.md",
-      "sha256": "74e1756d81f6426b87cc46fa41101ded3cad0bc88afb9233f79ac8e11396d24d"
+      "sha256": "85f2b7d7684007850a0abfe736c833c36d86ee7ce2753b97575addfe0ff5a6d7"
     },
     {
       "path": "docs/dataflow.md",
@@ -36,15 +36,19 @@
     },
     {
       "path": "docs/reproduction-report.md",
-      "sha256": "cd0c322ab4557a0a1cfe71b07c0fcbaa1dc004157108eb315c5f450461b86062"
+      "sha256": "809ff09be51bc4abe6c30cd4321b53c796d5aa8f8fb4ee26c0365ac8662245e4"
     },
     {
       "path": "docs/six-step.md",
-      "sha256": "18126ff805f9ef78c7264c8882e6419abe0fcb57cf61de69349f84b4c1bfc951"
+      "sha256": "90c87d1a473f6ece9f6c48de7e2e7bee068a90d47b7b15d0a7543351d2c9ab89"
     },
     {
       "path": "docs/submission-status.md",
-      "sha256": "36c80692072a392d2561f3b41304fcd08eb45960db9d4ff3b85d5f894feb277a"
+      "sha256": "d38715d588ad0938949f148df80148b5d92b8ad8cfe972ab6383e195b6739226"
+    },
+    {
+      "path": "docs/verification-update.md",
+      "sha256": "edbba4b5a11de92779f915c8ff5441314ada434d3151dc6184accab7096912b4"
     },
     {
       "path": "evidence/coverage-gaps.md",
@@ -143,8 +147,16 @@
       "sha256": "453a9837d8217b4309e0d34b841b90bd592cfa16d3673089d146f5e22c12cfbe"
     },
     {
+      "path": "fixtures/reiwa-binding.json",
+      "sha256": "77c8e11026cb638ddac81a05269df324fe91e4409a0f87733f2436a0b5c5900c"
+    },
+    {
       "path": "results/checker-ablation.json",
       "sha256": "7b05c28117b6d2010e3d76a0769c17269af80e0c6f105fdf379ef81196708267"
+    },
+    {
+      "path": "results/hyperresearch-binding-ablation.json",
+      "sha256": "0f60ba88f3202d797b1856bac8dd0ac6373f72d8f2f84a59ff2796864795b48f"
     },
     {
       "path": "results/isolation.json",
@@ -175,6 +187,14 @@
       "sha256": "3ffb386b1ea62b69c7fd014d8de847abcaa439018dc534b2cc4e3c65c81bf892"
     },
     {
+      "path": "results/six-reiwa-conflict.json",
+      "sha256": "3fdee1fd35b7b01014a5bd8d924a1d9a513d6c3cb54ae26bdde27787c79a8228"
+    },
+    {
+      "path": "results/six-reiwa-success.json",
+      "sha256": "404680d1402e7c0815fce18b89690e9df5594c3143d10d88ce6f3bdb8247012d"
+    },
+    {
       "path": "results/six-success.json",
       "sha256": "9005dc93e008fc70fd6e5eb6fc313d84b338130c304c6cf84e574238ef6d2a24"
     },
@@ -188,7 +208,11 @@
     },
     {
       "path": "scripts/run_offline.py",
-      "sha256": "e086c7d8b695caa08f7f61aa64018f191c6c191375e75c196460d0e8270c5695"
+      "sha256": "85aae939ae0bd1a75459ba17fd51d42f27a8a3f34f824f065510b6d283b5deab"
+    },
+    {
+      "path": "scripts/run_source_experiment.py",
+      "sha256": "2c4d09dc16728da75f9bf90c9c29fa4b57d9e8dbab4f22800908f77e84020c4a"
     },
     {
       "path": "scripts/validate_submission.py",
@@ -200,11 +224,11 @@
     },
     {
       "path": "src/six_step.py",
-      "sha256": "55f6c126fee4a641c02d7b0696c2c830fec38aad73f2f8073e7c223e073b457e"
+      "sha256": "eda13a68ec0b092485137e5a195690c526287ceebaeb8045241028a633008c6c"
     },
     {
       "path": "tests/test_framework.py",
-      "sha256": "a74afb4a28ed5c83d77dda6f7755418648e81e4fcdc5bf9bb06afa059af0321b"
+      "sha256": "1000a072ddf10f39f2ceccbc9aca0482193a8e581a943b67639d201b0f427583"
     }
   ]
 }

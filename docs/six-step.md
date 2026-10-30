@@ -13,12 +13,14 @@
 
 分解和查询由人工／AI 预先写入冻结 task，不是动态语言模型。下一步以来源是否存在、检查结果和预算为依据；它是小型确定性框架，不是通用自主研究系统。
 
-## 两组证据，不能混成一次成功
+## 三组证据，不能混成一次成功
 
 1. 课程 checkpoint 冻结小题：[同一 fixture](../fixtures/checkpoint.json)，[成功](../results/six-success.json) 为 conflict→missing→supported，六单位；[冲突](../results/six-conflict.json) 为一对操作后 conflict。候选是手工编制的，不叫模型输出。检查器只认识明确声明的规则。
 2. 原房产任务：[原任务](../evidence/task.md)，[冻结输入](../fixtures/property.json)，[同题轨迹](../results/six-property.json)。价格、库存 missing，情景算术 supported；六单位后 missing_evidence，不交付完整买入判断。地址定位与其他范围条件未核验，不隐含为通过。
 
-原房产题的“成功完整研究”仍不存在；我们没有为满足成功轨迹要求伪造缺失来源。成功示例来自课程小题。若老师要求成功和冲突都必须来自完整原房产题，需要进一步补证并真实运行。
+3. 原任务的历史成交核验子任务：新增 [REIWA 成功](../results/six-reiwa-success.json) 与 [REIWA 冲突](../results/six-reiwa-conflict.json)，同一任务、同一真实片段、相同六单位预算。范围明确缩小，不是全房产题成功。另有 [真实 HyperResearch 核验源码 A/B](verification-update.md)，不是泛指自己写的弱检查器。
+
+原房产题的“成功完整研究”仍不存在；我们没有为满足成功轨迹要求伪造缺失来源。新的子任务与完整原任务的差别必须保留，是否符合教师对同题范围的要求仍由教师验收。
 
 `review_status=rule_checked` 仅指本程序窄规则已核对，不指独立人工或 LLM 二审。`review_scope` 在结果里明确写出这一点；正式独立复核未做。
 

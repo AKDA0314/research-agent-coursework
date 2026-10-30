@@ -1,0 +1,464 @@
+{
+  "commit": "75b1ecfb2891184fad2cc1a2ddf9abe476f5b54c",
+  "module_sha256": "5c64b2789cc478460b6c0289f6edd93575253513763ae2c43d43b3c219c58b05",
+  "fixture_sha256": "77c8e11026cb638ddac81a05269df324fe91e4409a0f87733f2436a0b5c5900c",
+  "input_provenance": "Real saved short quotation; temporary SQLite claims row seeded from that quotation. Not the original vault DB or a full host run. Candidate sentences are deliberate test mutations, not original report statements.",
+  "changed_factor": "add field/value binding to the mechanical-check decision",
+  "fixed": [
+    "task",
+    "quote",
+    "temporary DB",
+    "candidate sentences/order",
+    "selector",
+    "six operation units"
+  ],
+  "before": {
+    "task_id": "reiwa-recorded-price-binding-v1",
+    "claims": [
+      {
+        "claim_key": "recorded_price",
+        "completion_condition": "One candidate binds the saved source quotation to the sold_price field and matching AUD value; current valuation remains unknown.",
+        "query": "11 Furlong Street REIWA sold price",
+        "source_type": "frozen webpage quotation from assignment 2",
+        "rule": "sold_price",
+        "field": "sold_price"
+      }
+    ],
+    "trace": [
+      {
+        "step": "decompose",
+        "input": "根据已保存的 REIWA 记录，核对 11 Furlong Street 的历史成交价；不得把它写成当前市场估值。只做已冻结原文的字段与取值核验，不重新联网。",
+        "claim_key": "recorded_price",
+        "completion_condition": "One candidate binds the saved source quotation to the sold_price field and matching AUD value; current valuation remains unknown."
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "recorded_price",
+        "query": "11 Furlong Street REIWA sold price",
+        "source_type": "frozen webpage quotation from assignment 2"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "current_market_value",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 768000,
+          "sentence": "Current market value is $768,000 [[reiwa-record]]."
+        },
+        "observation": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "pointer": "evidence/source-excerpt.json#/excerpt",
+        "spent": 1,
+        "remaining_budget": 5
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "current_market_value",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 768000,
+          "sentence": "Current market value is $768,000 [[reiwa-record]]."
+        },
+        "verdict": {
+          "status": "supported",
+          "reason": "supported-mechanical",
+          "hyperresearch_output": {
+            "total": 1,
+            "supported_mechanical": 1,
+            "dangling": 0,
+            "needs_llm": 0,
+            "pairs": [
+              {
+                "sentence": "Current market value is $768,000 [[reiwa-record]].",
+                "note_id": "reiwa-record",
+                "numbers": [
+                  "768,000"
+                ],
+                "strong": true,
+                "verdict": "supported-mechanical"
+              }
+            ]
+          },
+          "sampled_for_llm": []
+        },
+        "spent": 2,
+        "remaining_budget": 4
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "recorded_price",
+        "query": "11 Furlong Street REIWA sold price",
+        "source_type": "frozen webpage quotation from assignment 2"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "sold_price",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 876000,
+          "sentence": "Sold price was $876,000 [[reiwa-record]]."
+        },
+        "observation": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "pointer": "evidence/source-excerpt.json#/excerpt",
+        "spent": 3,
+        "remaining_budget": 3
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "sold_price",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 876000,
+          "sentence": "Sold price was $876,000 [[reiwa-record]]."
+        },
+        "verdict": {
+          "status": "missing",
+          "reason": "needs-llm",
+          "hyperresearch_output": {
+            "total": 1,
+            "supported_mechanical": 0,
+            "dangling": 0,
+            "needs_llm": 1,
+            "pairs": [
+              {
+                "sentence": "Sold price was $876,000 [[reiwa-record]].",
+                "note_id": "reiwa-record",
+                "numbers": [
+                  "876,000"
+                ],
+                "strong": true,
+                "verdict": "needs-llm"
+              }
+            ]
+          },
+          "sampled_for_llm": [
+            {
+              "sentence": "Sold price was $876,000 [[reiwa-record]].",
+              "note_id": "reiwa-record",
+              "numbers": [
+                "876,000"
+              ],
+              "strong": true,
+              "verdict": "needs-llm"
+            }
+          ]
+        },
+        "spent": 4,
+        "remaining_budget": 2
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "recorded_price",
+        "query": "11 Furlong Street REIWA sold price",
+        "source_type": "frozen webpage quotation from assignment 2"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "sold_price",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 768000,
+          "sentence": "Sold price was $768,000 [[reiwa-record]]."
+        },
+        "observation": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "pointer": "evidence/source-excerpt.json#/excerpt",
+        "spent": 5,
+        "remaining_budget": 1
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "sold_price",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 768000,
+          "sentence": "Sold price was $768,000 [[reiwa-record]]."
+        },
+        "verdict": {
+          "status": "supported",
+          "reason": "supported-mechanical",
+          "hyperresearch_output": {
+            "total": 1,
+            "supported_mechanical": 1,
+            "dangling": 0,
+            "needs_llm": 0,
+            "pairs": [
+              {
+                "sentence": "Sold price was $768,000 [[reiwa-record]].",
+                "note_id": "reiwa-record",
+                "numbers": [
+                  "768,000"
+                ],
+                "strong": true,
+                "verdict": "supported-mechanical"
+              }
+            ]
+          },
+          "sampled_for_llm": []
+        },
+        "spent": 6,
+        "remaining_budget": 0
+      }
+    ],
+    "selected": {
+      "recorded_price": {
+        "claim_key": "recorded_price",
+        "field": "current_market_value",
+        "source_id": "reiwa-record",
+        "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "value": 768000,
+        "sentence": "Current market value is $768,000 [[reiwa-record]]."
+      }
+    },
+    "spent": 6,
+    "remaining_budget": 0,
+    "stop_reason": "completed",
+    "review_status": "not_passed",
+    "review_scope": "same deterministic checker; no independent human/LLM review",
+    "deliverable": false
+  },
+  "after": {
+    "task_id": "reiwa-recorded-price-binding-v1",
+    "claims": [
+      {
+        "claim_key": "recorded_price",
+        "completion_condition": "One candidate binds the saved source quotation to the sold_price field and matching AUD value; current valuation remains unknown.",
+        "query": "11 Furlong Street REIWA sold price",
+        "source_type": "frozen webpage quotation from assignment 2",
+        "rule": "sold_price",
+        "field": "sold_price"
+      }
+    ],
+    "trace": [
+      {
+        "step": "decompose",
+        "input": "根据已保存的 REIWA 记录，核对 11 Furlong Street 的历史成交价；不得把它写成当前市场估值。只做已冻结原文的字段与取值核验，不重新联网。",
+        "claim_key": "recorded_price",
+        "completion_condition": "One candidate binds the saved source quotation to the sold_price field and matching AUD value; current valuation remains unknown."
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "recorded_price",
+        "query": "11 Furlong Street REIWA sold price",
+        "source_type": "frozen webpage quotation from assignment 2"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "current_market_value",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 768000,
+          "sentence": "Current market value is $768,000 [[reiwa-record]]."
+        },
+        "observation": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "pointer": "evidence/source-excerpt.json#/excerpt",
+        "spent": 1,
+        "remaining_budget": 5
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "current_market_value",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 768000,
+          "sentence": "Current market value is $768,000 [[reiwa-record]]."
+        },
+        "verdict": {
+          "status": "conflict",
+          "reason": "field_or_value_mismatch",
+          "observed_value": 768000,
+          "pointer": "evidence/source-excerpt.json#/excerpt",
+          "hyperresearch_output": {
+            "total": 1,
+            "supported_mechanical": 1,
+            "dangling": 0,
+            "needs_llm": 0,
+            "pairs": [
+              {
+                "sentence": "Current market value is $768,000 [[reiwa-record]].",
+                "note_id": "reiwa-record",
+                "numbers": [
+                  "768,000"
+                ],
+                "strong": true,
+                "verdict": "supported-mechanical"
+              }
+            ]
+          },
+          "sampled_for_llm": []
+        },
+        "spent": 2,
+        "remaining_budget": 4
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "recorded_price",
+        "query": "11 Furlong Street REIWA sold price",
+        "source_type": "frozen webpage quotation from assignment 2"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "sold_price",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 876000,
+          "sentence": "Sold price was $876,000 [[reiwa-record]]."
+        },
+        "observation": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "pointer": "evidence/source-excerpt.json#/excerpt",
+        "spent": 3,
+        "remaining_budget": 3
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "sold_price",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 876000,
+          "sentence": "Sold price was $876,000 [[reiwa-record]]."
+        },
+        "verdict": {
+          "status": "conflict",
+          "reason": "field_or_value_mismatch",
+          "observed_value": 768000,
+          "pointer": "evidence/source-excerpt.json#/excerpt",
+          "hyperresearch_output": {
+            "total": 1,
+            "supported_mechanical": 0,
+            "dangling": 0,
+            "needs_llm": 1,
+            "pairs": [
+              {
+                "sentence": "Sold price was $876,000 [[reiwa-record]].",
+                "note_id": "reiwa-record",
+                "numbers": [
+                  "876,000"
+                ],
+                "strong": true,
+                "verdict": "needs-llm"
+              }
+            ]
+          },
+          "sampled_for_llm": [
+            {
+              "sentence": "Sold price was $876,000 [[reiwa-record]].",
+              "note_id": "reiwa-record",
+              "numbers": [
+                "876,000"
+              ],
+              "strong": true,
+              "verdict": "needs-llm"
+            }
+          ]
+        },
+        "spent": 4,
+        "remaining_budget": 2
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "recorded_price",
+        "query": "11 Furlong Street REIWA sold price",
+        "source_type": "frozen webpage quotation from assignment 2"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "sold_price",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 768000,
+          "sentence": "Sold price was $768,000 [[reiwa-record]]."
+        },
+        "observation": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "pointer": "evidence/source-excerpt.json#/excerpt",
+        "spent": 5,
+        "remaining_budget": 1
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "recorded_price",
+        "candidate": {
+          "claim_key": "recorded_price",
+          "field": "sold_price",
+          "source_id": "reiwa-record",
+          "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+          "value": 768000,
+          "sentence": "Sold price was $768,000 [[reiwa-record]]."
+        },
+        "verdict": {
+          "status": "supported",
+          "reason": "field_value_match",
+          "observed_value": 768000,
+          "pointer": "evidence/source-excerpt.json#/excerpt",
+          "hyperresearch_output": {
+            "total": 1,
+            "supported_mechanical": 1,
+            "dangling": 0,
+            "needs_llm": 0,
+            "pairs": [
+              {
+                "sentence": "Sold price was $768,000 [[reiwa-record]].",
+                "note_id": "reiwa-record",
+                "numbers": [
+                  "768,000"
+                ],
+                "strong": true,
+                "verdict": "supported-mechanical"
+              }
+            ]
+          },
+          "sampled_for_llm": []
+        },
+        "spent": 6,
+        "remaining_budget": 0
+      }
+    ],
+    "selected": {
+      "recorded_price": {
+        "claim_key": "recorded_price",
+        "field": "sold_price",
+        "source_id": "reiwa-record",
+        "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "value": 768000,
+        "sentence": "Sold price was $768,000 [[reiwa-record]]."
+      }
+    },
+    "spent": 6,
+    "remaining_budget": 0,
+    "stop_reason": "completed",
+    "review_status": "not_passed",
+    "review_scope": "same deterministic checker; no independent human/LLM review",
+    "deliverable": false
+  },
+  "boundary": "Both runs have no independent review and deliverable=false. The adapter preserves raw needs-llm as pending evidence, without running an LLM. Added rules only cover this declared field. Light originally skipped step 14.5; this is a separate module experiment, not retroactive verification of the report."
+}

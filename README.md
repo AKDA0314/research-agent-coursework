@@ -31,6 +31,8 @@ These commands make no network requests, invoke no language model, and do not ch
 | 3: six-step framework | [Code](src/six_step.py), [six-step guide](docs/six-step.md) | Six duties, proposal/check budget, separate stop and review state |
 | 3: same original property task | [Frozen task](evidence/task.md), [trace](results/six-property.json), [seven-row comparison](docs/six-step.md#same-task-comparison) | Same task text replayed against frozen gaps/assumptions; incomplete evidence remains incomplete |
 | 3: success/conflict demonstrations | [Success](results/six-success.json), [conflict](results/six-conflict.json) | Same checkpoint teaching task, six-unit ceiling; not full-property success |
+| 3: same-source property-subtask pair | [REIWA success](results/six-reiwa-success.json), [REIWA conflict](results/six-reiwa-conflict.json) | Same explicitly narrowed historical-price task and quotation; six units each |
+| 2/3: actual HyperResearch checker A/B | [Raw results](results/hyperresearch-binding-ablation.json), [experiment guide](docs/verification-update.md) | Actual pinned citecheck functions + one binding-rule change; temporary fixture DB, no LLM or host rerun |
 | All: English README and AI disclosure | This file, [disclosure](docs/AI_USE.md), [submission status](docs/submission-status.md) | Learner explanation and instructor acceptance remain pending |
 
 ## Evidence boundaries
@@ -39,6 +41,7 @@ The preserved HyperResearch snapshot is version 0.11.1, commit `75b1ecfb2891184f
 Its real run used the property task; the six-step replay uses the same task text, but no fresh retrieval.
 The price/inventory evidence gaps were manually curated from the preserved run, so the replay is not an independent rediscovery of those gaps.
 The checkpoint fixture contains the sentence supplied by the course and handcrafted candidates; it is not an official downloaded dataset.
+The added REIWA pair uses a real saved quotation and an explicitly narrowed subtask, not a completed full property investigation. Candidate mutations are authored tests, not original report errors.
 Success here means the narrow rule-based check passed, not that an LLM became better or a human independently reviewed the result.
 The six operation units in the classroom are not USD and are not directly comparable to HyperResearch's `budget_usd`.
 

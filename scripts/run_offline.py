@@ -38,6 +38,9 @@ def main():
     before = run_framework(task, sources, proposals, checker=citation_only)
     after = run_framework(task, sources, proposals)
     save("checker-ablation.json", {"design_factor": "checker only: citation existence vs field/value binding", "fixture_sha256": hashlib.sha256(raw).hexdigest(), "held_fixed": ["task", "source text", "candidate list and order", "selector: first supported", "budget: six units", "stop policy"], "before": before, "after": after, "interpretation": "The correct candidate was present in both runs. The weak checker passed the inverted candidate; the unchanged selector chose it. This is an offline deterministic checker demonstration, not a model capability improvement or a second HyperResearch run."})
+    binding = json.loads((ROOT / "fixtures/reiwa-binding.json").read_text())
+    save("six-reiwa-success.json", run_framework(binding["task"], binding["sources"], binding["proposals"]))
+    save("six-reiwa-conflict.json", run_framework(binding["task"], binding["sources"], binding["conflict_proposals"]))
     property_file = ROOT / "fixtures/property.json"
     if property_file.exists():
         prop = json.loads(property_file.read_text(encoding="utf-8"))

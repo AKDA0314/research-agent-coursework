@@ -1,0 +1,154 @@
+{
+  "task_id": "reiwa-recorded-price-binding-v1",
+  "claims": [
+    {
+      "claim_key": "recorded_price",
+      "completion_condition": "One candidate binds the saved source quotation to the sold_price field and matching AUD value; current valuation remains unknown.",
+      "query": "11 Furlong Street REIWA sold price",
+      "source_type": "frozen webpage quotation from assignment 2",
+      "rule": "sold_price",
+      "field": "sold_price"
+    }
+  ],
+  "trace": [
+    {
+      "step": "decompose",
+      "input": "根据已保存的 REIWA 记录，核对 11 Furlong Street 的历史成交价；不得把它写成当前市场估值。只做已冻结原文的字段与取值核验，不重新联网。",
+      "claim_key": "recorded_price",
+      "completion_condition": "One candidate binds the saved source quotation to the sold_price field and matching AUD value; current valuation remains unknown."
+    },
+    {
+      "step": "plan_query",
+      "claim_key": "recorded_price",
+      "query": "11 Furlong Street REIWA sold price",
+      "source_type": "frozen webpage quotation from assignment 2"
+    },
+    {
+      "step": "propose_observe",
+      "claim_key": "recorded_price",
+      "candidate": {
+        "claim_key": "recorded_price",
+        "field": "current_market_value",
+        "source_id": "reiwa-record",
+        "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "value": 768000,
+        "sentence": "Current market value is $768,000 [[reiwa-record]]."
+      },
+      "observation": "Sold price: $768,000 **Sold: 13 May 2025**",
+      "pointer": "evidence/source-excerpt.json#/excerpt",
+      "spent": 1,
+      "remaining_budget": 5
+    },
+    {
+      "step": "bind_verify",
+      "claim_key": "recorded_price",
+      "candidate": {
+        "claim_key": "recorded_price",
+        "field": "current_market_value",
+        "source_id": "reiwa-record",
+        "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "value": 768000,
+        "sentence": "Current market value is $768,000 [[reiwa-record]]."
+      },
+      "verdict": {
+        "status": "conflict",
+        "reason": "field_or_value_mismatch",
+        "observed_value": 768000,
+        "pointer": "evidence/source-excerpt.json#/excerpt"
+      },
+      "spent": 2,
+      "remaining_budget": 4
+    },
+    {
+      "step": "plan_query",
+      "claim_key": "recorded_price",
+      "query": "11 Furlong Street REIWA sold price",
+      "source_type": "frozen webpage quotation from assignment 2"
+    },
+    {
+      "step": "propose_observe",
+      "claim_key": "recorded_price",
+      "candidate": {
+        "claim_key": "recorded_price",
+        "field": "sold_price",
+        "source_id": "reiwa-record",
+        "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "value": 876000,
+        "sentence": "Sold price was $876,000 [[reiwa-record]]."
+      },
+      "observation": "Sold price: $768,000 **Sold: 13 May 2025**",
+      "pointer": "evidence/source-excerpt.json#/excerpt",
+      "spent": 3,
+      "remaining_budget": 3
+    },
+    {
+      "step": "bind_verify",
+      "claim_key": "recorded_price",
+      "candidate": {
+        "claim_key": "recorded_price",
+        "field": "sold_price",
+        "source_id": "reiwa-record",
+        "quote": "Sold price: $768,000 **Sold: 13 May 2025**",
+        "value": 876000,
+        "sentence": "Sold price was $876,000 [[reiwa-record]]."
+      },
+      "verdict": {
+        "status": "conflict",
+        "reason": "field_or_value_mismatch",
+        "observed_value": 768000,
+        "pointer": "evidence/source-excerpt.json#/excerpt"
+      },
+      "spent": 4,
+      "remaining_budget": 2
+    },
+    {
+      "step": "plan_query",
+      "claim_key": "recorded_price",
+      "query": "11 Furlong Street REIWA sold price",
+      "source_type": "frozen webpage quotation from assignment 2"
+    },
+    {
+      "step": "propose_observe",
+      "claim_key": "recorded_price",
+      "candidate": {
+        "claim_key": "recorded_price",
+        "field": "sold_price",
+        "source_id": "unavailable-record",
+        "quote": "Sold price: $768,000",
+        "value": 768000,
+        "sentence": "Sold price was $768,000 [[unavailable-record]]."
+      },
+      "observation": "EMPTY_RESULT",
+      "pointer": null,
+      "spent": 5,
+      "remaining_budget": 1
+    },
+    {
+      "step": "bind_verify",
+      "claim_key": "recorded_price",
+      "candidate": {
+        "claim_key": "recorded_price",
+        "field": "sold_price",
+        "source_id": "unavailable-record",
+        "quote": "Sold price: $768,000",
+        "value": 768000,
+        "sentence": "Sold price was $768,000 [[unavailable-record]]."
+      },
+      "verdict": {
+        "status": "missing",
+        "reason": "source_not_found"
+      },
+      "spent": 6,
+      "remaining_budget": 0
+    }
+  ],
+  "selected": {
+    "recorded_price": null
+  },
+  "spent": 6,
+  "remaining_budget": 0,
+  "stop_reason": "conflict",
+  "review_status": "not_passed",
+  "review_scope": "same deterministic checker; no independent human/LLM review",
+  "deliverable": false
+}

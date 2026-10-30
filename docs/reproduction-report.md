@@ -85,4 +85,6 @@ hyperresearch install . --profile full --json
 
 这是新六步框架对原任务的**离线检查器重放**，不是修改 HyperResearch 后重跑整条 Agent 流水线。老师若要求同一 HyperResearch 宿主的端到端单因素重跑，这一项还需补做；本包不将局部实验冒充它。
 
+后续已补 [真实 citecheck 源码单因素实验](verification-update.md)：固定 REIWA 子任务、引用片段、候选、选择器和预算，只增加字段绑定。课程原文未明确要求完整收费宿主重跑，不应把它自行加成硬性要求；模块实验的范围仍须如实说明。
+
 另以课程 checkpoint 冻结句子验证“正确候选已经在集合里，仍选错”：候选相同、选择器相同、预算相同，只改变检查器。[结果](../results/checker-ablation.json) 在 `before.trace` 第一条 `bind_verify` 中，错误值被判 supported，`before.selected.resume_origin.value` 因而取错；问题首先在检查器，不是这次候选集没有生成正确答案。该归因只限于此可控轨迹。

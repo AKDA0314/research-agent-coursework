@@ -32,7 +32,8 @@ def verify_candidate(claim, candidate, sources):
         return {"status": "missing", "reason": "unsupported_rule"}
     if observed is None:
         return {"status": "missing", "reason": "field_not_extractable"}
-    same = candidate.get("claim_key") == claim["claim_key"] and candidate.get("value") == observed
+    same_field = not claim.get("field") or candidate.get("field") == claim["field"]
+    same = candidate.get("claim_key") == claim["claim_key"] and same_field and candidate.get("value") == observed
     return {"status": "supported" if same else "conflict", "reason": "field_value_match" if same else "field_or_value_mismatch", "observed_value": observed, "pointer": source["pointer"]}
 
 
