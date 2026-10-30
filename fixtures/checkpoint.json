@@ -1,0 +1,14 @@
+{
+  "provenance": "Teaching fixture authored for this submission from the exact sentence supplied in the assignment. Not an official downloaded corpus or live model response.",
+  "task": {
+    "task_id": "checkpoint-frozen-v1",
+    "question": "Where does resume begin? Bind the answer to the quoted source; reject an inverted value.",
+    "claims": [{"claim_key": "resume_origin", "completion_condition": "A cited passage explicitly states the resume origin and the candidate value matches it.", "query": "resume committed checkpoint", "source_type": "frozen classroom passage", "rule": "checkpoint"}]
+  },
+  "sources": {"classroom-quote": {"text": "Resume begins from the latest committed checkpoint.", "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text"}},
+  "proposals": {"resume_origin": [
+    {"claim_key": "resume_origin", "source_id": "classroom-quote", "quote": "Resume begins from the latest committed checkpoint.", "value": "Forget committed work"},
+    {"claim_key": "resume_origin", "source_id": "missing-page", "quote": "Resume begins from the latest committed checkpoint.", "value": "latest committed checkpoint"},
+    {"claim_key": "resume_origin", "source_id": "classroom-quote", "quote": "Resume begins from the latest committed checkpoint.", "value": "latest committed checkpoint"}
+  ]}
+}

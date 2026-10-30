@@ -1,0 +1,3 @@
+chars 11457 split_tokens 1111 avg_token_chars 9.28
+threshold 15.0 lacks_word_boundaries False
+cjk_chars 2840 share 0.248

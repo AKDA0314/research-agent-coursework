@@ -1,0 +1,25 @@
+# 原始搜索返回（WebSearch，mode=standard，query='Furlong Street Cockburn Central WA 6164'）
+# 来源：<USER_HOME>/.claude/projects/-Users-REDACTED-Documents-ChatGPT-----Agent-outputs-hyperresearch-lab/e9ff650e-afb9-4fbc-8438-b2af03277b38.jsonl 第 141 行，tool_use_id=toolu_01Ei5Qv6bWi8ukWdbuPDmygz，时间 2026-10-30T10:17:22.981Z
+
+Web search results for query: "Furlong Street Cockburn Central WA 6164"
+
+Links: [{"title":"27 furlong street cockburn central wa 6164 2020515998","url":"https://domain.com.au/27-furlong-street-cockburn-central-wa-6164-2020515998"},{"title":"Back to search results","url":"https://reiwa.com.au/lot-16--furlong--street-cockburn-central-4800954"},{"title":"Back to search results","url":"https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/"},{"title":"11 Furlong Street, Cockburn Central, WA 6164 sold on 22 May 2025 | OnTheHouse","url":"https://www.onthehouse.com.au/property/wa/cockburn-central-6164/11-furlong-st-cockburn-central-wa-6164-41710582"},{"title":"Back to search results","url":"https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/"},{"title":"19 Furlong Street Cockburn Central WA 6164","url":"https://www.planningalerts.org.au/applications/3496417"},{"title":"17 Furlong Street Cockburn Central WA 6164","url":"https://www.planningalerts.org.au/applications/3504858"},{"title":"www.domain.com.au","url":"https://www.domain.com.au/17749810"},{"title":"5 Furlong Street Cockburn Central WA 6164","url":"https://www.planningalerts.org.au/applications/3516975"},{"title":"Back to search results","url":"https://reiwa.com.au/lot-18--furlong--street-cockburn-central-4789499/"},{"title":"Back to search results","url":"https://reiwa.com.au/lot-51-23-furlong-street-cockburn-central-4559494/"},{"title":"Back to search results","url":"https://reiwa.com.au/lot-57-11-furlong-street-cockburn-central-4502386/"},{"title":"Back to search results","url":"https://reiwa.com.au/lot-50-25-furlong-street-cockburn-central-4603182/"},{"title":"31 Furlong Street Cockburn Central WA 6164","url":"https://api.planningalerts.org.au/applications/3409289"},{"title":"Back to search results","url":"https://reiwa.com.au/lot-54-17-furlong--street-cockburn-central-4572747/"},{"title":"Back to search results","url":"https://reiwa.com.au/lot-56-13-furlong-street-cockburn-central-4522255/"}]
+
+The search found property listings, sales records, planning applications, and nearby amenities for Furlong Street, Cockburn Central.
+
+**Recent sales**
+- **27 Furlong Street:** Reiwa lists this as a four bedroom, two bathroom house sold by Damyn Strang and Dalila Pidone at Abel Property Sales on 29 Jan 2026. Its sale price is given as $940,000 and it has a external land size of 187m².
+- **11 Furlong Street:** This is a 4-bedroom, 3-bathroom house. One source records a sale on 22 May 2025 for $768,000, while Reiwa gives 13 May 2025. The property was built in 2021 within the sought-after Mojo Urban Living development.
+- **Lot 16:** Sold on 14/4/2024 for $235,000.
+
+**Suburb context**
+- Reiwa describes the area as relatively new and still expanding.
+- Cockburn Central station sits across the road from this precinct, and the Cockburn Gateway Shopping Centre is the main commercial hub.
+- Schools nearby include Lakeland Senior High School at 0.8km and Havenport MSL College at 1.1km.
+- Median house prices conflict between sources: one cites $900,000 and another cites $915,000. The sources are from different dates, so treat these as approximate.
+
+**Planning applications**
+PlanningAlerts lists applications for several nearby addresses, including 5, 17, 19, and 31 Furlong Street, all under the City of Cockburn. One for 31 Furlong Street, a new two storey dwelling with Garage, was cancelled.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.

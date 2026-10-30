@@ -1,0 +1,56 @@
+{
+  "sub_questions": [
+    "现在买入 Cockburn Central 的 house，有哪些支持证据？",
+    "现在买入 Cockburn Central 的 house，有哪些反对证据？",
+    "还缺什么证据（证据缺口）？",
+    "11 Furlong St, Cockburn Central 的地址核实与定位（1 km 工作半径）",
+    "事项1：同一区域同类 house 价格变化（最近两个完整可比年度区间）",
+    "事项2：同一范围 house 在售库存变化（两个时点/期间）",
+    "事项3：购价 AUD 1,000,000、贷款余额 AUD 800,000 下的负资产临界条件（静态计算）"
+  ],
+  "entities": [
+    {"name": "11 Furlong St, Cockburn Central WA", "type": "address-anchor", "required_fields": ["verified spelling", "location source", "suburb"]},
+    {"name": "Cockburn Central house market (1 km radius vs suburb)", "type": "market", "required_fields": ["nearby sample", "suburb background", "sample size"]}
+  ],
+  "required_formats": [
+    "三事项证据表（事项、发现、范围、数值/原文、来源URL或笔记ID、发布日期、数据期间、访问日期、核验状态）",
+    "支持材料/反对材料/未解决缺口分开写",
+    "区分观察事实、条件计算、推断",
+    "中文报告"
+  ],
+  "required_sections": [
+    "范围说明",
+    "三事项证据表",
+    "支持/反对/缺口",
+    "结论边界"
+  ],
+  "required_section_headings": [
+    "## 1. 范围说明",
+    "## 2. 三事项证据表",
+    "## 3. 支持材料、反对材料与未解决缺口",
+    "## 4. 事实、条件计算与推断的区分",
+    "## 5. 结论边界"
+  ],
+  "time_horizons": [],
+  "time_periods": [
+    {"period": "latest two complete comparable annual periods up to 2026-10-30", "type": "rolling-year", "primary_source": "published suburb/house statistics (e.g. REIWA, Landgate, Cotality/CoreLogic, SQM, Domain, realestate.com.au)", "issuer": "various"},
+    {"period": "information cutoff 2026-10-30 Australia/Perth", "type": "event-anchored", "primary_source": "n/a", "issuer": "n/a"}
+  ],
+  "scope_conditions": [
+    "house only, no unit/apartment/land",
+    "1 km straight-line radius around the address as working default; suburb stats shown separately; postcode 6164 only auxiliary",
+    "only three topics investigated; not full risk assessment",
+    "negative-equity calc is static, excludes transaction costs/taxes, loan fixed",
+    "no guaranteed return or definite buy advice"
+  ],
+  "pipeline_tier": "light",
+  "response_format": "structured",
+  "citation_style": "wikilink",
+  "levers": {
+    "register": "survey",
+    "register_confidence": "low",
+    "domain_notes": "Sourcing: primary/authoritative property data first (Landgate, REIWA, state/ABS, Cotality, SQM Research, Domain, realestate.com.au) with explicit data periods; most pages are JS-heavy or paywalled so record fetch failures. Evidence norms: sold-price medians with sample sizes outrank asking prices and commentary; suburb medians are background only. Recency: only data published on or before 2026-10-30 counts.",
+    "inference_depth": "surface",
+    "rationale": {"register": "query asks for supporting/opposing evidence and gaps, coverage-shaped with explicit no-verdict boundary", "inference_depth": "bounded three-item evidence collection; gaps are reported rather than inferred"}
+  }
+}

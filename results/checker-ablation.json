@@ -1,0 +1,301 @@
+{
+  "design_factor": "checker only: citation existence vs field/value binding",
+  "fixture_sha256": "df0d841a7c640d8ea7f9cf9a6d9d09dd666d44ecfb878ce9706284bb2f3fb73b",
+  "held_fixed": [
+    "task",
+    "source text",
+    "candidate list and order",
+    "selector: first supported",
+    "budget: six units",
+    "stop policy"
+  ],
+  "before": {
+    "task_id": "checkpoint-frozen-v1",
+    "claims": [
+      {
+        "claim_key": "resume_origin",
+        "completion_condition": "A cited passage explicitly states the resume origin and the candidate value matches it.",
+        "query": "resume committed checkpoint",
+        "source_type": "frozen classroom passage",
+        "rule": "checkpoint"
+      }
+    ],
+    "trace": [
+      {
+        "step": "decompose",
+        "input": "Where does resume begin? Bind the answer to the quoted source; reject an inverted value.",
+        "claim_key": "resume_origin",
+        "completion_condition": "A cited passage explicitly states the resume origin and the candidate value matches it."
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "resume_origin",
+        "query": "resume committed checkpoint",
+        "source_type": "frozen classroom passage"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "classroom-quote",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "Forget committed work"
+        },
+        "observation": "Resume begins from the latest committed checkpoint.",
+        "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text",
+        "spent": 1,
+        "remaining_budget": 5
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "classroom-quote",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "Forget committed work"
+        },
+        "verdict": {
+          "status": "supported",
+          "reason": "citation_exists_only"
+        },
+        "spent": 2,
+        "remaining_budget": 4
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "resume_origin",
+        "query": "resume committed checkpoint",
+        "source_type": "frozen classroom passage"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "missing-page",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "latest committed checkpoint"
+        },
+        "observation": "EMPTY_RESULT",
+        "pointer": null,
+        "spent": 3,
+        "remaining_budget": 3
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "missing-page",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "latest committed checkpoint"
+        },
+        "verdict": {
+          "status": "missing",
+          "reason": "citation_exists_only"
+        },
+        "spent": 4,
+        "remaining_budget": 2
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "resume_origin",
+        "query": "resume committed checkpoint",
+        "source_type": "frozen classroom passage"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "classroom-quote",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "latest committed checkpoint"
+        },
+        "observation": "Resume begins from the latest committed checkpoint.",
+        "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text",
+        "spent": 5,
+        "remaining_budget": 1
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "classroom-quote",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "latest committed checkpoint"
+        },
+        "verdict": {
+          "status": "supported",
+          "reason": "citation_exists_only"
+        },
+        "spent": 6,
+        "remaining_budget": 0
+      }
+    ],
+    "selected": {
+      "resume_origin": {
+        "claim_key": "resume_origin",
+        "source_id": "classroom-quote",
+        "quote": "Resume begins from the latest committed checkpoint.",
+        "value": "Forget committed work"
+      }
+    },
+    "spent": 6,
+    "remaining_budget": 0,
+    "stop_reason": "completed",
+    "review_status": "not_passed",
+    "review_scope": "same deterministic checker; no independent human/LLM review",
+    "deliverable": false
+  },
+  "after": {
+    "task_id": "checkpoint-frozen-v1",
+    "claims": [
+      {
+        "claim_key": "resume_origin",
+        "completion_condition": "A cited passage explicitly states the resume origin and the candidate value matches it.",
+        "query": "resume committed checkpoint",
+        "source_type": "frozen classroom passage",
+        "rule": "checkpoint"
+      }
+    ],
+    "trace": [
+      {
+        "step": "decompose",
+        "input": "Where does resume begin? Bind the answer to the quoted source; reject an inverted value.",
+        "claim_key": "resume_origin",
+        "completion_condition": "A cited passage explicitly states the resume origin and the candidate value matches it."
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "resume_origin",
+        "query": "resume committed checkpoint",
+        "source_type": "frozen classroom passage"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "classroom-quote",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "Forget committed work"
+        },
+        "observation": "Resume begins from the latest committed checkpoint.",
+        "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text",
+        "spent": 1,
+        "remaining_budget": 5
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "classroom-quote",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "Forget committed work"
+        },
+        "verdict": {
+          "status": "conflict",
+          "reason": "field_or_value_mismatch",
+          "observed_value": "latest committed checkpoint",
+          "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text"
+        },
+        "spent": 2,
+        "remaining_budget": 4
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "resume_origin",
+        "query": "resume committed checkpoint",
+        "source_type": "frozen classroom passage"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "missing-page",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "latest committed checkpoint"
+        },
+        "observation": "EMPTY_RESULT",
+        "pointer": null,
+        "spent": 3,
+        "remaining_budget": 3
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "missing-page",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "latest committed checkpoint"
+        },
+        "verdict": {
+          "status": "missing",
+          "reason": "source_not_found"
+        },
+        "spent": 4,
+        "remaining_budget": 2
+      },
+      {
+        "step": "plan_query",
+        "claim_key": "resume_origin",
+        "query": "resume committed checkpoint",
+        "source_type": "frozen classroom passage"
+      },
+      {
+        "step": "propose_observe",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "classroom-quote",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "latest committed checkpoint"
+        },
+        "observation": "Resume begins from the latest committed checkpoint.",
+        "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text",
+        "spent": 5,
+        "remaining_budget": 1
+      },
+      {
+        "step": "bind_verify",
+        "claim_key": "resume_origin",
+        "candidate": {
+          "claim_key": "resume_origin",
+          "source_id": "classroom-quote",
+          "quote": "Resume begins from the latest committed checkpoint.",
+          "value": "latest committed checkpoint"
+        },
+        "verdict": {
+          "status": "supported",
+          "reason": "field_value_match",
+          "observed_value": "latest committed checkpoint",
+          "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text"
+        },
+        "spent": 6,
+        "remaining_budget": 0
+      }
+    ],
+    "selected": {
+      "resume_origin": {
+        "claim_key": "resume_origin",
+        "source_id": "classroom-quote",
+        "quote": "Resume begins from the latest committed checkpoint.",
+        "value": "latest committed checkpoint"
+      }
+    },
+    "spent": 6,
+    "remaining_budget": 0,
+    "stop_reason": "completed",
+    "review_status": "rule_checked",
+    "review_scope": "same deterministic checker; no independent human/LLM review",
+    "deliverable": true
+  },
+  "interpretation": "The correct candidate was present in both runs. The weak checker passed the inverted candidate; the unchanged selector chose it. This is an offline deterministic checker demonstration, not a model capability improvement or a second HyperResearch run."
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "step": 1,
+    "thought": "Find evidence for the question",
+    "action": {
+      "name": "search",
+      "input": "Where does resume begin? Bind the answer to the quoted source; reject an inverted value."
+    },
+    "observation": {
+      "kind": "search",
+      "query": "Where does resume begin? Bind the answer to the quoted source; reject an inverted value.",
+      "hits": [
+        "classroom-quote"
+      ]
+    }
+  },
+  {
+    "step": 2,
+    "thought": "Read the returned source",
+    "action": {
+      "name": "read",
+      "input": "classroom-quote"
+    },
+    "observation": {
+      "kind": "source",
+      "source_id": "classroom-quote",
+      "text": "Resume begins from the latest committed checkpoint.",
+      "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text"
+    }
+  },
+  {
+    "step": 3,
+    "thought": "Check the candidate against the observed passage",
+    "action": {
+      "name": "verify",
+      "input": {
+        "kind": "source",
+        "source_id": "classroom-quote",
+        "text": "Resume begins from the latest committed checkpoint.",
+        "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text"
+      }
+    },
+    "observation": {
+      "supported": false,
+      "candidate": {
+        "claim_key": "resume_origin",
+        "source_id": "classroom-quote",
+        "quote": "Resume begins from the latest committed checkpoint.",
+        "value": "Forget committed work"
+      },
+      "observed_pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text"
+    },
+    "stop_reason": "verification_failed"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "commit": "75b1ecfb2891184fad2cc1a2ddf9abe476f5b54c",
+  "installed_skill": ".claude/skills/hyperresearch-2-width-sweep/SKILL.md",
+  "sha256": "23bf29069b289f7f46cb8a99d539741309d323bbab57f963b06991b6ef91f8f6",
+  "selected_lines": [
+    {
+      "line": 6,
+      "text": "  Achieves comprehensive topical coverage with 55–80 curated sources for"
+    },
+    {
+      "line": 11,
+      "text": "<!-- rendered from profile \"full\" (hyperresearch 0.11.1) — edit the profile or the package template, not this file -->"
+    },
+    {
+      "line": 15,
+      "text": "**Tier gate:** Runs for ALL tiers. For `light` tier: skip academic APIs, target 15–25 sources, limit to 2–3 fetcher batches. For `full`: run the full procedure below."
+    },
+    {
+      "line": 17,
+      "text": "**Goal:** achieve comprehensive topical coverage — every atomic item from the decomposition must have at least 3 supporting sources by the end of this step. Target 55–80 curated sources for `full` tier."
+    },
+    {
+      "line": 288,
+      "text": "| `light` | 10 | 15–25 | 3–5 | 1–2 |"
+    },
+    {
+      "line": 289,
+      "text": "| `full` | 45 | 55–80 | 10–12 | 2–3 |"
+    }
+  ],
+  "interpretation": "Installed gear is full; light-specific target remains 15–25. Presence of rendered text is not proof that the host obeyed it."
+}

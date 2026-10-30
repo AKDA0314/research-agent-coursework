@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "test_exit_code": 0,
+  "test_output": "test_ablation_same_budget_and_different_selection (test_framework.FrameworkTests) ... ok\ntest_binding_not_only_citation (test_framework.FrameworkTests) ... ok\ntest_budget_never_negative_or_half_pair (test_framework.FrameworkTests) ... ok\ntest_no_mutation_or_scoring_labels (test_framework.FrameworkTests) ... ok\ntest_property_gaps_preserved (test_framework.FrameworkTests) ... ok\ntest_react_body_under_30_physical_lines (test_framework.FrameworkTests) ... ok\ntest_react_empty_and_illegal (test_framework.FrameworkTests) ... ok\ntest_react_error_is_recorded (test_framework.FrameworkTests) ... ok\ntest_react_inverted_value (test_framework.FrameworkTests) ... ok\ntest_react_limits (test_framework.FrameworkTests) ... ok\ntest_react_success (test_framework.FrameworkTests) ... ok\ntest_six_conflict (test_framework.FrameworkTests) ... ok\ntest_six_success_full_six_units (test_framework.FrameworkTests) ... ok\ntest_wrong_numeric_threshold_rejected (test_framework.FrameworkTests) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.003s\n\nOK\n",
+  "react_function_body_lines": 29,
+  "problems": [],
+  "scan_scope": "Submission text, heuristic credential-pattern checks, relative Markdown targets, exported hashes, original blocked status. Not a formal security audit or teacher acceptance.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "ee1b659d49a7adc416b318e8097bb64eaca0e0a442de25a3a141bc115e7033d6"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c8ea90bdf908ed8b82c41362ca53e06a2368a58c84c63def70d6282db0efde4b"
+    },
+    {
+      "path": "docs/AI_USE.md",
+      "sha256": "74e1756d81f6426b87cc46fa41101ded3cad0bc88afb9233f79ac8e11396d24d"
+    },
+    {
+      "path": "docs/dataflow.md",
+      "sha256": "768d24e85673f2dd81dacef0c164e0669523bf966f1e85ef08ccaaca6d472ab6"
+    },
+    {
+      "path": "docs/evaluation.md",
+      "sha256": "5919300253f4af8e2393756415b067b2d24a5680c069d8a97d00e6e6ad1050ab"
+    },
+    {
+      "path": "docs/product-comparison.md",
+      "sha256": "e7acbdb4c8f7931c293e83b9a4271a8056f486ef2d84f979a965ec2c77d6b637"
+    },
+    {
+      "path": "docs/react.md",
+      "sha256": "d8e05ebde74366064d1aab8fae82c7dc425fc2d39a8d417c5b17c57ab9f3b08b"
+    },
+    {
+      "path": "docs/reproduction-report.md",
+      "sha256": "cd0c322ab4557a0a1cfe71b07c0fcbaa1dc004157108eb315c5f450461b86062"
+    },
+    {
+      "path": "docs/six-step.md",
+      "sha256": "18126ff805f9ef78c7264c8882e6419abe0fcb57cf61de69349f84b4c1bfc951"
+    },
+    {
+      "path": "docs/submission-status.md",
+      "sha256": "e2fb76518b43430dc74610bba52c2a5367ae014f7642ae0fa5df062dc96ab4f9"
+    },
+    {
+      "path": "evidence/coverage-gaps.md",
+      "sha256": "0fae4874f075de0381eabef5e7d2ebfa554423fd041fd3f530b0bbb9e87b4df3"
+    },
+    {
+      "path": "evidence/coverage-matrix.md",
+      "sha256": "c7e83b5459189746dcf0d92d25c156b0db81a3947427262a7e310c0025bd1716"
+    },
+    {
+      "path": "evidence/curation-commands.log",
+      "sha256": "acf1ca44ed2d12783b7125507b303c80fdbf1ebe48891928c9e839fe3b4bcad7"
+    },
+    {
+      "path": "evidence/events.jsonl",
+      "sha256": "6fe9d0d24650f5f2e9a1be4467ec1a9e1a7caeb6e7d36845d463ed4a5e78fb27"
+    },
+    {
+      "path": "evidence/evidence-fetch-return.txt",
+      "sha256": "59c04f916d74a67ddd1163a9ace50e954badf389b5e18c7a3e9203ebf75f78ad"
+    },
+    {
+      "path": "evidence/evidence-search-return.txt",
+      "sha256": "5f4d8cce3666235c62b515241108ad1e13b13b87146b56e114c7cba9bc2a7b41"
+    },
+    {
+      "path": "evidence/export-manifest.json",
+      "sha256": "77eab3ce274ad0421df2d288d98de7c104f8ed8913188878c64bd8bfaa6b2c54"
+    },
+    {
+      "path": "evidence/length-check-issue.md",
+      "sha256": "223611c2d1ab364741f75ffaececca7c2c02abf3c98818cb2f8d1e6b84e91f53"
+    },
+    {
+      "path": "evidence/length-check-repro.txt",
+      "sha256": "434e39f898175eea4489fb8cc60deb9a8a24cb0bc58104e1f0fa523797109dfa"
+    },
+    {
+      "path": "evidence/lint-after.json",
+      "sha256": "880954dcdbb15fa7f560031b6b0b025dcf0284143ac2be3b5a327709741eef6c"
+    },
+    {
+      "path": "evidence/lint-before.json",
+      "sha256": "54346a312f48ce27d20067b05abb439f7ae75c5b65448ab6c21a731201260f7d"
+    },
+    {
+      "path": "evidence/polish-log.json",
+      "sha256": "b130d9f20746065d71baa93ad519957c208638bcac7d2502878660390be5dddf"
+    },
+    {
+      "path": "evidence/prompt-decomposition.json",
+      "sha256": "f9f4712b70da62a776906baef39186534808fd67478c5f3d0c82b14f911e711e"
+    },
+    {
+      "path": "evidence/query.md",
+      "sha256": "6d17a5a016ca3e27b46fdf3c6537a146313fd24c462ea9b3795c77afd3f6a086"
+    },
+    {
+      "path": "evidence/report.md",
+      "sha256": "b5c62e7e81dbeff177b86265c3a93c6802d78b8948f3be9df3c7c5b35e8c45ec"
+    },
+    {
+      "path": "evidence/retrospective.md",
+      "sha256": "2352334ef71437c5548ed1aa59eb75bf904c7aed2e2fa5f440906558fb46c60a"
+    },
+    {
+      "path": "evidence/run-verify-full.json",
+      "sha256": "409befd32c181add3280d60fd5334dee651d5554497824d870e503c5a25e1cc7"
+    },
+    {
+      "path": "evidence/run.json",
+      "sha256": "130407a501aac8b08580a0a588cc5ee5b634d9ae9cadb93312d217dbdfb5f8f6"
+    },
+    {
+      "path": "evidence/search-plan.md",
+      "sha256": "e95b2695548f24b65b4d964911a5493552452e18be485aaa9dc43fd8ee8e0c49"
+    },
+    {
+      "path": "evidence/source-excerpt.json",
+      "sha256": "c50a86d4c956ccf600980c3790f37fcca7874c65fe1ef62c3d0b06bc5fd401fa"
+    },
+    {
+      "path": "evidence/source-trace.md",
+      "sha256": "d3d186dbe3691b0001e5c96a6a9c3bc078ca045f6741311bd507b67ec2d5de69"
+    },
+    {
+      "path": "evidence/task.md",
+      "sha256": "5203bace7a264be8dbdfc8b8ea1aa4a9bd47510300eb2ec961d1133b0f8d01e8"
+    },
+    {
+      "path": "fixtures/checkpoint.json",
+      "sha256": "df0d841a7c640d8ea7f9cf9a6d9d09dd666d44ecfb878ce9706284bb2f3fb73b"
+    },
+    {
+      "path": "fixtures/property.json",
+      "sha256": "453a9837d8217b4309e0d34b841b90bd592cfa16d3673089d146f5e22c12cfbe"
+    },
+    {
+      "path": "results/checker-ablation.json",
+      "sha256": "7b05c28117b6d2010e3d76a0769c17269af80e0c6f105fdf379ef81196708267"
+    },
+    {
+      "path": "results/isolation.json",
+      "sha256": "fe259f13f6c7177d051e83679cd72ef0167c1c99be8edb0dedc747c36e6f179a"
+    },
+    {
+      "path": "results/property-ablation.json",
+      "sha256": "2a1e507609e8841b2b155d8c9d6ea1d45f39229c7062fc45cecdd6ad0f70b569"
+    },
+    {
+      "path": "results/react-conflict.json",
+      "sha256": "53ef339da2e31918986073b10c9248517f45031d8aee5501825551a2eabe7cc3"
+    },
+    {
+      "path": "results/react-empty.json",
+      "sha256": "04283434841b68c674c9bb44c152c35e6137fd9bcd3d4aa72ae5ce8f7630e016"
+    },
+    {
+      "path": "results/react-success.json",
+      "sha256": "ed2ef8343747a7042eb08ed5f6d7b45de66c578eeb4b15bec2bed1bfabc7371c"
+    },
+    {
+      "path": "results/six-conflict.json",
+      "sha256": "9fd415b3c04676bfc026278a74c3114f92e1dfea1f5185aeb2cc5a6bc9dc961e"
+    },
+    {
+      "path": "results/six-property.json",
+      "sha256": "3ffb386b1ea62b69c7fd014d8de847abcaa439018dc534b2cc4e3c65c81bf892"
+    },
+    {
+      "path": "results/six-success.json",
+      "sha256": "9005dc93e008fc70fd6e5eb6fc313d84b338130c304c6cf84e574238ef6d2a24"
+    },
+    {
+      "path": "results/source-audit.json",
+      "sha256": "b01be64c3640dc16bf8759096855ef6566c0fd0868094b19ea1aed8453380f3f"
+    },
+    {
+      "path": "scripts/prepare_evidence.py",
+      "sha256": "635ef9dc693a2f65ef5f1869c318e3a9a912d45609b2999e92783c74a1142d04"
+    },
+    {
+      "path": "scripts/run_offline.py",
+      "sha256": "e086c7d8b695caa08f7f61aa64018f191c6c191375e75c196460d0e8270c5695"
+    },
+    {
+      "path": "scripts/validate_submission.py",
+      "sha256": "5eb62f25c7fcb4a9b3cc01d69605ba1bbaeb53bff6096c9a87ae601081480313"
+    },
+    {
+      "path": "src/react_loop.py",
+      "sha256": "d55038ae9d619d796c0effd576f7bdc170d053453e3e690ad59a3d76e72575ba"
+    },
+    {
+      "path": "src/six_step.py",
+      "sha256": "55f6c126fee4a641c02d7b0696c2c830fec38aad73f2f8073e7c223e073b457e"
+    },
+    {
+      "path": "tests/test_framework.py",
+      "sha256": "a74afb4a28ed5c83d77dda6f7755418648e81e4fcdc5bf9bb06afa059af0321b"
+    }
+  ]
+}

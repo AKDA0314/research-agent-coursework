@@ -1,0 +1,7 @@
+{"applied": [
+  {"category": "hygiene", "description": "removed non-verbatim decorative quotation marks around coinages/paraphrases: house, 附近, 1 公里内样本, 这个区域 house 涨了多少 (rephrased), 相对条件 (rephrased), 现在买入风险较低 / 未来有上涨空间", "chars_removed": 20},
+  {"category": "hygiene", "description": "removed quotes around Chinese translations presented as quotes of English sources (仍然存在, 更均衡的市场 -> 市场趋于均衡) and the paraphrased OnTheHouse snippet (2025-05-22、$768,000); verbatim quote 'Sales price growth 21.7%' and the REIWA address string kept", "chars_removed": 4},
+  {"category": "hygiene", "description": "stripped pipeline vocabulary from reader prose while keeping the disclosures: 'escalation 队列 #1，未经浏览器通道处理' -> '未经浏览器人工重试'; 'light 档不执行逐句引用核验（未跑第 14.5 步）' -> '本次为轻量核验，未执行逐句引用核验'; '抓取员的摘要' -> '抓取时生成的摘要'", "chars_removed": 25}
+], "escalations": [
+  {"category": "citation", "issue": "Line 8 cites [[search]] for the Nominatim geocode. That looks like a generic or placeholder note id rather than a real source note. Left untouched under the citation pass-through rule. Recommend that step 16 or the ship gate confirm the note exists."}
+]}

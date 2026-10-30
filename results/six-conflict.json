@@ -1,0 +1,67 @@
+{
+  "task_id": "checkpoint-frozen-v1",
+  "claims": [
+    {
+      "claim_key": "resume_origin",
+      "completion_condition": "A cited passage explicitly states the resume origin and the candidate value matches it.",
+      "query": "resume committed checkpoint",
+      "source_type": "frozen classroom passage",
+      "rule": "checkpoint"
+    }
+  ],
+  "trace": [
+    {
+      "step": "decompose",
+      "input": "Where does resume begin? Bind the answer to the quoted source; reject an inverted value.",
+      "claim_key": "resume_origin",
+      "completion_condition": "A cited passage explicitly states the resume origin and the candidate value matches it."
+    },
+    {
+      "step": "plan_query",
+      "claim_key": "resume_origin",
+      "query": "resume committed checkpoint",
+      "source_type": "frozen classroom passage"
+    },
+    {
+      "step": "propose_observe",
+      "claim_key": "resume_origin",
+      "candidate": {
+        "claim_key": "resume_origin",
+        "source_id": "classroom-quote",
+        "quote": "Resume begins from the latest committed checkpoint.",
+        "value": "Forget committed work"
+      },
+      "observation": "Resume begins from the latest committed checkpoint.",
+      "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text",
+      "spent": 1,
+      "remaining_budget": 5
+    },
+    {
+      "step": "bind_verify",
+      "claim_key": "resume_origin",
+      "candidate": {
+        "claim_key": "resume_origin",
+        "source_id": "classroom-quote",
+        "quote": "Resume begins from the latest committed checkpoint.",
+        "value": "Forget committed work"
+      },
+      "verdict": {
+        "status": "conflict",
+        "reason": "field_or_value_mismatch",
+        "observed_value": "latest committed checkpoint",
+        "pointer": "fixtures/checkpoint.json#/sources/classroom-quote/text"
+      },
+      "spent": 2,
+      "remaining_budget": 4
+    }
+  ],
+  "selected": {
+    "resume_origin": null
+  },
+  "spent": 2,
+  "remaining_budget": 4,
+  "stop_reason": "conflict",
+  "review_status": "not_passed",
+  "review_scope": "same deterministic checker; no independent human/LLM review",
+  "deliverable": false
+}

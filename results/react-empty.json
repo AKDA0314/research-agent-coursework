@@ -1,0 +1,15 @@
+[
+  {
+    "step": 1,
+    "thought": "Find evidence for the question",
+    "action": {
+      "name": "search",
+      "input": "Where does resume begin? Bind the answer to the quoted source; reject an inverted value."
+    },
+    "observation": {
+      "kind": "search",
+      "hits": []
+    },
+    "stop_reason": "missing_evidence"
+  }
+]

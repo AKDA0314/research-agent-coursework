@@ -1,0 +1,322 @@
+{
+  "ok": true,
+  "data": {
+    "issues": [
+      {
+        "rule": "provenance",
+        "severity": "error",
+        "note_id": "<vault>",
+        "message": "Vault has 15 fetched source notes but ZERO `*Suggested by [[...]]` breadcrumbs. The bouncing reading loop never fired — every fetch was a flat batch with no link back to the source that proposed it. Use `$HPR fetch ... --suggested-by <source-note-id> --suggested-by-reason \"<why>\"` for every follow-up fetch."
+      },
+      {
+        "rule": "extract-coverage",
+        "severity": "error",
+        "note_id": "<vault>",
+        "message": "Vault has 15 fetched source notes but only 0 real source-linked extract notes (0% coverage, need ≥5). The analyst was skipped on most sources or the source->extract chain of custody is broken. Spawn an analyst subagent on the unanalyzed sources during curation. Target: at least 1 extract (≥150 words, with `parent=<source-note-id>`) per 3 sources (floor of 1 for any corpus size). Minting stub notes to pass this gate is lint-gaming and will not satisfy."
+      },
+      {
+        "rule": "instruction-coverage",
+        "severity": "warning",
+        "note_id": "<vault>",
+        "message": "2 atomic entity/entities from prompt-decomposition.json are missing from the final report: 11 Furlong St, Cockburn Central WA, Cockburn Central house market (1 km radius vs suburb). The draft drifted from the user's explicit ask. Re-spawn the instruction-critic with the missing items flagged, or hand-craft Edits to restore them."
+      },
+      {
+        "rule": "instruction-coverage",
+        "severity": "warning",
+        "note_id": "<vault>",
+        "message": "Required format(s) from prompt-decomposition not visibly present in draft: 三事项证据表（事项、发现、范围、数值/原文、来源URL或笔记ID、发布日期、数据期间、访问日期、核验状态）, 支持材料/反对材料/未解决缺口分开写, 区分观察事实、条件计算、推断, 中文报告. This may be a false positive if the format is rendered without the spec word in the prose — review manually."
+      },
+      {
+        "rule": "singleton-tags",
+        "severity": "info",
+        "note_id": "geocode",
+        "message": "Tag 'geocode' is used by only 1 note. Consider merging."
+      },
+      {
+        "rule": "singleton-tags",
+        "severity": "info",
+        "note_id": "listings",
+        "message": "Tag 'listings' is used by only 1 note. Consider merging."
+      },
+      {
+        "rule": "singleton-tags",
+        "severity": "info",
+        "note_id": "market-data",
+        "message": "Tag 'market-data' is used by only 1 note. Consider merging."
+      },
+      {
+        "rule": "singleton-tags",
+        "severity": "info",
+        "note_id": "stale-background",
+        "message": "Tag 'stale-background' is used by only 1 note. Consider merging."
+      },
+      {
+        "rule": "singleton-tags",
+        "severity": "info",
+        "note_id": "suburb-median",
+        "message": "Tag 'suburb-median' is used by only 1 note. Consider merging."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "real-estate-for-sale-cockburn-central-wa-6164-real-estate-listings-cockburn-cent",
+        "note_path": "research/notes/real-estate-for-sale-cockburn-central-wa-6164-real-estate-listings-cockburn-cent.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "sold-real-estate-in-cockburn-central-wa-6164-sold-house-and-property-prices-reiw",
+        "note_path": "research/notes/sold-real-estate-in-cockburn-central-wa-6164-sold-house-and-property-prices-reiw.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "perth-property-boom-to-power-through-2026-before-sharp-slowdown-looms-residentia",
+        "note_path": "research/notes/perth-property-boom-to-power-through-2026-before-sharp-slowdown-looms-residentia.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "strong-price-growth-to-continue-for-perth-property-market-in-2026-reiwa-market-f",
+        "note_path": "research/notes/strong-price-growth-to-continue-for-perth-property-market-in-2026-reiwa-market-f.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "perths-property-boom-may-have-hit-its-ceiling-australian-broker",
+        "note_path": "research/notes/perths-property-boom-may-have-hit-its-ceiling-australian-broker.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "27-paddock-parade-cockburn-central-wa-6164-sold-on-22-may-2026-onthehouse",
+        "note_path": "research/notes/27-paddock-parade-cockburn-central-wa-6164-sold-on-22-may-2026-onthehouse.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "how-rising-interest-rates-are-affecting-perth-home-buyers-in-2026",
+        "note_path": "research/notes/how-rising-interest-rates-are-affecting-perth-home-buyers-in-2026.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025",
+        "note_path": "research/notes/11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "perth-well-placed-to-weather-rate-hike-storm-smart-property-investment",
+        "note_path": "research/notes/perth-well-placed-to-weather-rate-hike-storm-smart-property-investment.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "homes-taking-nearly-twice-as-long-to-sell",
+        "note_path": "research/notes/homes-taking-nearly-twice-as-long-to-sell.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+        "note_path": "research/notes/cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "affordability-accessibility-and-availability-to-drive-the-market-in-2026",
+        "note_path": "research/notes/affordability-accessibility-and-availability-to-drive-the-market-in-2026.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "perth-property-price-growth-slowed-significantly-in-the-september-2026-quarter",
+        "note_path": "research/notes/perth-property-price-growth-slowed-significantly-in-the-september-2026-quarter.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "27-furlong-street-cockburn-central-wa-6164-sold-29-jan-2026",
+        "note_path": "research/notes/27-furlong-street-cockburn-central-wa-6164-sold-29-jan-2026.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "orphaned-notes",
+        "severity": "info",
+        "note_id": "search",
+        "note_path": "research/notes/search.md",
+        "message": "Note is orphaned (no links in or out)."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '0.975' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '1.05' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '1.217' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '10%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '115.8494353' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '12.3%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '12.9%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '15%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '16.0%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '17.95%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '179,487.18' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '19.9999%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '2.1%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '2.5%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '20%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '20.0001%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '200,000' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '24281' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '25%' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "Number '289978' in the final report appears in no claim or cited note body. If it is derived arithmetic, fine; otherwise verify it against a source or remove it."
+      },
+      {
+        "rule": "numeric-consistency",
+        "severity": "warning",
+        "note_id": "<report>",
+        "note_path": "<LAB>/research/notes/final_report_cockburn-central-house-timing-3443a3.md",
+        "message": "...and 12 more untraceable numbers (showing first 20)."
+      }
+    ],
+    "summary": {
+      "errors": 2,
+      "warnings": 23,
+      "info": 20,
+      "total": 45
+    }
+  },
+  "count": 45,
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:18.102051+00:00"
+}

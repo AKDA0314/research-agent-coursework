@@ -1,0 +1,75 @@
+# 原始抓取返回（hyperresearch fetch，经 Bash，抓取代理 batch 1）
+# 来源：<USER_HOME>/.claude/projects/-Users-REDACTED-Documents-ChatGPT-----Agent-outputs-hyperresearch-lab/e9ff650e-afb9-4fbc-8438-b2af03277b38/subagents/agent-af90a84a0adf9b1f6.jsonl 第 14（命令）/15（返回）行，tool_use_id=toolu_011HK5ESn5d2fJv4vRg9YJsW，时间 2026-10-30T10:18:15.691Z / 2026-10-30T10:19:43.617Z
+# 注意：命令里每个 URL 的输出被 `head -c 600` 截断，所以 JSON 部分不完整，这是代理命令造成的，不是工具本身的限制。
+
+## 命令
+H=<LAB>/.venv/bin/hyperresearch; cd <LAB>; for u in "https://www.onthehouse.com.au/property/wa/cockburn-central-6164/11-furlong-st-cockburn-central-wa-6164-41710582" "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/" "https://reiwa.com.au/suburb/cockburn-central/" "https://www.microburbs.com.au/suburb-reports/Cockburn%20Central" "https://www.onthehouse.com.au/property/wa/cockburn-central-6164" "https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/" "https://nominatim.openstreetmap.org/search?q=11+Furlong+Street+Cockburn+Central+WA&format=json"; do echo "== $u"; PYTHONIOENCODING=utf-8 $H fetch "$u" --tag cockburn-central -j 2>&1 | head -c 600; echo; done
+
+## 返回
+== https://www.onthehouse.com.au/property/wa/cockburn-central-6164/11-furlong-st-cockburn-central-wa-6164-41710582
+[INIT].... → Crawl4AI 0.9.5 
+[FETCH]... ↓ https://www.onthehouse.com.au/property/wa/cockbu.../11-furlong-st-cockburn-central-wa-6164-41710582  | ✓ | ⏱: 32.08s 
+[SCRAPE].. ◆ https://www.onthehouse.com.au/property/wa/cockbu.../11-furlong-st-cockburn-central-wa-6164-41710582  | ✓ | ⏱: 0.66s 
+[COMPLETE] ● https://www.onthehouse.com.au/property/wa/cockbu.../11-furlong-st-cockburn-central-wa-6164-41710582  | ✓ | ⏱: 32.89s 
+{
+  "ok": false,
+  "error": "Skipped junk content from https://www.onthehouse.com.au/property/wa/cockburn-central-6164/11-furlong-st-cockburn-central-wa-6164-4
+== https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/
+[INIT].... → Crawl4AI 0.9.5 
+[FETCH]... ↓ https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/                                     | ✓ | ⏱: 4.22s 
+[SCRAPE].. ◆ https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/                                     | ✓ | ⏱: 0.24s 
+[COMPLETE] ● https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/                                     | ✓ | ⏱: 4.48s 
+{
+  "ok": true,
+  "data": {
+    "note_id": "11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025",
+    "title": "11 Furlong Street, Cockburn Central WA 61
+== https://reiwa.com.au/suburb/cockburn-central/
+[INIT].... → Crawl4AI 0.9.5 
+[FETCH]... ↓ https://reiwa.com.au/suburb/cockburn-central/                                                        | ✓ | ⏱: 3.91s 
+[SCRAPE].. ◆ https://reiwa.com.au/suburb/cockburn-central/                                                        | ✓ | ⏱: 0.21s 
+[COMPLETE] ● https://reiwa.com.au/suburb/cockburn-central/                                                        | ✓ | ⏱: 4.13s 
+{
+  "ok": true,
+  "data": {
+    "note_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+    "title": "Cockburn Central Suburb P
+== https://www.microburbs.com.au/suburb-reports/Cockburn%20Central
+[INIT].... → Crawl4AI 0.9.5 
+[FETCH]... ↓ https://www.microburbs.com.au/suburb-reports/Cockburn Central                                        | ✓ | ⏱: 3.51s 
+[SCRAPE].. ◆ https://www.microburbs.com.au/suburb-reports/Cockburn Central                                        | ✓ | ⏱: 0.01s 
+[ERROR]... × https://www.microburbs....eports/Cockburn Central  | Error: Blocked by anti-bot protection: Cloudflare JS challenge 
+[COMPLETE] ● https://www.microburbs.com.au/suburb-reports/Cockburn Central                                        | ✗ | ⏱: 3.52s 
+{
+  "ok": false,
+  "error": "S
+== https://www.onthehouse.com.au/property/wa/cockburn-central-6164
+[INIT].... → Crawl4AI 0.9.5 
+[FETCH]... ↓ https://www.onthehouse.com.au/property/wa/cockburn-central-6164                                      | ✓ | ⏱: 21.33s 
+[SCRAPE].. ◆ https://www.onthehouse.com.au/property/wa/cockburn-central-6164                                      | ✓ | ⏱: 0.61s 
+[COMPLETE] ● https://www.onthehouse.com.au/property/wa/cockburn-central-6164                                      | ✓ | ⏱: 22.06s 
+{
+  "ok": false,
+  "error": "Skipped junk content from https://www.onthehouse.com.au/property/wa/cockburn-central-6164: Empty or near-empty content.",
+  "error
+== https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/
+[INIT].... → Crawl4AI 0.9.5 
+[FETCH]... ↓ https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/                                     | ✓ | ⏱: 4.12s 
+[SCRAPE].. ◆ https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/                                     | ✓ | ⏱: 0.19s 
+[COMPLETE] ● https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/                                     | ✓ | ⏱: 4.33s 
+{
+  "ok": true,
+  "data": {
+    "note_id": "27-furlong-street-cockburn-central-wa-6164-sold-29-jan-2026",
+    "title": "27 Furlong Street, Cockburn Central WA 61
+== https://nominatim.openstreetmap.org/search?q=11+Furlong+Street+Cockburn+Central+WA&format=json
+[INIT].... → Crawl4AI 0.9.5 
+[FETCH]... ↓ https://nominatim.openstreetmap.org/search?q=11+Furlong+Street+Cockburn+Central+WA&format=json       | ✓ | ⏱: 4.52s 
+[SCRAPE].. ◆ https://nominatim.openstreetmap.org/search?q=11+Furlong+Street+Cockburn+Central+WA&format=json       | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://nominatim.openstreetmap.org/search?q=11+Furlong+Street+Cockburn+Central+WA&format=json       | ✓ | ⏱: 4.53s 
+{
+  "ok": true,
+  "data": {
+    "note_id": "search",
+    "title": "search",
+    "url": "https://nominatim.openstreetmap.org/search?q=11+Furlong+Street+Cockburn+C

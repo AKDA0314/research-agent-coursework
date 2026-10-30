@@ -1,0 +1,171 @@
+$ hyperresearch note update perth-well-placed-to-weather-rate-hike-storm-smart-property-investment --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "perth-well-placed-to-weather-rate-hike-storm-smart-property-investment",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:14.031047+00:00"
+}
+$ hyperresearch note update how-rising-interest-rates-are-affecting-perth-home-buyers-in-2026 --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "how-rising-interest-rates-are-affecting-perth-home-buyers-in-2026",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:14.321284+00:00"
+}
+$ hyperresearch note update perth-property-boom-to-power-through-2026-before-sharp-slowdown-looms-residentia --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "perth-property-boom-to-power-through-2026-before-sharp-slowdown-looms-residentia",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:14.625302+00:00"
+}
+$ hyperresearch note update perths-property-boom-may-have-hit-its-ceiling-australian-broker --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "perths-property-boom-may-have-hit-its-ceiling-australian-broker",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:14.900628+00:00"
+}
+$ hyperresearch note update affordability-accessibility-and-availability-to-drive-the-market-in-2026 --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "affordability-accessibility-and-availability-to-drive-the-market-in-2026",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:15.210626+00:00"
+}
+$ hyperresearch note update strong-price-growth-to-continue-for-perth-property-market-in-2026-reiwa-market-f --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "strong-price-growth-to-continue-for-perth-property-market-in-2026-reiwa-market-f",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:15.496784+00:00"
+}
+$ hyperresearch note update perth-property-price-growth-slowed-significantly-in-the-september-2026-quarter --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "perth-property-price-growth-slowed-significantly-in-the-september-2026-quarter",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:15.751651+00:00"
+}
+$ hyperresearch note update search --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "search",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:15.995911+00:00"
+}
+$ hyperresearch note update cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:16.249024+00:00"
+}
+$ hyperresearch note update 27-furlong-street-cockburn-central-wa-6164-sold-29-jan-2026 --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "27-furlong-street-cockburn-central-wa-6164-sold-29-jan-2026",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:16.501595+00:00"
+}
+$ hyperresearch note update 11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025 --add-tag cockburn-central-house-timing
+{
+  "ok": true,
+  "data": {
+    "id": "11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025",
+    "changed": [
+      "+tag:cockburn-central-house-timing"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:16.756350+00:00"
+}
+$ hyperresearch note update perth-well-placed-to-weather-rate-hike-storm-smart-property-investment --tier practitioner --content-type article
+{
+  "ok": true,
+  "data": {
+    "id": "perth-well-placed-to-weather-rate-hike-storm-smart-property-investment",
+    "changed": [
+      "tier=practitioner",
+      "content_type=article"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:17.016236+00:00"
+}
+$ hyperresearch note update search --tier ground_truth --content-type dataset
+{
+  "ok": true,
+  "data": {
+    "id": "search",
+    "changed": [
+      "tier=ground_truth",
+      "content_type=dataset"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:17.266022+00:00"
+}
+$ hyperresearch note update perth-property-price-growth-slowed-significantly-in-the-september-2026-quarter --tier institutional --content-type article
+{
+  "ok": true,
+  "data": {
+    "id": "perth-property-price-growth-slowed-significantly-in-the-september-2026-quarter",
+    "changed": [
+      "tier=institutional",
+      "content_type=article"
+    ]
+  },
+  "vault": "<LAB>",
+  "timestamp": "2026-10-30T10:33:17.534142+00:00"
+}

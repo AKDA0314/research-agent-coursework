@@ -1,0 +1,12 @@
+{"at": "2026-10-30T10:16:38.277104+00:00", "type": "step", "step": "1", "status": "running", "chapter": null}
+{"at": "2026-10-30T10:16:55.908463+00:00", "type": "levers", "register": "survey", "inference_depth": "surface"}
+{"at": "2026-10-30T10:16:56.148603+00:00", "type": "step", "step": "1", "status": "done", "chapter": null}
+{"at": "2026-10-30T10:17:04.106970+00:00", "type": "step", "step": "2", "status": "running", "chapter": null}
+{"at": "2026-10-30T10:21:42.077342+00:00", "type": "step", "step": "2", "status": "done", "chapter": null}
+{"at": "2026-10-30T10:23:29.281559+00:00", "type": "step", "step": "10", "status": "done", "chapter": null}
+{"at": "2026-10-30T10:23:33.789995+00:00", "type": "step", "step": "15", "status": "running", "chapter": null}
+{"at": "2026-10-30T10:24:33.074325+00:00", "type": "step", "step": "15", "status": "done", "chapter": null}
+{"at": "2026-10-30T10:24:33.298831+00:00", "type": "step", "step": "16", "status": "running", "chapter": null}
+{"at": "2026-10-30T10:26:04.139900+00:00", "type": "step", "step": "16", "status": "done", "chapter": null}
+{"at": "2026-10-30T10:26:04.626271+00:00", "type": "finish", "passed": false, "failed_checks": ["length-in-range"]}
+{"at": "2026-10-30T10:26:44.497074+00:00", "type": "finish", "passed": false, "failed_checks": ["length-in-range"]}
