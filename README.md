@@ -4,6 +4,8 @@ This is an AI-assisted coursework submission draft, not a benchmark claim.
 The actual HyperResearch run remains **blocked on verification**.
 Formal **RACE and FACT were not run or submitted**.
 
+Authorized public submission repository: [AKDA0314/research-agent-coursework](https://github.com/AKDA0314/research-agent-coursework).
+
 ## Reproduce the offline work
 
 Python 3.9+ and the standard library are sufficient for the new coursework code:
@@ -29,7 +31,7 @@ These commands make no network requests, invoke no language model, and do not ch
 | 3: six-step framework | [Code](src/six_step.py), [six-step guide](docs/six-step.md) | Six duties, proposal/check budget, separate stop and review state |
 | 3: same original property task | [Frozen task](evidence/task.md), [trace](results/six-property.json), [seven-row comparison](docs/six-step.md#same-task-comparison) | Same task text replayed against frozen gaps/assumptions; incomplete evidence remains incomplete |
 | 3: success/conflict demonstrations | [Success](results/six-success.json), [conflict](results/six-conflict.json) | Same checkpoint teaching task, six-unit ceiling; not full-property success |
-| All: English README and AI disclosure | This file, [disclosure](docs/AI_USE.md), [submission status](docs/submission-status.md) | Learner explanation and repository upload require human confirmation |
+| All: English README and AI disclosure | This file, [disclosure](docs/AI_USE.md), [submission status](docs/submission-status.md) | Learner explanation and instructor acceptance remain pending |
 
 ## Evidence boundaries
 

@@ -12,7 +12,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "c8ea90bdf908ed8b82c41362ca53e06a2368a58c84c63def70d6282db0efde4b"
+      "sha256": "0c0e4ced9907bf8afd98e548d30f72716ef982e955ca817b802d82fdd09eab13"
     },
     {
       "path": "docs/AI_USE.md",
@@ -44,7 +44,7 @@
     },
     {
       "path": "docs/submission-status.md",
-      "sha256": "e2fb76518b43430dc74610bba52c2a5367ae014f7642ae0fa5df062dc96ab4f9"
+      "sha256": "36c80692072a392d2561f3b41304fcd08eb45960db9d4ff3b85d5f894feb277a"
     },
     {
       "path": "evidence/coverage-gaps.md",
