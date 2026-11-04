@@ -1,0 +1,14 @@
+{
+  "status": "blocked_review",
+  "stop_reason": "audit_retry_completed",
+  "review_status": "not_passed",
+  "deliverable": false,
+  "human_review": "pending",
+  "api_calls": 1,
+  "estimated_cost_cny": 0.03953,
+  "original_plus_this_retry_estimated_cny": 0.807142,
+  "source_run_name": "my-run-20261101-144909",
+  "report_sha256": "904ba34f8fc460f4d9da0f62a69f6b5368d783b81f21e5cba48044adbfee9d44",
+  "formal_race_fact": "not_run",
+  "finished_utc": "2026-11-01T07:24:33.686406+00:00"
+}

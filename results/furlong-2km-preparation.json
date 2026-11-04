@@ -1,0 +1,27 @@
+{
+  "prepared_date": "2026-11-04",
+  "new_paid_api_calls": 0,
+  "offline_tests_passed": 46,
+  "submission_validation_passed": true,
+  "historical_files_checked": 97,
+  "historical_files_changed": [],
+  "task_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+  "corpus_sha256": "0babe546e045e7c192cf7e63b1a1a15bd1106b869805ffbe7cc870d398641d3f",
+  "source_count": 18,
+  "known_gaps": [
+    "two-timepoint exhaustive 2km house inventory",
+    "complete comparable 2km annual sales population",
+    "current complete approvals/starts/completions",
+    "survey-grade parcel locations"
+  ],
+  "official_price_rechecked": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+  "peak_price_cny_per_million": {
+    "input_uncached": 2,
+    "output": 8
+  },
+  "code_sha256": {
+    "src/six_step.py": "a94846d244f481197751702f4d28d9b2dfaab0aad82bf4a36ba3f31ff0beea69",
+    "scripts/run_live.py": "df5d96d77b2a6eca021ab970a493d9128f5cf3efbb02176640a70cf2dccffdcb",
+    "src/deepseek_client.py": "90664097578b75ff7a87e0033f05856184e7933a3e3ed2a93c4a3455b1d0217d"
+  }
+}

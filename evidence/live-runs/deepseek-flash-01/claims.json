@@ -1,0 +1,576 @@
+[
+  {
+    "candidate": {
+      "statement": "11 Furlong Street, Cockburn Central WA 6164 在 REIWA 上被记录为一处 house，4 卧室、3 浴室、2 车位，土地面积 172m²，2025-05-13 成交价 $768,000。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025",
+          "quote": "# 11 Furlong Street, Cockburn Central WA 6164\nSold price: $768,000 **Sold: 13 May 2025**"
+        },
+        {
+          "source_id": "11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025",
+          "quote": "* **4** Bedrooms\n  * **3** Bathrooms\n  * **2** Cars\n  * Landsize **172m**"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q1C1",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q1C1",
+      "status": "supported",
+      "reason": "REIWA 页面原文含地址、$768,000、Sold 13 May 2025、4卧3浴2车位、Landsize 172m；页面标签为 House。"
+    },
+    "verdict": {
+      "claim_key": "Q1C1",
+      "status": "supported",
+      "reason": "REIWA 页面原文含地址、$768,000、Sold 13 May 2025、4卧3浴2车位、Landsize 172m；页面标签为 House。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "该 REIWA 页面把 11 Furlong Street 描述为 2021 年建成的双层 townhouse（4x3），而非独立屋；因此“house”标签与 townhouse 描述存在口径冲突。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025",
+          "quote": "Modern Mojo Living: 4x3 Townhouse!"
+        },
+        {
+          "source_id": "11-furlong-street-cockburn-central-wa-6164-sold-13-may-2025",
+          "quote": "Built in 2021 within the sought-after Mojo Urban Living in Cockburn Central"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q1C2",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q1C2",
+      "status": "supported",
+      "reason": "原文标题“4x3 Townhouse!”及“Built in 2021”支持 townhouse 描述，与页面 House 标签并存，口径冲突成立。"
+    },
+    "verdict": {
+      "claim_key": "Q1C2",
+      "status": "supported",
+      "reason": "原文标题“4x3 Townhouse!”及“Built in 2021”支持 townhouse 描述，与页面 House 标签并存，口径冲突成立。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "Nominatim 地理编码只返回了“Furlong Street”这条住宅街道（way 1082972044，约 -32.1158872, 115.8494353，Cockburn Central WA 6164），未返回门牌号 11 的精确点位。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "search",
+          "quote": "\"name\":\"Furlong Street\",\"display_name\":\"Furlong Street, Cockburn Central, Western Australia, 6164, Australia\""
+        },
+        {
+          "source_id": "search",
+          "quote": "\"lat\":\"-32.1158872\",\"lon\":\"115.8494353\""
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q1C3",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q1C3",
+      "status": "supported",
+      "reason": "Nominatim 返回仅一条 highway/residential 的 Furlong Street（way 1082972044，坐标一致），无门牌 11 点位。"
+    },
+    "verdict": {
+      "claim_key": "Q1C3",
+      "status": "supported",
+      "reason": "Nominatim 返回仅一条 highway/residential 的 Furlong Street（way 1082972044，坐标一致），无门牌 11 点位。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "REIWA 记录 27 Furlong Street, Cockburn Central WA 6164 为 house，4 卧 2 浴 2 车位，土地 187m²，2026-01-29 成交价 $940,000。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "27-furlong-street-cockburn-central-wa-6164-sold-29-jan-2026",
+          "quote": "# 27 Furlong Street, Cockburn Central WA 6164\nSold price: $940,000 **Sold: 29 Jan 2026**"
+        },
+        {
+          "source_id": "27-furlong-street-cockburn-central-wa-6164-sold-29-jan-2026",
+          "quote": "* **4** Bedrooms\n  * **2** Bathrooms\n  * **2** Cars\n  * Landsize **187m**"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q1C4",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q1C4",
+      "status": "supported",
+      "reason": "REIWA 页面原文含 27 Furlong Street、$940,000、Sold 29 Jan 2026、4卧2浴2车位、Landsize 187m、House。"
+    },
+    "verdict": {
+      "claim_key": "Q1C4",
+      "status": "supported",
+      "reason": "REIWA 页面原文含 27 Furlong Street、$940,000、Sold 29 Jan 2026、4卧2浴2车位、Landsize 187m、House。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "OnTheHouse 记录 27 Paddock Parade, Cockburn Central WA 6164 为 3 卧 2 浴 2 车位 house，2026-05-22 成交 $1,000,000，并显示 2024-07-01 曾以 $810,000 成交。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "27-paddock-parade-cockburn-central-wa-6164-sold-on-22-may-2026-onthehouse",
+          "quote": "Sold on 22 May 2026 for $1,000,000"
+        },
+        {
+          "source_id": "27-paddock-parade-cockburn-central-wa-6164-sold-on-22-may-2026-onthehouse",
+          "quote": "Bedrooms: 3\nBathrooms: 2\nCar spaces: 2"
+        },
+        {
+          "source_id": "27-paddock-parade-cockburn-central-wa-6164-sold-on-22-may-2026-onthehouse",
+          "quote": "01 Jul 2024\nSold for $810,000"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q1C5",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q1C5",
+      "status": "supported",
+      "reason": "OnTheHouse 原文含 22 May 2026 售 $1,000,000、3卧2浴2车位、01 Jul 2024 售 $810,000；页面 Building Type 为 House。"
+    },
+    "verdict": {
+      "claim_key": "Q1C5",
+      "status": "supported",
+      "reason": "OnTheHouse 原文含 22 May 2026 售 $1,000,000、3卧2浴2车位、01 Jul 2024 售 $810,000；页面 Building Type 为 House。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "REIWA 成交列表页显示 Cockburn Central 的 house 成交样本，包括 37 Paddock Parade 2026-07-24 售 $995,000、178 Semple Court 2026-07-14 售 $1,050,000、3/2 Stockton Bend 2026-07-06 售 $585,000。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "sold-real-estate-in-cockburn-central-wa-6164-sold-house-and-property-prices-reiw",
+          "quote": "Sold price: $995,000 save listing 37 Paddock Parade, Cockburn Central\n    * House\n**Sold 24 Jul 2026**"
+        },
+        {
+          "source_id": "sold-real-estate-in-cockburn-central-wa-6164-sold-house-and-property-prices-reiw",
+          "quote": "Sold price: $1,050,000 save listing 178 Semple Court, Cockburn Central\n    * House\n**Sold 14 Jul 2026**"
+        },
+        {
+          "source_id": "sold-real-estate-in-cockburn-central-wa-6164-sold-house-and-property-prices-reiw",
+          "quote": "Sold price: $585,000 save listing 3/2 Stockton Bend, Cockburn Central\n    * House\n**Sold 06 Jul 2026**"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q1C6",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q1C6",
+      "status": "supported",
+      "reason": "REIWA 成交列表原文分别列出 37 Paddock Parade $995,000 Sold 24 Jul 2026、178 Semple Court $1,050,000 Sold 14 Jul 2026、3/2 Stockton Bend $585,000 Sold 06 Jul 2026，均标 House。"
+    },
+    "verdict": {
+      "claim_key": "Q1C6",
+      "status": "supported",
+      "reason": "REIWA 成交列表原文分别列出 37 Paddock Parade $995,000 Sold 24 Jul 2026、178 Semple Court $1,050,000 Sold 14 Jul 2026、3/2 Stockton Bend $585,000 Sold 06 Jul 2026，均标 House。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "REIWA suburb 页的 $975,000 中位价是 Cockburn Central 全 suburb、12 个月至 2026 年 9 月的统计，不能当作 11 Furlong St 1 公里半径内的数据。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+          "quote": "Median price data last updated 30 October 2026 containing transactions for the 12 month period ending September 2026"
+        },
+        {
+          "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+          "quote": "#### $975,000"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q1C7",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q1C7",
+      "status": "supported",
+      "reason": "suburb 页原文注明中位价数据截至 2026-10-30、覆盖至 2026 年 9 月的 12 个月，$975,000 为 suburb 级；不能等同 1 公里半径数据。"
+    },
+    "verdict": {
+      "claim_key": "Q1C7",
+      "status": "supported",
+      "reason": "suburb 页原文注明中位价数据截至 2026-10-30、覆盖至 2026 年 9 月的 12 个月，$975,000 为 suburb 级；不能等同 1 公里半径数据。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "REIWA 的 Cockburn Central suburb 页显示 house 中位价为 $975,000，数据最后更新于 2026-10-30，覆盖截至 2026 年 9 月的 12 个月成交。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+          "quote": "Median price data last updated 30 October 2026 containing transactions for the 12 month period ending September 2026"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q2C1",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q2C1",
+      "status": "supported",
+      "reason": "原文含“Median price data last updated 30 October 2026 containing transactions for the 12 month period ending September 2026”，且页面显示$975,000；但页面未明确该$975,000为house中位价（House标签与数值并列），候选称house中位价属合理但略超原文。"
+    },
+    "verdict": {
+      "claim_key": "Q2C1",
+      "status": "supported",
+      "reason": "原文含“Median price data last updated 30 October 2026 containing transactions for the 12 month period ending September 2026”，且页面显示$975,000；但页面未明确该$975,000为house中位价（House标签与数值并列），候选称house中位价属合理但略超原文。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "同一 suburb 页给出 house 中位价 $975,000，以及 3 卧室 $930K、4 卧室 $1.21M 的分项中位价。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+          "quote": "#### $975,000"
+        },
+        {
+          "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+          "quote": "**3BR**\n$930K"
+        },
+        {
+          "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+          "quote": "**4BR**\n$1.21M"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q2C2",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q2C2",
+      "status": "supported",
+      "reason": "原文有$975,000、3BR $930K、4BR $1.21M，均在House标签下。"
+    },
+    "verdict": {
+      "claim_key": "Q2C2",
+      "status": "supported",
+      "reason": "原文有$975,000、3BR $930K、4BR $1.21M，均在House标签下。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "suburb 页只给出一个 12 个月期间（截至 2026 年 9 月）的中位价，没有给出前一个完整可比年度的中位价数值，因此无法据此计算两个年度区间的价格变化。",
+      "kind": "inference",
+      "bindings": [
+        {
+          "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+          "quote": "Sales data is annual up to the latest completed month."
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q2C3",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q2C3",
+      "status": "supported",
+      "reason": "页面仅给出截至2026年9月的12个月中位价，无前一完整年度数值；原文“Sales data is annual up to the latest completed month”支持该推断。"
+    },
+    "verdict": {
+      "claim_key": "Q2C3",
+      "status": "supported",
+      "reason": "页面仅给出截至2026年9月的12个月中位价，无前一完整年度数值；原文“Sales data is annual up to the latest completed month”支持该推断。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "suburb 页的 21.7% 销售价格增长没有注明统计期间、房型或样本量，不能当作两个完整年度区间的可比涨幅。",
+      "kind": "inference",
+      "bindings": [
+        {
+          "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+          "quote": "**21.7%** Sales price growth"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q2C4",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q2C4",
+      "status": "supported",
+      "reason": "原文仅“21.7% Sales price growth”，未注明期间、房型或样本量，推断成立。"
+    },
+    "verdict": {
+      "claim_key": "Q2C4",
+      "status": "supported",
+      "reason": "原文仅“21.7% Sales price growth”，未注明期间、房型或样本量，推断成立。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "REIWA 在售列表页显示 Cockburn Central 及周边 suburb 共有 210 套在售房产，列表结果为 268 条，但未按 house 类型或统计时点拆分。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "real-estate-for-sale-cockburn-central-wa-6164-real-estate-listings-cockburn-cent",
+          "quote": "There are currently 210 properties and houses for sale in Cockburn Central and surrounding suburbs."
+        },
+        {
+          "source_id": "real-estate-for-sale-cockburn-central-wa-6164-real-estate-listings-cockburn-cent",
+          "quote": "1-20 of 268 results"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q2C5",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q2C5",
+      "status": "supported",
+      "reason": "原文含“210 properties and houses for sale in Cockburn Central and surrounding suburbs”及“1-20 of 268 results”，未按house或时点拆分。"
+    },
+    "verdict": {
+      "claim_key": "Q2C5",
+      "status": "supported",
+      "reason": "原文含“210 properties and houses for sale in Cockburn Central and surrounding suburbs”及“1-20 of 268 results”，未按house或时点拆分。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "OnTheHouse 显示 Cockburn Central 当前有 37 套在售房产，但未按 house 类型拆分，也没有给出历史时点的库存数。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "27-paddock-parade-cockburn-central-wa-6164-sold-on-22-may-2026-onthehouse",
+          "quote": "There are currently [37 properties listed for sale](https://www.onthehouse.com.au/property-for-sale/wa/cockburn-central-6164)"
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q2C6",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q2C6",
+      "status": "supported",
+      "reason": "OnTheHouse页含“There are currently 37 properties listed for sale”，未按house拆分，也无历史时点库存。"
+    },
+    "verdict": {
+      "claim_key": "Q2C6",
+      "status": "supported",
+      "reason": "OnTheHouse页含“There are currently 37 properties listed for sale”，未按house拆分，也无历史时点库存。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "REIWA 的 Perth 全市在售挂牌数在 2026 年 5 月底为 5,137 套，比 2026 年 4 月高 16.0%，比一年前高 20.7%；这是 Perth 全市数据，不是 Cockburn Central 或地址附近的数据。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "homes-taking-nearly-twice-as-long-to-sell",
+          "quote": "The number of properties for sale on [reiwa.com](https://reiwa.com.au/home) was 5,137 at the end of May. This was 16.0 per cent higher than April 2026 and 20.7 per cent higher than a year ago."
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q2C7",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q2C7",
+      "status": "supported",
+      "reason": "原文含5,137、16.0%高于4月、20.7%高于一年前，且明确为Perth全市reiwa.com挂牌数。"
+    },
+    "verdict": {
+      "claim_key": "Q2C7",
+      "status": "supported",
+      "reason": "原文含5,137、16.0%高于4月、20.7%高于一年前，且明确为Perth全市reiwa.com挂牌数。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "REIWA 的 Perth 年度 house 中位成交价增长率从 2025 年 12 月至 2026 年 3 月的 5.3%，降到 2026 年 3 月至 6 月的 5.0%，再降到 2026 年 6 月至 9 月的 2.1%；这是 Perth 全市数据，不是 Cockburn Central 数据。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "perth-property-price-growth-slowed-significantly-in-the-september-2026-quarter",
+          "quote": "After recording 5.3 per cent annual growth between December and March and 5.0 per cent growth from March to June, Perth’s annual median house sale price growth more than halved, dropping to 2.1 per cent between June and September."
+        }
+      ],
+      "calculation": "",
+      "claim_key": "Q2C8",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q2C8",
+      "status": "supported",
+      "reason": "原文含5.3%（Dec–Mar）、5.0%（Mar–Jun）、2.1%（Jun–Sep）的Perth年度house中位成交价增长，且为Perth全市。"
+    },
+    "verdict": {
+      "claim_key": "Q2C8",
+      "status": "supported",
+      "reason": "原文含5.3%（Dec–Mar）、5.0%（Mar–Jun）、2.1%（Jun–Sep）的Perth年度house中位成交价增长，且为Perth全市。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "在购价 AUD 1,000,000、固定贷款余额 AUD 800,000 的静态假设下，负资产临界市值为 AUD 800,000。",
+      "kind": "calculation",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "教学假设：购价 **AUD 1,000,000**，贷款余额 **AUD 800,000**。"
+        },
+        {
+          "source_id": "TASK",
+          "quote": "简化定义：房屋当前市场价值小于贷款余额时，房产净权益为负。"
+        }
+      ],
+      "calculation": "临界市值 = 贷款余额 = 800,000 AUD；净权益 = 市值 − 800,000，当市值 < 800,000 时为负",
+      "claim_key": "Q3C1",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q3C1",
+      "status": "supported",
+      "reason": "任务原文给定购价1,000,000、贷款余额800,000，并定义市值<贷款余额即负资产，故临界市值=800,000，算术一致。"
+    },
+    "verdict": {
+      "claim_key": "Q3C1",
+      "status": "supported",
+      "reason": "任务原文给定购价1,000,000、贷款余额800,000，并定义市值<贷款余额即负资产，故临界市值=800,000，算术一致。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "从购价 1,000,000 跌至临界市值 800,000，抗跌幅度为 20%。",
+      "kind": "calculation",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "教学假设：购价 **AUD 1,000,000**，贷款余额 **AUD 800,000**。"
+        }
+      ],
+      "calculation": "(1,000,000 − 800,000) / 1,000,000 = 200,000 / 1,000,000 = 0.20 = 20%",
+      "claim_key": "Q3C2",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q3C2",
+      "status": "supported",
+      "reason": "(1,000,000−800,000)/1,000,000=0.20=20%，独立重算一致。"
+    },
+    "verdict": {
+      "claim_key": "Q3C2",
+      "status": "supported",
+      "reason": "(1,000,000−800,000)/1,000,000=0.20=20%，独立重算一致。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "市值恰好等于 800,000 时净权益为 0，不构成负资产；只有市值低于 800,000 才为负。",
+      "kind": "inference",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "房屋当前市场价值小于贷款余额时，房产净权益为负"
+        }
+      ],
+      "calculation": "市值=800,000：净权益=800,000−800,000=0（非负）；市值=799,999：净权益=−1（负）",
+      "claim_key": "Q3C3",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q3C3",
+      "status": "supported",
+      "reason": "原文定义严格小于才为负；市值=800,000时净权益=0，非负，符合原文。"
+    },
+    "verdict": {
+      "claim_key": "Q3C3",
+      "status": "supported",
+      "reason": "原文定义严格小于才为负；市值=800,000时净权益=0，非负，符合原文。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "该计算为静态情景，不计交易成本、出售成本、税费及贷款余额随时间变化。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "基础计算不计交易成本、出售成本、税费及贷款余额随时间变化；必须披露这些简化。"
+        }
+      ],
+      "claim_key": "Q3C4",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q3C4",
+      "status": "supported",
+      "reason": "原文明确要求披露不计交易成本、出售成本、税费及贷款余额随时间变化。"
+    },
+    "verdict": {
+      "claim_key": "Q3C4",
+      "status": "supported",
+      "reason": "原文明确要求披露不计交易成本、出售成本、税费及贷款余额随时间变化。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "抗跌幅度 20% 只是临界条件，不等于预测房价下跌概率，也不证明未来不会负资产。",
+      "kind": "inference",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "计算抗跌幅度不等于预测下跌概率，也不证明未来不会负资产。"
+        }
+      ],
+      "claim_key": "Q3C5",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q3C5",
+      "status": "supported",
+      "reason": "原文明确称抗跌幅度不等于下跌概率预测，也不证明未来不会负资产。"
+    },
+    "verdict": {
+      "claim_key": "Q3C5",
+      "status": "supported",
+      "reason": "原文明确称抗跌幅度不等于下跌概率预测，也不证明未来不会负资产。"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "购价与贷款余额为教学假设，不是用户真实财务信息，也不是目标地址的市场估值。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "这不是用户真实财务信息，也不是目标地址的市场估值。"
+        }
+      ],
+      "claim_key": "Q3C6",
+      "literal_errors": []
+    },
+    "model_verdict": {
+      "claim_key": "Q3C6",
+      "status": "supported",
+      "reason": "原文明确购价与贷款余额为教学假设，非用户真实财务信息，也非目标地址市场估值。"
+    },
+    "verdict": {
+      "claim_key": "Q3C6",
+      "status": "supported",
+      "reason": "原文明确购价与贷款余额为教学假设，非用户真实财务信息，也非目标地址市场估值。"
+    }
+  }
+]

@@ -19,7 +19,7 @@ def main():
     patterns = {"home_path": r"/Users/[^\s<>]+", "OAuth": r"(?:code_challenge=|oauth/authorize\?)", "private_key": r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY", "GitHub_token": r"(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})", "API_key": r"sk-[A-Za-z0-9_-]{20,}"}
     files = []
     for path in sorted(ROOT.rglob("*")):
-        if not path.is_file() or ".git" in path.parts or "__pycache__" in path.parts or path.name == "validation.json":
+        if not path.is_file() or any(p in path.parts for p in (".git", "__pycache__", ".local-runs")) or path.name in {"validation.json", ".DS_Store"}:
             continue
         if path.suffix not in {".py", ".md", ".json", ".jsonl", ".txt", ".log"} and path.name != ".gitignore":
             problems.append(str(path.relative_to(ROOT)) + ": unexpected file type")

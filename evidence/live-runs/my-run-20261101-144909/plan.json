@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "claim_key": "Q1",
+      "question": "在 11 Furlong St, Cockburn Central, WA 的 1 公里直线半径内，house 类型的成交价在最近两个已发布、完整且可比的年度区间中如何变化？逐项记录实际起止日期、发布日期、统计范围、房型、指标和样本量；挂牌价与成交价分开。",
+      "completion_condition": "已核实地址定位与所属 suburb；已列出至少两个可比年度区间的 house 成交指标（含起止日期、发布日期、样本量），或明确记录无法取得可比数据的具体缺口；附近样本与 suburb 整体统计分栏呈现。",
+      "query": "Cockburn Central WA house sold prices 2025 2026 REIWA 11 Furlong Street median house price annual",
+      "source_type": "房产交易记录与官方 suburb 统计（REIWA sold listings、suburb profile、OnTheHouse）"
+    },
+    {
+      "claim_key": "Q2",
+      "question": "在同一地理范围（地址 1 公里半径）与 house 类型、同一统计定义下，Cockburn Central 的在售库存数量在两个时点或期间如何变化？若只有单一时点数据，须标为 missing 而非推断增减。",
+      "completion_condition": "已找到同一范围、同一房型、同一统计定义的两个时点/期间在售数量，或明确记录地址附近历史库存为 missing；suburb 背景库存数据单独说明，不升级为附近事实；新房供应/建筑批准等指标单列且不替代在售库存。",
+      "query": "Cockburn Central WA houses for sale listings count 2025 2026 REIWA for-sale inventory",
+      "source_type": "在售挂牌列表与市场报告（REIWA for-sale、市场文章）"
+    },
+    {
+      "claim_key": "Q3",
+      "question": "在购价 AUD 1,000,000、固定贷款余额 AUD 800,000 的教学假设下，房屋当前市场价值低于多少时净权益为负？列出计算式、临界值，并区分等于临界值与超过临界值的情形，检查算术。",
+      "completion_condition": "已给出计算式与临界值（市场价值 < AUD 800,000 时净权益为负）、等于临界值（净权益为 0）与超过临界值（净权益为负）的区别，算术经复核；已披露不计交易成本、出售成本、税费及贷款余额随时间变化的简化，并声明抗跌幅度不等于下跌概率预测。",
+      "query": "negative equity loan balance 800000 property value threshold calculation",
+      "source_type": "条件计算（基于任务给定假设，无需外部来源）"
+    }
+  ],
+  "scope_requirements": [
+    "信息截止日固定为 2026-10-30 Australia/Perth；更晚发布的信息不得冒充截止日前已知信息。",
+    "地理锚点 11 Furlong St, Cockburn Central, WA；须先核实地址拼写、定位与所属 suburb，不预设该地址在售或房型已确认。",
+    "研究对象为该地址附近 house 市场，不混入 apartment/unit、空地或其他房型；不评估该单幢房屋具体买卖价值。",
+    "“附近”默认口径为地址定位点 1 公里直线半径，须在报告中展示；无法定位时不得声称取得附近数据。",
+    "地址附近样本与 Cockburn Central suburb 整体统计必须分栏；6164 仅作辅助定位，不得把邮编或 Perth 数据写成附近数据。",
+    "半径内样本少时先披露样本量与不足；扩展范围须写明新边界与理由并单独展示，不静默合并。",
+    "suburb 中位价仅作区域背景，不代表该房屋估值；不得把样本构成变化当作同一房产涨跌。",
+    "挂牌价与成交价分开；无可比数据时输出缺口，不拼接不同范围或指标制造趋势。",
+    "只有一个时点的库存不得据此写库存增加或减少；新房供应、建筑批准量、开工量、完工量单列补充，不替代在售库存变化。",
+    "负资产项仅做静态情景计算，固定贷款余额；不计交易成本、出售成本、税费及贷款余额随时间变化，须披露简化。",
+    "区分观察到的事实、条件计算与推断；搜索摘要不能冒充已读取原文；无法访问或口径不匹配须记录。",
+    "结论边界：三事项不足以完整判断购房风险，不把未调查风险写成不存在，不输出保证收益或确定买入建议。",
+    "历史执行约束（HyperResearch 0.11.1、light 路线、对照实验固定因素）属历史记录；本次改用 DeepSeek 与冻结资料，不声称复现同模型或单因素实验。"
+  ]
+}

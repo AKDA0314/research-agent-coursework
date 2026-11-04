@@ -1,0 +1,3138 @@
+[
+  {
+    "candidate": {
+      "statement": "11 Furlong Street, Cockburn Central WA 6164 为 House，成交价 $768,000，成交日 13 May 2025，土地面积 172m²，4卧3卫2车位；平台坐标 -32.1160059,115.849158 为地图标点，程序计算距工作中心 29.3m，在 2000m 圈内。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "reiwa-11",
+          "quote": "11 Furlong Street, Cockburn Central WA 6164"
+        },
+        {
+          "source_id": "reiwa-11",
+          "quote": "Sold price: $768,000"
+        },
+        {
+          "source_id": "reiwa-11",
+          "quote": "Sold: 13 May 2025"
+        },
+        {
+          "source_id": "reiwa-11",
+          "quote": "Landsize\n172m"
+        },
+        {
+          "source_id": "reiwa-11",
+          "quote": "\"GeoLatitude\": -32.1160059"
+        },
+        {
+          "source_id": "distance-calculations",
+          "quote": "\"distance_m\": 29.3"
+        },
+        {
+          "source_id": "distance-calculations",
+          "quote": "\"within_2000m\": true"
+        }
+      ],
+      "claim_key": "Q1C1",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "reiwa-11",
+            "quote": "11 Furlong Street, Cockburn Central WA 6164",
+            "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+            "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+            "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+            "start_char": 0,
+            "end_char": 43,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "reiwa-11",
+            "quote": "Sold price: $768,000",
+            "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+            "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+            "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+            "start_char": 163,
+            "end_char": 183,
+            "start_line": 11,
+            "end_line": 11
+          },
+          {
+            "source_id": "reiwa-11",
+            "quote": "Sold: 13 May 2025",
+            "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+            "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+            "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+            "start_char": 46,
+            "end_char": 63,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "reiwa-11",
+            "quote": "Landsize\n172m",
+            "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+            "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+            "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+            "start_char": 237,
+            "end_char": 250,
+            "start_line": 20,
+            "end_line": 21
+          },
+          {
+            "source_id": "reiwa-11",
+            "quote": "\"GeoLatitude\": -32.1160059",
+            "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+            "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+            "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+            "start_char": 4873,
+            "end_char": 4899,
+            "start_line": 115,
+            "end_line": 115
+          },
+          {
+            "source_id": "distance-calculations",
+            "quote": "\"distance_m\": 29.3",
+            "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+            "source_url": "local:distance-evidence.json",
+            "fetched_at": "2026-11-04",
+            "start_char": 793,
+            "end_char": 811,
+            "start_line": 19,
+            "end_line": 19
+          },
+          {
+            "source_id": "distance-calculations",
+            "quote": "\"within_2000m\": true",
+            "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+            "source_url": "local:distance-evidence.json",
+            "fetched_at": "2026-11-04",
+            "start_char": 819,
+            "end_char": 839,
+            "start_line": 20,
+            "end_line": 20
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q1C1",
+      "status": "missing",
+      "reason": "地址、成交价、日期、土地面积、坐标与距离均有绑定片段，但“House”标签、4卧3卫2车位及经度数值无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "4卧3卫2车位",
+        "经度 115.849158"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 11 Furlong Street, Cockburn Central WA 6164"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "成交价、面积、距离有片段；卧室/卫浴/车位与经度无绑定证据"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 13 May 2025"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "distance_m 29.3 与 within_2000m true 支持圈内"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "House 标签与房型配置未被绑定片段支持"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q1C1",
+      "status": "missing",
+      "reason": "地址、成交价、日期、土地面积、坐标与距离均有绑定片段，但“House”标签、4卧3卫2车位及经度数值无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "4卧3卫2车位",
+        "经度 115.849158"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 11 Furlong Street, Cockburn Central WA 6164"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "成交价、面积、距离有片段；卧室/卫浴/车位与经度无绑定证据"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 13 May 2025"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "distance_m 29.3 与 within_2000m true 支持圈内"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "House 标签与房型配置未被绑定片段支持"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "11 Furlong Street 页面正文称其为 4卧3卫双拼 townhouse（2021年建），与平台 PropertyType \"House\" 标签并存，属双重标签，不能称为独立屋。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "reiwa-11",
+          "quote": "Modern Mojo Living: 4x3 Townhouse!"
+        },
+        {
+          "source_id": "reiwa-11",
+          "quote": "\"PropertyType\": \"House\""
+        }
+      ],
+      "claim_key": "Q1C2",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "reiwa-11",
+            "quote": "Modern Mojo Living: 4x3 Townhouse!",
+            "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+            "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+            "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+            "start_char": 833,
+            "end_char": 867,
+            "start_line": 50,
+            "end_line": 50
+          },
+          {
+            "source_id": "reiwa-11",
+            "quote": "\"PropertyType\": \"House\"",
+            "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+            "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+            "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+            "start_char": 4565,
+            "end_char": 4588,
+            "start_line": 105,
+            "end_line": 105
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q1C2",
+      "status": "missing",
+      "reason": "正文 townhouse 与结构化 PropertyType House 有片段，但“双拼”“2021年建”“4卧3卫”无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "双拼",
+        "2021年建",
+        "4卧3卫"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "同一页面片段指向该房源"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "4卧3卫与2021年建无绑定片段"
+        },
+        "time": {
+          "status": "missing",
+          "reason": "2021年建无绑定片段"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "本条不涉地理范围"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "双重标签可支持，但双拼与建造年份未支持"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q1C2",
+      "status": "missing",
+      "reason": "正文 townhouse 与结构化 PropertyType House 有片段，但“双拼”“2021年建”“4卧3卫”无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "双拼",
+        "2021年建",
+        "4卧3卫"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "同一页面片段指向该房源"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "4卧3卫与2021年建无绑定片段"
+        },
+        "time": {
+          "status": "missing",
+          "reason": "2021年建无绑定片段"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "本条不涉地理范围"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "双重标签可支持，但双拼与建造年份未支持"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "27 Furlong Street, Cockburn Central WA 6164 为 House，成交价 $940,000，成交日 29 Jan 2026，土地面积 187m²，4卧2卫2车位；平台坐标 -32.1154786,115.8493133，程序计算距中心 46.9m，在 2000m 圈内。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "reiwa-27",
+          "quote": "27 Furlong Street, Cockburn Central WA 6164"
+        },
+        {
+          "source_id": "reiwa-27",
+          "quote": "Sold price: $940,000"
+        },
+        {
+          "source_id": "reiwa-27",
+          "quote": "Sold: 29 Jan 2026"
+        },
+        {
+          "source_id": "reiwa-27",
+          "quote": "Landsize\n187m"
+        },
+        {
+          "source_id": "reiwa-27",
+          "quote": "\"GeoLatitude\": -32.1154786"
+        },
+        {
+          "source_id": "distance-calculations",
+          "quote": "\"distance_m\": 46.9"
+        }
+      ],
+      "claim_key": "Q1C3",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "reiwa-27",
+            "quote": "27 Furlong Street, Cockburn Central WA 6164",
+            "body_sha256": "5d8d1718b905c073bf13d54bec82a7acd396adf2df1eb9599377c31b5c6855fd",
+            "source_url": "https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/",
+            "fetched_at": "2026-11-04T10:22:33.506177+00:00",
+            "start_char": 0,
+            "end_char": 43,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "reiwa-27",
+            "quote": "Sold price: $940,000",
+            "body_sha256": "5d8d1718b905c073bf13d54bec82a7acd396adf2df1eb9599377c31b5c6855fd",
+            "source_url": "https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/",
+            "fetched_at": "2026-11-04T10:22:33.506177+00:00",
+            "start_char": 163,
+            "end_char": 183,
+            "start_line": 11,
+            "end_line": 11
+          },
+          {
+            "source_id": "reiwa-27",
+            "quote": "Sold: 29 Jan 2026",
+            "body_sha256": "5d8d1718b905c073bf13d54bec82a7acd396adf2df1eb9599377c31b5c6855fd",
+            "source_url": "https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/",
+            "fetched_at": "2026-11-04T10:22:33.506177+00:00",
+            "start_char": 46,
+            "end_char": 63,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "reiwa-27",
+            "quote": "Landsize\n187m",
+            "body_sha256": "5d8d1718b905c073bf13d54bec82a7acd396adf2df1eb9599377c31b5c6855fd",
+            "source_url": "https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/",
+            "fetched_at": "2026-11-04T10:22:33.506177+00:00",
+            "start_char": 237,
+            "end_char": 250,
+            "start_line": 20,
+            "end_line": 21
+          },
+          {
+            "source_id": "reiwa-27",
+            "quote": "\"GeoLatitude\": -32.1154786",
+            "body_sha256": "5d8d1718b905c073bf13d54bec82a7acd396adf2df1eb9599377c31b5c6855fd",
+            "source_url": "https://reiwa.com.au/27-furlong-street-cockburn-central-4984527/",
+            "fetched_at": "2026-11-04T10:22:33.506177+00:00",
+            "start_char": 3236,
+            "end_char": 3262,
+            "start_line": 87,
+            "end_line": 87
+          },
+          {
+            "source_id": "distance-calculations",
+            "quote": "\"distance_m\": 46.9",
+            "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+            "source_url": "local:distance-evidence.json",
+            "fetched_at": "2026-11-04",
+            "start_char": 1282,
+            "end_char": 1300,
+            "start_line": 32,
+            "end_line": 32
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q1C3",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、4卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "4卧2卫2车位",
+        "经度 115.8493133",
+        "在 2000m 圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 27 Furlong Street"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "价格面积距离有片段；卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 29 Jan 2026"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "仅有距离值，无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "房型标签与配置未支持"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q1C3",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、4卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "4卧2卫2车位",
+        "经度 115.8493133",
+        "在 2000m 圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 27 Furlong Street"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "价格面积距离有片段；卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 29 Jan 2026"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "仅有距离值，无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "房型标签与配置未支持"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "68 Muriel Court, Cockburn Central WA 6164 为 House，成交价 $915,000，成交日 09 Dec 2025，土地面积 168m²，4卧2卫2车位；平台坐标 -32.116762,115.8489532，程序计算距中心 107.3m，在 2000m 圈内。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "muriel68",
+          "quote": "68 Muriel Court, Cockburn Central WA 6164"
+        },
+        {
+          "source_id": "muriel68",
+          "quote": "Sold price: $915,000"
+        },
+        {
+          "source_id": "muriel68",
+          "quote": "Sold: 09 Dec 2025"
+        },
+        {
+          "source_id": "muriel68",
+          "quote": "Landsize\n168m"
+        },
+        {
+          "source_id": "muriel68",
+          "quote": "\"GeoLatitude\": -32.116762"
+        },
+        {
+          "source_id": "distance-calculations",
+          "quote": "\"distance_m\": 107.3"
+        }
+      ],
+      "claim_key": "Q1C4",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "muriel68",
+            "quote": "68 Muriel Court, Cockburn Central WA 6164",
+            "body_sha256": "7431d8bb4d844e1a8e84418dc4351db67866f6f948721d1ea7bbdedb7000d316",
+            "source_url": "https://reiwa.com.au/68-muriel-court-cockburn-central-4978123/",
+            "fetched_at": "2026-11-04T10:23:08.243208+00:00",
+            "start_char": 0,
+            "end_char": 41,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "muriel68",
+            "quote": "Sold price: $915,000",
+            "body_sha256": "7431d8bb4d844e1a8e84418dc4351db67866f6f948721d1ea7bbdedb7000d316",
+            "source_url": "https://reiwa.com.au/68-muriel-court-cockburn-central-4978123/",
+            "fetched_at": "2026-11-04T10:23:08.243208+00:00",
+            "start_char": 174,
+            "end_char": 194,
+            "start_line": 14,
+            "end_line": 14
+          },
+          {
+            "source_id": "muriel68",
+            "quote": "Sold: 09 Dec 2025",
+            "body_sha256": "7431d8bb4d844e1a8e84418dc4351db67866f6f948721d1ea7bbdedb7000d316",
+            "source_url": "https://reiwa.com.au/68-muriel-court-cockburn-central-4978123/",
+            "fetched_at": "2026-11-04T10:23:08.243208+00:00",
+            "start_char": 44,
+            "end_char": 61,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "muriel68",
+            "quote": "Landsize\n168m",
+            "body_sha256": "7431d8bb4d844e1a8e84418dc4351db67866f6f948721d1ea7bbdedb7000d316",
+            "source_url": "https://reiwa.com.au/68-muriel-court-cockburn-central-4978123/",
+            "fetched_at": "2026-11-04T10:23:08.243208+00:00",
+            "start_char": 248,
+            "end_char": 261,
+            "start_line": 23,
+            "end_line": 24
+          },
+          {
+            "source_id": "muriel68",
+            "quote": "\"GeoLatitude\": -32.116762",
+            "body_sha256": "7431d8bb4d844e1a8e84418dc4351db67866f6f948721d1ea7bbdedb7000d316",
+            "source_url": "https://reiwa.com.au/68-muriel-court-cockburn-central-4978123/",
+            "fetched_at": "2026-11-04T10:23:08.243208+00:00",
+            "start_char": 4284,
+            "end_char": 4309,
+            "start_line": 114,
+            "end_line": 114
+          },
+          {
+            "source_id": "distance-calculations",
+            "quote": "\"distance_m\": 107.3",
+            "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+            "source_url": "local:distance-evidence.json",
+            "fetched_at": "2026-11-04",
+            "start_char": 5168,
+            "end_char": 5187,
+            "start_line": 136,
+            "end_line": 136
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q1C4",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、4卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "4卧2卫2车位",
+        "经度 115.8489532",
+        "在 2000m 圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 68 Muriel Court"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 09 Dec 2025"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "房型标签与配置未支持"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q1C4",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、4卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "4卧2卫2车位",
+        "经度 115.8489532",
+        "在 2000m 圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 68 Muriel Court"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 09 Dec 2025"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "房型标签与配置未支持"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "27 Paddock Parade, Cockburn Central WA 6164 平台标 House、成交价 $1,000,000、成交日 22 May 2026、土地面积 158m²、3卧2卫2车位；正文称其为 2021年建 green title townhouse，属双重标签；平台坐标 -32.1176315,115.8477632，程序计算距中心 249.8m，在圈内。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "paddock27",
+          "quote": "27 Paddock Parade, Cockburn Central WA 6164"
+        },
+        {
+          "source_id": "paddock27",
+          "quote": "Sold price: $1,000,000"
+        },
+        {
+          "source_id": "paddock27",
+          "quote": "Sold: 22 May 2026"
+        },
+        {
+          "source_id": "paddock27",
+          "quote": "Landsize\n158m"
+        },
+        {
+          "source_id": "paddock27",
+          "quote": "2021-built green title townhouse"
+        },
+        {
+          "source_id": "paddock27",
+          "quote": "\"PropertyType\": \"House\""
+        },
+        {
+          "source_id": "distance-calculations",
+          "quote": "\"distance_m\": 249.8"
+        }
+      ],
+      "claim_key": "Q1C5",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "paddock27",
+            "quote": "27 Paddock Parade, Cockburn Central WA 6164",
+            "body_sha256": "aa420d24d198e1440c4585c53710e15cc60366bda028c86e5ea003d2f932c852",
+            "source_url": "https://reiwa.com.au/27-paddock-parade-cockburn-central-5022336/",
+            "fetched_at": "2026-11-04T10:23:08.174278+00:00",
+            "start_char": 0,
+            "end_char": 43,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "paddock27",
+            "quote": "Sold price: $1,000,000",
+            "body_sha256": "aa420d24d198e1440c4585c53710e15cc60366bda028c86e5ea003d2f932c852",
+            "source_url": "https://reiwa.com.au/27-paddock-parade-cockburn-central-5022336/",
+            "fetched_at": "2026-11-04T10:23:08.174278+00:00",
+            "start_char": 178,
+            "end_char": 200,
+            "start_line": 14,
+            "end_line": 14
+          },
+          {
+            "source_id": "paddock27",
+            "quote": "Sold: 22 May 2026",
+            "body_sha256": "aa420d24d198e1440c4585c53710e15cc60366bda028c86e5ea003d2f932c852",
+            "source_url": "https://reiwa.com.au/27-paddock-parade-cockburn-central-5022336/",
+            "fetched_at": "2026-11-04T10:23:08.174278+00:00",
+            "start_char": 46,
+            "end_char": 63,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "paddock27",
+            "quote": "Landsize\n158m",
+            "body_sha256": "aa420d24d198e1440c4585c53710e15cc60366bda028c86e5ea003d2f932c852",
+            "source_url": "https://reiwa.com.au/27-paddock-parade-cockburn-central-5022336/",
+            "fetched_at": "2026-11-04T10:23:08.174278+00:00",
+            "start_char": 254,
+            "end_char": 267,
+            "start_line": 23,
+            "end_line": 24
+          },
+          {
+            "source_id": "paddock27",
+            "quote": "2021-built green title townhouse",
+            "body_sha256": "aa420d24d198e1440c4585c53710e15cc60366bda028c86e5ea003d2f932c852",
+            "source_url": "https://reiwa.com.au/27-paddock-parade-cockburn-central-5022336/",
+            "fetched_at": "2026-11-04T10:23:08.174278+00:00",
+            "start_char": 1203,
+            "end_char": 1235,
+            "start_line": 54,
+            "end_line": 54
+          },
+          {
+            "source_id": "paddock27",
+            "quote": "\"PropertyType\": \"House\"",
+            "body_sha256": "aa420d24d198e1440c4585c53710e15cc60366bda028c86e5ea003d2f932c852",
+            "source_url": "https://reiwa.com.au/27-paddock-parade-cockburn-central-5022336/",
+            "fetched_at": "2026-11-04T10:23:08.174278+00:00",
+            "start_char": 5418,
+            "end_char": 5441,
+            "start_line": 124,
+            "end_line": 124
+          },
+          {
+            "source_id": "distance-calculations",
+            "quote": "\"distance_m\": 249.8",
+            "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+            "source_url": "local:distance-evidence.json",
+            "fetched_at": "2026-11-04",
+            "start_char": 3699,
+            "end_char": 3718,
+            "start_line": 97,
+            "end_line": 97
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q1C5",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、townhouse 与 House 标签、纬度、距离有片段；3卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "3卧2卫2车位",
+        "经度 115.8477632",
+        "在圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 27 Paddock Parade"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 22 May 2026"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "双重标签可支持，但配置与圈内判定未支持"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q1C5",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、townhouse 与 House 标签、纬度、距离有片段；3卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "3卧2卫2车位",
+        "经度 115.8477632",
+        "在圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 27 Paddock Parade"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 22 May 2026"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "双重标签可支持，但配置与圈内判定未支持"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "37 Paddock Parade, Cockburn Central WA 6164 为 House，成交价 $995,000，成交日 24 Jul 2026，土地面积 192m²，4卧2卫2车位；平台坐标 -32.1176772,115.8480752，程序计算距中心 236.7m，在 2000m 圈内。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "paddock37",
+          "quote": "37 Paddock Parade, Cockburn Central WA 6164"
+        },
+        {
+          "source_id": "paddock37",
+          "quote": "Sold price: $995,000"
+        },
+        {
+          "source_id": "paddock37",
+          "quote": "Sold: 24 Jul 2026"
+        },
+        {
+          "source_id": "paddock37",
+          "quote": "Landsize\n192m"
+        },
+        {
+          "source_id": "paddock37",
+          "quote": "\"GeoLatitude\": -32.1176772"
+        },
+        {
+          "source_id": "distance-calculations",
+          "quote": "\"distance_m\": 236.7"
+        }
+      ],
+      "claim_key": "Q1C6",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "paddock37",
+            "quote": "37 Paddock Parade, Cockburn Central WA 6164",
+            "body_sha256": "203d30248efce6535ba09c7969240d2b30e9ab83886d95b911a0d3abf207f8df",
+            "source_url": "https://reiwa.com.au/37-paddock-parade-cockburn-central-5031355/",
+            "fetched_at": "2026-11-04T10:23:08.175390+00:00",
+            "start_char": 0,
+            "end_char": 43,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "paddock37",
+            "quote": "Sold price: $995,000",
+            "body_sha256": "203d30248efce6535ba09c7969240d2b30e9ab83886d95b911a0d3abf207f8df",
+            "source_url": "https://reiwa.com.au/37-paddock-parade-cockburn-central-5031355/",
+            "fetched_at": "2026-11-04T10:23:08.175390+00:00",
+            "start_char": 178,
+            "end_char": 198,
+            "start_line": 14,
+            "end_line": 14
+          },
+          {
+            "source_id": "paddock37",
+            "quote": "Sold: 24 Jul 2026",
+            "body_sha256": "203d30248efce6535ba09c7969240d2b30e9ab83886d95b911a0d3abf207f8df",
+            "source_url": "https://reiwa.com.au/37-paddock-parade-cockburn-central-5031355/",
+            "fetched_at": "2026-11-04T10:23:08.175390+00:00",
+            "start_char": 46,
+            "end_char": 63,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "paddock37",
+            "quote": "Landsize\n192m",
+            "body_sha256": "203d30248efce6535ba09c7969240d2b30e9ab83886d95b911a0d3abf207f8df",
+            "source_url": "https://reiwa.com.au/37-paddock-parade-cockburn-central-5031355/",
+            "fetched_at": "2026-11-04T10:23:08.175390+00:00",
+            "start_char": 252,
+            "end_char": 265,
+            "start_line": 23,
+            "end_line": 24
+          },
+          {
+            "source_id": "paddock37",
+            "quote": "\"GeoLatitude\": -32.1176772",
+            "body_sha256": "203d30248efce6535ba09c7969240d2b30e9ab83886d95b911a0d3abf207f8df",
+            "source_url": "https://reiwa.com.au/37-paddock-parade-cockburn-central-5031355/",
+            "fetched_at": "2026-11-04T10:23:08.175390+00:00",
+            "start_char": 6827,
+            "end_char": 6853,
+            "start_line": 106,
+            "end_line": 106
+          },
+          {
+            "source_id": "distance-calculations",
+            "quote": "\"distance_m\": 236.7",
+            "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+            "source_url": "local:distance-evidence.json",
+            "fetched_at": "2026-11-04",
+            "start_char": 4190,
+            "end_char": 4209,
+            "start_line": 110,
+            "end_line": 110
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q1C6",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、4卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "4卧2卫2车位",
+        "经度 115.8480752",
+        "在 2000m 圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 37 Paddock Parade"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 24 Jul 2026"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "房型标签与配置未支持"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q1C6",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、4卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "4卧2卫2车位",
+        "经度 115.8480752",
+        "在 2000m 圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 37 Paddock Parade"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 24 Jul 2026"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "房型标签与配置未支持"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "61 Paddock Parade, Cockburn Central WA 6164 为 House，成交价 $950,000，成交日 27 Jun 2026，土地面积 192m²，3卧2卫2车位；平台坐标 -32.1180945,115.8491033，程序计算距中心 247.4m，在 2000m 圈内。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "paddock61",
+          "quote": "61 Paddock Parade, Cockburn Central WA 6164"
+        },
+        {
+          "source_id": "paddock61",
+          "quote": "Sold price: $950,000"
+        },
+        {
+          "source_id": "paddock61",
+          "quote": "Sold: 27 Jun 2026"
+        },
+        {
+          "source_id": "paddock61",
+          "quote": "Landsize\n192m"
+        },
+        {
+          "source_id": "paddock61",
+          "quote": "\"GeoLatitude\": -32.1180945"
+        },
+        {
+          "source_id": "distance-calculations",
+          "quote": "\"distance_m\": 247.4"
+        }
+      ],
+      "claim_key": "Q1C7",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "paddock61",
+            "quote": "61 Paddock Parade, Cockburn Central WA 6164",
+            "body_sha256": "12a34dde46c34d02bb2c4eaabd19ec8419758f6d07c5fff374c062067262c670",
+            "source_url": "https://reiwa.com.au/61-paddock-parade-cockburn-central-5030216/",
+            "fetched_at": "2026-11-04T10:23:08.241928+00:00",
+            "start_char": 0,
+            "end_char": 43,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "paddock61",
+            "quote": "Sold price: $950,000",
+            "body_sha256": "12a34dde46c34d02bb2c4eaabd19ec8419758f6d07c5fff374c062067262c670",
+            "source_url": "https://reiwa.com.au/61-paddock-parade-cockburn-central-5030216/",
+            "fetched_at": "2026-11-04T10:23:08.241928+00:00",
+            "start_char": 178,
+            "end_char": 198,
+            "start_line": 14,
+            "end_line": 14
+          },
+          {
+            "source_id": "paddock61",
+            "quote": "Sold: 27 Jun 2026",
+            "body_sha256": "12a34dde46c34d02bb2c4eaabd19ec8419758f6d07c5fff374c062067262c670",
+            "source_url": "https://reiwa.com.au/61-paddock-parade-cockburn-central-5030216/",
+            "fetched_at": "2026-11-04T10:23:08.241928+00:00",
+            "start_char": 46,
+            "end_char": 63,
+            "start_line": 1,
+            "end_line": 1
+          },
+          {
+            "source_id": "paddock61",
+            "quote": "Landsize\n192m",
+            "body_sha256": "12a34dde46c34d02bb2c4eaabd19ec8419758f6d07c5fff374c062067262c670",
+            "source_url": "https://reiwa.com.au/61-paddock-parade-cockburn-central-5030216/",
+            "fetched_at": "2026-11-04T10:23:08.241928+00:00",
+            "start_char": 252,
+            "end_char": 265,
+            "start_line": 23,
+            "end_line": 24
+          },
+          {
+            "source_id": "paddock61",
+            "quote": "\"GeoLatitude\": -32.1180945",
+            "body_sha256": "12a34dde46c34d02bb2c4eaabd19ec8419758f6d07c5fff374c062067262c670",
+            "source_url": "https://reiwa.com.au/61-paddock-parade-cockburn-central-5030216/",
+            "fetched_at": "2026-11-04T10:23:08.241928+00:00",
+            "start_char": 6591,
+            "end_char": 6617,
+            "start_line": 153,
+            "end_line": 153
+          },
+          {
+            "source_id": "distance-calculations",
+            "quote": "\"distance_m\": 247.4",
+            "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+            "source_url": "local:distance-evidence.json",
+            "fetched_at": "2026-11-04",
+            "start_char": 4681,
+            "end_char": 4700,
+            "start_line": 123,
+            "end_line": 123
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q1C7",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、3卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "3卧2卫2车位",
+        "经度 115.8491033",
+        "在 2000m 圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 61 Paddock Parade"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 27 Jun 2026"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "房型标签与配置未支持"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q1C7",
+      "status": "missing",
+      "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、3卧2卫2车位、经度及 within_2000m 无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "为 House",
+        "3卧2卫2车位",
+        "经度 115.8491033",
+        "在 2000m 圈内"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "地址片段支持 61 Paddock Parade"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "卧室卫浴车位与经度缺证"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "Sold: 27 Jun 2026"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "无 within_2000m 绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "房型标签与配置未支持"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "REIWA Cockburn Central 郊区结构化数据中，两个已完成年度 house 中位价与样本量为：CalendarYear 2024 为 AUD 750,000、HouseCount 20；CalendarYear 2025 为 AUD 845,000、HouseCount 29；地理范围为 Cockburn Central 郊区（非 2 公里圈），房型 House，指标为中位成交价；CalendarYear 准确起止未明确。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "profile",
+          "quote": "\"CalendarYear\": 2024,\n      \"MedianHousePrice\": 750000"
+        },
+        {
+          "source_id": "profile",
+          "quote": "\"HouseCount\": 20"
+        },
+        {
+          "source_id": "profile",
+          "quote": "\"CalendarYear\": 2025,\n      \"MedianHousePrice\": 845000"
+        },
+        {
+          "source_id": "profile",
+          "quote": "\"HouseCount\": 29"
+        },
+        {
+          "source_id": "profile",
+          "quote": "年份起止不另行推定"
+        }
+      ],
+      "claim_key": "Q1C8",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [
+          "unbound_numeric_anchor:AUD:750000",
+          "unbound_numeric_anchor:AUD:845000"
+        ],
+        "verified_spans": [
+          {
+            "source_id": "profile",
+            "quote": "\"CalendarYear\": 2024,\n      \"MedianHousePrice\": 750000",
+            "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+            "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+            "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+            "start_char": 5125,
+            "end_char": 5179,
+            "start_line": 239,
+            "end_line": 240
+          },
+          {
+            "source_id": "profile",
+            "quote": "\"HouseCount\": 20",
+            "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+            "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+            "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+            "start_char": 5253,
+            "end_char": 5269,
+            "start_line": 243,
+            "end_line": 243
+          },
+          {
+            "source_id": "profile",
+            "quote": "\"CalendarYear\": 2025,\n      \"MedianHousePrice\": 845000",
+            "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+            "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+            "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+            "start_char": 5335,
+            "end_char": 5389,
+            "start_line": 248,
+            "end_line": 249
+          },
+          {
+            "source_id": "profile",
+            "quote": "\"HouseCount\": 29",
+            "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+            "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+            "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+            "start_char": 5463,
+            "end_char": 5479,
+            "start_line": 252,
+            "end_line": 252
+          },
+          {
+            "source_id": "profile",
+            "quote": "年份起止不另行推定",
+            "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+            "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+            "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+            "start_char": 5814,
+            "end_char": 5823,
+            "start_line": 267,
+            "end_line": 267
+          }
+        ],
+        "missing_anchors": [
+          {
+            "unit": "AUD",
+            "value": "750000"
+          },
+          {
+            "unit": "AUD",
+            "value": "845000"
+          }
+        ],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q1C8",
+      "status": "missing",
+      "reason": "binding_check.errors 含未绑定数值锚点 AUD 750000 与 845000；且“地理范围为 Cockburn Central 郊区”“指标为中位成交价”等句意无绑定片段。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "AUD 750,000",
+        "AUD 845,000",
+        "地理范围为 Cockburn Central 郊区（非 2 公里圈）",
+        "指标为中位成交价"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "片段含 CalendarYear 与 MedianHousePrice 字段"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "数值锚点未绑定，AUD 单位无片段"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "CalendarYear 2024/2025 有片段，起止未明确有片段"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "郊区地理范围无绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "中位价指标与地理范围句意未支持"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q1C8",
+      "status": "missing",
+      "reason": "unbound_numeric_anchor:AUD:750000; unbound_numeric_anchor:AUD:845000",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "AUD 750,000",
+        "AUD 845,000",
+        "地理范围为 Cockburn Central 郊区（非 2 公里圈）",
+        "指标为中位成交价"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "片段含 CalendarYear 与 MedianHousePrice 字段"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "数值锚点未绑定，AUD 单位无片段"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "CalendarYear 2024/2025 有片段，起止未明确有片段"
+        },
+        "scope": {
+          "status": "missing",
+          "reason": "郊区地理范围无绑定片段"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "中位价指标与地理范围句意未支持"
+        }
+      },
+      "override": "binding_errors"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "REIWA Cockburn Central houses 搜索页在访问时间 2026-11-04T10:22:33.506496+00:00 显示“1,355 properties and houses for sale in Cockburn Central and surrounding suburbs”，该总数含周边 suburbs，不能作为 2 公里圈内 house 库存总量。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "current",
+          "quote": "There are currently 1,355 properties and houses for sale in Cockburn Central and surrounding suburbs."
+        }
+      ],
+      "claim_key": "Q2C1",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "current",
+            "quote": "There are currently 1,355 properties and houses for sale in Cockburn Central and surrounding suburbs.",
+            "body_sha256": "a50e5011c0efa989d2667bcff9f4e95cacba766f2166c92255c64230a9fba44a",
+            "source_url": "https://reiwa.com.au/for-sale/cockburn-central/houses/",
+            "fetched_at": "2026-11-04T10:22:33.506496+00:00",
+            "start_char": 123,
+            "end_char": 224,
+            "start_line": 3,
+            "end_line": 3
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q2C1",
+      "status": "supported",
+      "reason": "绑定片段原文含1,355及“and surrounding suburbs”，抓取时间与候选一致；候选仅作范围限定，未把总数当圈内库存。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "REIWA Cockburn Central houses搜索页"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "1,355 properties and houses"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "fetched_at 2026-11-04T10:22:33.506496+00:00"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "原文明确含周边suburbs，候选否定其作为2公里圈内总量"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "句意与限定一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q2C1",
+      "status": "supported",
+      "reason": "绑定片段原文含1,355及“and surrounding suburbs”，抓取时间与候选一致；候选仅作范围限定，未把总数当圈内库存。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "REIWA Cockburn Central houses搜索页"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "1,355 properties and houses"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "fetched_at 2026-11-04T10:22:33.506496+00:00"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "原文明确含周边suburbs，候选否定其作为2公里圈内总量"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "句意与限定一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "同一搜索页显示分页“1 - 20 of 165 results”，并另列“152 results from surrounding suburbs”；分页数与周边结果数均不等于 2 公里圈内 house 在售总量。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "current",
+          "quote": "1\n-\n20\nof\n165\nresults"
+        },
+        {
+          "source_id": "current",
+          "quote": "We have included\n152\nresult\ns\nfrom surrounding suburbs"
+        }
+      ],
+      "claim_key": "Q2C2",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "current",
+            "quote": "1\n-\n20\nof\n165\nresults",
+            "body_sha256": "a50e5011c0efa989d2667bcff9f4e95cacba766f2166c92255c64230a9fba44a",
+            "source_url": "https://reiwa.com.au/for-sale/cockburn-central/houses/",
+            "fetched_at": "2026-11-04T10:22:33.506496+00:00",
+            "start_char": 850,
+            "end_char": 871,
+            "start_line": 19,
+            "end_line": 24
+          },
+          {
+            "source_id": "current",
+            "quote": "We have included\n152\nresult\ns\nfrom surrounding suburbs",
+            "body_sha256": "a50e5011c0efa989d2667bcff9f4e95cacba766f2166c92255c64230a9fba44a",
+            "source_url": "https://reiwa.com.au/for-sale/cockburn-central/houses/",
+            "fetched_at": "2026-11-04T10:22:33.506496+00:00",
+            "start_char": 3802,
+            "end_char": 3856,
+            "start_line": 249,
+            "end_line": 253
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q2C2",
+      "status": "supported",
+      "reason": "两处片段分别给出“1-20 of 165 results”和“152 results from surrounding suburbs”，候选仅否定其等于圈内总量。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "同一搜索页分页与周边结果"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "165 results、152 results"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "同一抓取时间"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "分页/周边数非2公里圈内house总量"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "否定性限定与原文一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q2C2",
+      "status": "supported",
+      "reason": "两处片段分别给出“1-20 of 165 results”和“152 results from surrounding suburbs”，候选仅否定其等于圈内总量。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "同一搜索页分页与周边结果"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "165 results、152 results"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "同一抓取时间"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "分页/周边数非2公里圈内house总量"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "否定性限定与原文一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "当前挂牌 12 Lodge Court, Cockburn Central：报价 Offers Over $1,150,000，状态为在售（无成交日期），平台标 House，5卧2卫6车位，土地 518m²，ListDate 2026-10-11，页面访问时间 2026-11-04T10:23:07.390222+00:00。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "lodge12",
+          "quote": "12 Lodge Court, Cockburn Central WA 6164\nOffers Over $1,150,000"
+        },
+        {
+          "source_id": "lodge12",
+          "quote": "\"PropertyType\": \"House\""
+        },
+        {
+          "source_id": "lodge12",
+          "quote": "\"ListDate\": \"2026-10-11T00:00:00+08:00\""
+        },
+        {
+          "source_id": "lodge12",
+          "quote": "\"LandsizeHtml\": \"518m<sup><small>2</small></sup>\""
+        }
+      ],
+      "claim_key": "Q2C3",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "lodge12",
+            "quote": "12 Lodge Court, Cockburn Central WA 6164\nOffers Over $1,150,000",
+            "body_sha256": "f0bacba16c1081ec9f9589444956c186a5d095c6952f423503c62d267a13a574",
+            "source_url": "https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/",
+            "fetched_at": "2026-11-04T10:23:07.390222+00:00",
+            "start_char": 158,
+            "end_char": 221,
+            "start_line": 13,
+            "end_line": 14
+          },
+          {
+            "source_id": "lodge12",
+            "quote": "\"PropertyType\": \"House\"",
+            "body_sha256": "f0bacba16c1081ec9f9589444956c186a5d095c6952f423503c62d267a13a574",
+            "source_url": "https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/",
+            "fetched_at": "2026-11-04T10:23:07.390222+00:00",
+            "start_char": 6857,
+            "end_char": 6880,
+            "start_line": 98,
+            "end_line": 98
+          },
+          {
+            "source_id": "lodge12",
+            "quote": "\"ListDate\": \"2026-10-11T00:00:00+08:00\"",
+            "body_sha256": "f0bacba16c1081ec9f9589444956c186a5d095c6952f423503c62d267a13a574",
+            "source_url": "https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/",
+            "fetched_at": "2026-11-04T10:23:07.390222+00:00",
+            "start_char": 6884,
+            "end_char": 6923,
+            "start_line": 99,
+            "end_line": 99
+          },
+          {
+            "source_id": "lodge12",
+            "quote": "\"LandsizeHtml\": \"518m<sup><small>2</small></sup>\"",
+            "body_sha256": "f0bacba16c1081ec9f9589444956c186a5d095c6952f423503c62d267a13a574",
+            "source_url": "https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/",
+            "fetched_at": "2026-11-04T10:23:07.390222+00:00",
+            "start_char": 7011,
+            "end_char": 7060,
+            "start_line": 104,
+            "end_line": 104
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q2C3",
+      "status": "supported",
+      "reason": "片段支持地址、Offers Over $1,150,000、PropertyType House、ListDate 2026-10-11、518m²及抓取时间；无成交日期与在售状态由挂牌页性质及无成交字段支持。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "12 Lodge Court, Cockburn Central"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "$1,150,000、518m²"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "ListDate 2026-10-11；访问时间一致"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "平台标House"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "报价、房型、土地与挂牌日期均一致；卧室/车位为页面字段"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q2C3",
+      "status": "supported",
+      "reason": "片段支持地址、Offers Over $1,150,000、PropertyType House、ListDate 2026-10-11、518m²及抓取时间；无成交日期与在售状态由挂牌页性质及无成交字段支持。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "12 Lodge Court, Cockburn Central"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "$1,150,000、518m²"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "ListDate 2026-10-11；访问时间一致"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "平台标House"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "报价、房型、土地与挂牌日期均一致；卧室/车位为页面字段"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "当前挂牌 31 Equitation Terrace, Cockburn Central：报价 From $895,000，状态为在售（无成交日期），平台标 House，4卧2卫2车位，土地 159m²，ListDate 2026-08-31，页面访问时间 2026-11-04T10:23:07.389642+00:00。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "equitation31",
+          "quote": "31 Equitation Terrace, Cockburn Central WA 6164\nFrom $895,000"
+        },
+        {
+          "source_id": "equitation31",
+          "quote": "\"PropertyType\": \"House\""
+        },
+        {
+          "source_id": "equitation31",
+          "quote": "\"ListDate\": \"2026-08-31T00:00:00+08:00\""
+        },
+        {
+          "source_id": "equitation31",
+          "quote": "\"LandsizeHtml\": \"159m<sup><small>2</small></sup>\""
+        }
+      ],
+      "claim_key": "Q2C4",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "equitation31",
+            "quote": "31 Equitation Terrace, Cockburn Central WA 6164\nFrom $895,000",
+            "body_sha256": "8c12620020e9098e4f860b857c1cd97cc82d21d18c043ecfa8caff285afe5204",
+            "source_url": "https://reiwa.com.au/31-equitation-terrace-cockburn-central-5055619/",
+            "fetched_at": "2026-11-04T10:23:07.389642+00:00",
+            "start_char": 136,
+            "end_char": 197,
+            "start_line": 11,
+            "end_line": 12
+          },
+          {
+            "source_id": "equitation31",
+            "quote": "\"PropertyType\": \"House\"",
+            "body_sha256": "8c12620020e9098e4f860b857c1cd97cc82d21d18c043ecfa8caff285afe5204",
+            "source_url": "https://reiwa.com.au/31-equitation-terrace-cockburn-central-5055619/",
+            "fetched_at": "2026-11-04T10:23:07.389642+00:00",
+            "start_char": 6090,
+            "end_char": 6113,
+            "start_line": 112,
+            "end_line": 112
+          },
+          {
+            "source_id": "equitation31",
+            "quote": "\"ListDate\": \"2026-08-31T00:00:00+08:00\"",
+            "body_sha256": "8c12620020e9098e4f860b857c1cd97cc82d21d18c043ecfa8caff285afe5204",
+            "source_url": "https://reiwa.com.au/31-equitation-terrace-cockburn-central-5055619/",
+            "fetched_at": "2026-11-04T10:23:07.389642+00:00",
+            "start_char": 6117,
+            "end_char": 6156,
+            "start_line": 113,
+            "end_line": 113
+          },
+          {
+            "source_id": "equitation31",
+            "quote": "\"LandsizeHtml\": \"159m<sup><small>2</small></sup>\"",
+            "body_sha256": "8c12620020e9098e4f860b857c1cd97cc82d21d18c043ecfa8caff285afe5204",
+            "source_url": "https://reiwa.com.au/31-equitation-terrace-cockburn-central-5055619/",
+            "fetched_at": "2026-11-04T10:23:07.389642+00:00",
+            "start_char": 6235,
+            "end_char": 6284,
+            "start_line": 118,
+            "end_line": 118
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q2C4",
+      "status": "supported",
+      "reason": "片段支持地址、From $895,000、House、ListDate 2026-08-31、159m²及抓取时间。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "31 Equitation Terrace"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "$895,000、159m²"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "ListDate 2026-08-31；访问时间一致"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "平台标House"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "报价、房型、土地与挂牌日期一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q2C4",
+      "status": "supported",
+      "reason": "片段支持地址、From $895,000、House、ListDate 2026-08-31、159m²及抓取时间。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "31 Equitation Terrace"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "$895,000、159m²"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "ListDate 2026-08-31；访问时间一致"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "平台标House"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "报价、房型、土地与挂牌日期一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "当前挂牌 4 Equitation Terrace, Cockburn Central：报价 Price Guide on Request，状态为在售（无成交日期），平台标 House，3卧2卫2车位，土地 130m²，ListDate 2026-10-09，页面访问时间 2026-11-04T10:23:07.390039+00:00。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "equitation4",
+          "quote": "4 Equitation Terrace, Cockburn Central WA 6164\nPrice Guide on Request"
+        },
+        {
+          "source_id": "equitation4",
+          "quote": "\"PropertyType\": \"House\""
+        },
+        {
+          "source_id": "equitation4",
+          "quote": "\"ListDate\": \"2026-10-09T08:00:00+08:00\""
+        },
+        {
+          "source_id": "equitation4",
+          "quote": "\"LandsizeHtml\": \"130m<sup><small>2</small></sup>\""
+        }
+      ],
+      "claim_key": "Q2C5",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "equitation4",
+            "quote": "4 Equitation Terrace, Cockburn Central WA 6164\nPrice Guide on Request",
+            "body_sha256": "00d7c5090fde0706782219f4034426a2fea42a18d56e1a1ee49cd6eef03276ac",
+            "source_url": "https://reiwa.com.au/4-equitation-terrace-cockburn-central-5067289/",
+            "fetched_at": "2026-11-04T10:23:07.390039+00:00",
+            "start_char": 139,
+            "end_char": 208,
+            "start_line": 12,
+            "end_line": 13
+          },
+          {
+            "source_id": "equitation4",
+            "quote": "\"PropertyType\": \"House\"",
+            "body_sha256": "00d7c5090fde0706782219f4034426a2fea42a18d56e1a1ee49cd6eef03276ac",
+            "source_url": "https://reiwa.com.au/4-equitation-terrace-cockburn-central-5067289/",
+            "fetched_at": "2026-11-04T10:23:07.390039+00:00",
+            "start_char": 5377,
+            "end_char": 5400,
+            "start_line": 116,
+            "end_line": 116
+          },
+          {
+            "source_id": "equitation4",
+            "quote": "\"ListDate\": \"2026-10-09T08:00:00+08:00\"",
+            "body_sha256": "00d7c5090fde0706782219f4034426a2fea42a18d56e1a1ee49cd6eef03276ac",
+            "source_url": "https://reiwa.com.au/4-equitation-terrace-cockburn-central-5067289/",
+            "fetched_at": "2026-11-04T10:23:07.390039+00:00",
+            "start_char": 5404,
+            "end_char": 5443,
+            "start_line": 117,
+            "end_line": 117
+          },
+          {
+            "source_id": "equitation4",
+            "quote": "\"LandsizeHtml\": \"130m<sup><small>2</small></sup>\"",
+            "body_sha256": "00d7c5090fde0706782219f4034426a2fea42a18d56e1a1ee49cd6eef03276ac",
+            "source_url": "https://reiwa.com.au/4-equitation-terrace-cockburn-central-5067289/",
+            "fetched_at": "2026-11-04T10:23:07.390039+00:00",
+            "start_char": 5531,
+            "end_char": 5580,
+            "start_line": 122,
+            "end_line": 122
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q2C5",
+      "status": "supported",
+      "reason": "片段支持地址、Price Guide on Request、House、ListDate 2026-10-09、130m²及抓取时间。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "4 Equitation Terrace"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "Price Guide on Request、130m²"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "ListDate 2026-10-09；访问时间一致"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "平台标House"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "报价、房型、土地与挂牌日期一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q2C5",
+      "status": "supported",
+      "reason": "片段支持地址、Price Guide on Request、House、ListDate 2026-10-09、130m²及抓取时间。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "4 Equitation Terrace"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "Price Guide on Request、130m²"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "ListDate 2026-10-09；访问时间一致"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "平台标House"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "报价、房型、土地与挂牌日期一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "当前挂牌 29 Paddock Parade, Cockburn Central：报价 From $1,000,000，状态为在售（无成交日期），平台标 House，3卧3卫2车位，土地 192m²，ListDate 2026-09-09，页面访问时间 2026-11-04T10:23:07.390342+00:00。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "paddock29",
+          "quote": "29 Paddock Parade, Cockburn Central WA 6164\nFrom $1,000,000"
+        },
+        {
+          "source_id": "paddock29",
+          "quote": "\"PropertyType\": \"House\""
+        },
+        {
+          "source_id": "paddock29",
+          "quote": "\"ListDate\": \"2026-09-09T00:00:00+08:00\""
+        },
+        {
+          "source_id": "paddock29",
+          "quote": "\"LandsizeHtml\": \"192m<sup><small>2</small></sup>\""
+        }
+      ],
+      "claim_key": "Q2C6",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "paddock29",
+            "quote": "29 Paddock Parade, Cockburn Central WA 6164\nFrom $1,000,000",
+            "body_sha256": "de4b357b0b4f2d263e433b98a09a84f2a61efe3ad2c04edf57fdf997f54de245",
+            "source_url": "https://reiwa.com.au/29-paddock-parade-cockburn-central-5062709/",
+            "fetched_at": "2026-11-04T10:23:07.390342+00:00",
+            "start_char": 134,
+            "end_char": 193,
+            "start_line": 11,
+            "end_line": 12
+          },
+          {
+            "source_id": "paddock29",
+            "quote": "\"PropertyType\": \"House\"",
+            "body_sha256": "de4b357b0b4f2d263e433b98a09a84f2a61efe3ad2c04edf57fdf997f54de245",
+            "source_url": "https://reiwa.com.au/29-paddock-parade-cockburn-central-5062709/",
+            "fetched_at": "2026-11-04T10:23:07.390342+00:00",
+            "start_char": 7775,
+            "end_char": 7798,
+            "start_line": 87,
+            "end_line": 87
+          },
+          {
+            "source_id": "paddock29",
+            "quote": "\"ListDate\": \"2026-09-09T00:00:00+08:00\"",
+            "body_sha256": "de4b357b0b4f2d263e433b98a09a84f2a61efe3ad2c04edf57fdf997f54de245",
+            "source_url": "https://reiwa.com.au/29-paddock-parade-cockburn-central-5062709/",
+            "fetched_at": "2026-11-04T10:23:07.390342+00:00",
+            "start_char": 7802,
+            "end_char": 7841,
+            "start_line": 88,
+            "end_line": 88
+          },
+          {
+            "source_id": "paddock29",
+            "quote": "\"LandsizeHtml\": \"192m<sup><small>2</small></sup>\"",
+            "body_sha256": "de4b357b0b4f2d263e433b98a09a84f2a61efe3ad2c04edf57fdf997f54de245",
+            "source_url": "https://reiwa.com.au/29-paddock-parade-cockburn-central-5062709/",
+            "fetched_at": "2026-11-04T10:23:07.390342+00:00",
+            "start_char": 7922,
+            "end_char": 7971,
+            "start_line": 93,
+            "end_line": 93
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q2C6",
+      "status": "supported",
+      "reason": "片段支持地址、From $1,000,000、House、ListDate 2026-09-09、192m²及抓取时间。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "29 Paddock Parade"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "$1,000,000、192m²"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "ListDate 2026-09-09；访问时间一致"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "平台标House"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "报价、房型、土地与挂牌日期一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q2C6",
+      "status": "supported",
+      "reason": "片段支持地址、From $1,000,000、House、ListDate 2026-09-09、192m²及抓取时间。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "29 Paddock Parade"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "$1,000,000、192m²"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "ListDate 2026-09-09；访问时间一致"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "平台标House"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "报价、房型、土地与挂牌日期一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "Muriel Court 地方结构规划（Cockburn Central North (Muriel Court) Local Structure Plan，WAPC Reference SPN/0801M-7）PDF 第 1 页载明最初于 2010 年 2 月通过，用于指导 Muriel Court 范围内未来的土地 subdivision 与开发；第 2 页载明由西澳规划委员会于 2010 年 2 月决议通过、到期日 2035 年 10 月 19 日。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "muriel-plan",
+          "quote": "Cockburn Central North (Muriel Court) Local Structure Plan"
+        },
+        {
+          "source_id": "muriel-plan",
+          "quote": "Initially adopted February 2010"
+        },
+        {
+          "source_id": "muriel-plan",
+          "quote": "This report has been prepared to guide future subdivision and development of land identified within Muriel Court."
+        },
+        {
+          "source_id": "muriel-plan",
+          "quote": "IT IS CERTIFIED THAT THIS STRUCTURE PLAN WAS ADOPTED BY \nRESOLUTION OF THE WESTERN AUSTRALIAN PLANNING COMMISSION \nON:   \nFebruary 2010"
+        },
+        {
+          "source_id": "muriel-plan",
+          "quote": "Date of Expiry: \n 19 October 2035"
+        }
+      ],
+      "claim_key": "Q2C7",
+      "literal_errors": [
+        "quoted_span_not_found"
+      ],
+      "binding_check": {
+        "errors": [
+          "quoted_span_not_found"
+        ],
+        "verified_spans": [
+          {
+            "source_id": "muriel-plan",
+            "quote": "Initially adopted February 2010",
+            "body_sha256": "816c29d7b776be0cb887d41909457a4f66c2d0d1ba8e92c92917471604065ffc",
+            "source_url": "https://www.wa.gov.au/system/files/2024-02/cockburn-central-north-muriel-court-local-structure-plan-wapc-reference-spn-0801m-7.pdf",
+            "fetched_at": "2026-11-04T10:24:16.958531+00:00",
+            "start_char": 202,
+            "end_char": 233,
+            "start_line": 8,
+            "end_line": 8
+          },
+          {
+            "source_id": "muriel-plan",
+            "quote": "This report has been prepared to guide future subdivision and development of land identified within Muriel Court.",
+            "body_sha256": "816c29d7b776be0cb887d41909457a4f66c2d0d1ba8e92c92917471604065ffc",
+            "source_url": "https://www.wa.gov.au/system/files/2024-02/cockburn-central-north-muriel-court-local-structure-plan-wapc-reference-spn-0801m-7.pdf",
+            "fetched_at": "2026-11-04T10:24:16.958531+00:00",
+            "start_char": 235,
+            "end_char": 348,
+            "start_line": 9,
+            "end_line": 9
+          },
+          {
+            "source_id": "muriel-plan",
+            "quote": "IT IS CERTIFIED THAT THIS STRUCTURE PLAN WAS ADOPTED BY \nRESOLUTION OF THE WESTERN AUSTRALIAN PLANNING COMMISSION \nON:   \nFebruary 2010",
+            "body_sha256": "816c29d7b776be0cb887d41909457a4f66c2d0d1ba8e92c92917471604065ffc",
+            "source_url": "https://www.wa.gov.au/system/files/2024-02/cockburn-central-north-muriel-court-local-structure-plan-wapc-reference-spn-0801m-7.pdf",
+            "fetched_at": "2026-11-04T10:24:16.958531+00:00",
+            "start_char": 584,
+            "end_char": 719,
+            "start_line": 15,
+            "end_line": 18
+          },
+          {
+            "source_id": "muriel-plan",
+            "quote": "Date of Expiry: \n 19 October 2035",
+            "body_sha256": "816c29d7b776be0cb887d41909457a4f66c2d0d1ba8e92c92917471604065ffc",
+            "source_url": "https://www.wa.gov.au/system/files/2024-02/cockburn-central-north-muriel-court-local-structure-plan-wapc-reference-spn-0801m-7.pdf",
+            "fetched_at": "2026-11-04T10:24:16.958531+00:00",
+            "start_char": 878,
+            "end_char": 911,
+            "start_line": 21,
+            "end_line": 22
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q2C7",
+      "status": "missing",
+      "reason": "binding_check.errors含quoted_span_not_found；且片段未显示页码1/2，候选的页码归属无绑定证据。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "PDF第1页载明",
+        "PDF第2页载明",
+        "WAPC Reference SPN/0801M-7"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "Muriel Court地方结构规划"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "2010年2月、2035年10月19日"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "February 2010、19 October 2035"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "Muriel Court范围"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "页码与引用编号未由绑定片段支持，且存在span未找到错误"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q2C7",
+      "status": "missing",
+      "reason": "quoted_span_not_found",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "PDF第1页载明",
+        "PDF第2页载明",
+        "WAPC Reference SPN/0801M-7"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "Muriel Court地方结构规划"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "2010年2月、2035年10月19日"
+        },
+        "time": {
+          "status": "supported",
+          "reason": "February 2010、19 October 2035"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "Muriel Court范围"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "页码与引用编号未由绑定片段支持，且存在span未找到错误"
+        }
+      },
+      "override": "binding_errors"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "同一结构规划 PDF 第 22 页载明：表列预计住宅数基于拟定密度，且不含 North Lake Road 沿线 Restricted Use-Office/R160 区域可额外容纳最多 459 套住宅；该预计数为规划容量口径，不是当前待售、已批准、已开工或已完工套数。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "muriel-plan",
+          "quote": "The table below indicates the estimated projected dwelling numbers based on the proposed densities."
+        },
+        {
+          "source_id": "muriel-plan",
+          "quote": "Note: The above figures do not include residential development within the Restricted Use-Office/R160 area \nfronting North Lake Road (which can accommodate an additional maximum of 459 dwellings)."
+        }
+      ],
+      "claim_key": "Q2C8",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "muriel-plan",
+            "quote": "The table below indicates the estimated projected dwelling numbers based on the proposed densities.",
+            "body_sha256": "816c29d7b776be0cb887d41909457a4f66c2d0d1ba8e92c92917471604065ffc",
+            "source_url": "https://www.wa.gov.au/system/files/2024-02/cockburn-central-north-muriel-court-local-structure-plan-wapc-reference-spn-0801m-7.pdf",
+            "fetched_at": "2026-11-04T10:24:16.958531+00:00",
+            "start_char": 4924,
+            "end_char": 5023,
+            "start_line": 111,
+            "end_line": 111
+          },
+          {
+            "source_id": "muriel-plan",
+            "quote": "Note: The above figures do not include residential development within the Restricted Use-Office/R160 area \nfronting North Lake Road (which can accommodate an additional maximum of 459 dwellings).",
+            "body_sha256": "816c29d7b776be0cb887d41909457a4f66c2d0d1ba8e92c92917471604065ffc",
+            "source_url": "https://www.wa.gov.au/system/files/2024-02/cockburn-central-north-muriel-court-local-structure-plan-wapc-reference-spn-0801m-7.pdf",
+            "fetched_at": "2026-11-04T10:24:16.958531+00:00",
+            "start_char": 5033,
+            "end_char": 5228,
+            "start_line": 116,
+            "end_line": 117
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q2C8",
+      "status": "supported",
+      "reason": "片段支持预计住宅数基于拟定密度、不含North Lake Road Restricted Use-Office/R160额外最多459套，并明确为规划容量口径。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "同一结构规划PDF表格及注释"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "最多459 dwellings"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "该陈述不涉时间"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "North Lake Road沿线Restricted Use-Office/R160区域"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "预计数非当前待售/批准/开工/完工套数，与原文口径一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q2C8",
+      "status": "supported",
+      "reason": "片段支持预计住宅数基于拟定密度、不含North Lake Road Restricted Use-Office/R160额外最多459套，并明确为规划容量口径。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "同一结构规划PDF表格及注释"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "最多459 dwellings"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "该陈述不涉时间"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "North Lake Road沿线Restricted Use-Office/R160区域"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "预计数非当前待售/批准/开工/完工套数，与原文口径一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "教学假设购价为 AUD 1,000,000。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。"
+        }
+      ],
+      "claim_key": "Q3C1",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "TASK",
+            "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。",
+            "body_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+            "source_url": "frozen/task.md",
+            "fetched_at": "not_applicable",
+            "start_char": 1279,
+            "end_char": 1318,
+            "start_line": 37,
+            "end_line": 37
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q3C1",
+      "status": "supported",
+      "reason": "绑定片段原文明确给出教学假设购价 AUD 1,000,000。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为教学假设购价"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "AUD 1,000,000 与原文一致"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "假设无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "句意与原文一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q3C1",
+      "status": "supported",
+      "reason": "绑定片段原文明确给出教学假设购价 AUD 1,000,000。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为教学假设购价"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "AUD 1,000,000 与原文一致"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "假设无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "句意与原文一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "教学假设固定贷款余额为 AUD 800,000。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。"
+        }
+      ],
+      "claim_key": "Q3C2",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "TASK",
+            "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。",
+            "body_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+            "source_url": "frozen/task.md",
+            "fetched_at": "not_applicable",
+            "start_char": 1279,
+            "end_char": 1318,
+            "start_line": 37,
+            "end_line": 37
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q3C2",
+      "status": "supported",
+      "reason": "绑定片段原文明确给出贷款余额 AUD 800,000。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为教学假设贷款余额"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "AUD 800,000 与原文一致"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "假设无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "句意与原文一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q3C2",
+      "status": "supported",
+      "reason": "绑定片段原文明确给出贷款余额 AUD 800,000。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为教学假设贷款余额"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "AUD 800,000 与原文一致"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "假设无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "句意与原文一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "按简化定义，当前市场价值等于固定贷款余额时，房产净权益为零。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "简化定义：当前市场价值小于固定贷款余额时，房产净权益为负；等于贷款余额时净权益为零。"
+        }
+      ],
+      "claim_key": "Q3C3",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "TASK",
+            "quote": "简化定义：当前市场价值小于固定贷款余额时，房产净权益为负；等于贷款余额时净权益为零。",
+            "body_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+            "source_url": "frozen/task.md",
+            "fetched_at": "not_applicable",
+            "start_char": 1340,
+            "end_char": 1382,
+            "start_line": 38,
+            "end_line": 38
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q3C3",
+      "status": "supported",
+      "reason": "绑定片段原文明确：等于贷款余额时净权益为零。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为当前市场价值与固定贷款余额"
+        },
+        "value_unit": {
+          "status": "not_applicable",
+          "reason": "定性定义无数值"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "等于时为零的句意与原文一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q3C3",
+      "status": "supported",
+      "reason": "绑定片段原文明确：等于贷款余额时净权益为零。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为当前市场价值与固定贷款余额"
+        },
+        "value_unit": {
+          "status": "not_applicable",
+          "reason": "定性定义无数值"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "等于时为零的句意与原文一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "按简化定义，当前市场价值小于固定贷款余额时，房产净权益为负。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "简化定义：当前市场价值小于固定贷款余额时，房产净权益为负；等于贷款余额时净权益为零。"
+        }
+      ],
+      "claim_key": "Q3C4",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "TASK",
+            "quote": "简化定义：当前市场价值小于固定贷款余额时，房产净权益为负；等于贷款余额时净权益为零。",
+            "body_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+            "source_url": "frozen/task.md",
+            "fetched_at": "not_applicable",
+            "start_char": 1340,
+            "end_char": 1382,
+            "start_line": 38,
+            "end_line": 38
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q3C4",
+      "status": "supported",
+      "reason": "绑定片段原文明确：小于贷款余额时净权益为负。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为当前市场价值与固定贷款余额"
+        },
+        "value_unit": {
+          "status": "not_applicable",
+          "reason": "定性定义无数值"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "小于时为负的句意与原文一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q3C4",
+      "status": "supported",
+      "reason": "绑定片段原文明确：小于贷款余额时净权益为负。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为当前市场价值与固定贷款余额"
+        },
+        "value_unit": {
+          "status": "not_applicable",
+          "reason": "定性定义无数值"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "小于时为负的句意与原文一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "净权益为零的临界市场价值等于固定贷款余额 AUD 800,000。",
+      "kind": "calculation",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。"
+        }
+      ],
+      "calculation": "{\"result\":\"AUD 800,000\",\"expression\":\"loan\",\"inputs\":{\"loan\":\"AUD 800,000\"}}",
+      "claim_key": "Q3C5",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "TASK",
+            "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。",
+            "body_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+            "source_url": "frozen/task.md",
+            "fetched_at": "not_applicable",
+            "start_char": 1279,
+            "end_char": 1318,
+            "start_line": 37,
+            "end_line": 37
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q3C5",
+      "status": "supported",
+      "reason": "由原文定义（等于贷款余额时净权益为零）及贷款余额 AUD 800,000 可推出临界值为 AUD 800,000。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "临界市场价值对应固定贷款余额"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "AUD 800,000 与原文贷款余额一致"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "假设无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "临界值等于贷款余额的推导成立"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q3C5",
+      "status": "supported",
+      "reason": "由原文定义（等于贷款余额时净权益为零）及贷款余额 AUD 800,000 可推出临界值为 AUD 800,000。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "临界市场价值对应固定贷款余额"
+        },
+        "value_unit": {
+          "status": "supported",
+          "reason": "AUD 800,000 与原文贷款余额一致"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "假设无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "临界值等于贷款余额的推导成立"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "相对购价 AUD 1,000,000 的下跌比例为 0.2，即 20%（精确值，无需四舍五入）。",
+      "kind": "calculation",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。"
+        }
+      ],
+      "calculation": "{\"result\":\"20%\",\"expression\":\"(purchase - loan) / purchase\",\"inputs\":{\"purchase\":\"AUD 1,000,000\",\"loan\":\"AUD 800,000\"}}",
+      "claim_key": "Q3C6",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [
+          "unbound_numeric_anchor:percent:20"
+        ],
+        "verified_spans": [
+          {
+            "source_id": "TASK",
+            "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。",
+            "body_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+            "source_url": "frozen/task.md",
+            "fetched_at": "not_applicable",
+            "start_char": 1279,
+            "end_char": 1318,
+            "start_line": 37,
+            "end_line": 37
+          }
+        ],
+        "missing_anchors": [
+          {
+            "unit": "percent",
+            "value": "20"
+          }
+        ],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q3C6",
+      "status": "missing",
+      "reason": "绑定片段只给出购价与贷款余额，未绑定 20% 数值锚点；且 binding_check.errors 非空，按规则必须 missing。",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "下跌比例为 0.2，即 20%（精确值，无需四舍五入）"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "购价与贷款余额主语有绑定"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "20% 未在绑定片段中出现，存在未绑定数值锚点"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "假设无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "比例结果未由绑定证据直接支持"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q3C6",
+      "status": "missing",
+      "reason": "unbound_numeric_anchor:percent:20",
+      "fully_supported": false,
+      "unsupported_parts": [
+        "下跌比例为 0.2，即 20%（精确值，无需四舍五入）"
+      ],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "购价与贷款余额主语有绑定"
+        },
+        "value_unit": {
+          "status": "missing",
+          "reason": "20% 未在绑定片段中出现，存在未绑定数值锚点"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "假设无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "missing",
+          "reason": "比例结果未由绑定证据直接支持"
+        }
+      },
+      "override": "binding_errors"
+    }
+  },
+  {
+    "candidate": {
+      "statement": "基础计算不计交易成本、出售成本、税费和贷款余额变化。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "基础计算不计交易成本、出售成本、税费和贷款余额变化。"
+        }
+      ],
+      "claim_key": "Q3C7",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "TASK",
+            "quote": "基础计算不计交易成本、出售成本、税费和贷款余额变化。",
+            "body_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+            "source_url": "frozen/task.md",
+            "fetched_at": "not_applicable",
+            "start_char": 1488,
+            "end_char": 1514,
+            "start_line": 41,
+            "end_line": 41
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q3C7",
+      "status": "supported",
+      "reason": "绑定片段原文逐字列出不计交易成本、出售成本、税费和贷款余额变化。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为基础计算"
+        },
+        "value_unit": {
+          "status": "not_applicable",
+          "reason": "无金额数值"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "无时间要素"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "限定范围与原文一致"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "排除项句意与原文一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q3C7",
+      "status": "supported",
+      "reason": "绑定片段原文逐字列出不计交易成本、出售成本、税费和贷款余额变化。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为基础计算"
+        },
+        "value_unit": {
+          "status": "not_applicable",
+          "reason": "无金额数值"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "无时间要素"
+        },
+        "scope": {
+          "status": "supported",
+          "reason": "限定范围与原文一致"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "排除项句意与原文一致"
+        }
+      }
+    }
+  },
+  {
+    "candidate": {
+      "statement": "条件算术正确不等于市场预测，抗跌比例不等于下跌概率。",
+      "kind": "fact",
+      "bindings": [
+        {
+          "source_id": "TASK",
+          "quote": "条件算术正确不等于市场预测，抗跌比例不等于下跌概率。"
+        }
+      ],
+      "claim_key": "Q3C8",
+      "literal_errors": [],
+      "binding_check": {
+        "errors": [],
+        "verified_spans": [
+          {
+            "source_id": "TASK",
+            "quote": "条件算术正确不等于市场预测，抗跌比例不等于下跌概率。",
+            "body_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+            "source_url": "frozen/task.md",
+            "fetched_at": "not_applicable",
+            "start_char": 1514,
+            "end_char": 1540,
+            "start_line": 41,
+            "end_line": 41
+          }
+        ],
+        "missing_anchors": [],
+        "derived_results": [],
+        "calculation_errors": [],
+        "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+      }
+    },
+    "model_verdict": {
+      "claim_key": "Q3C8",
+      "status": "supported",
+      "reason": "绑定片段原文明确条件算术不等于市场预测、抗跌比例不等于下跌概率。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为条件算术与抗跌比例"
+        },
+        "value_unit": {
+          "status": "not_applicable",
+          "reason": "无金额数值"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "否定性限定与原文一致"
+        }
+      }
+    },
+    "verdict": {
+      "claim_key": "Q3C8",
+      "status": "supported",
+      "reason": "绑定片段原文明确条件算术不等于市场预测、抗跌比例不等于下跌概率。",
+      "fully_supported": true,
+      "unsupported_parts": [],
+      "checks": {
+        "subject": {
+          "status": "supported",
+          "reason": "主语为条件算术与抗跌比例"
+        },
+        "value_unit": {
+          "status": "not_applicable",
+          "reason": "无金额数值"
+        },
+        "time": {
+          "status": "not_applicable",
+          "reason": "无时间要素"
+        },
+        "scope": {
+          "status": "not_applicable",
+          "reason": "无地区或房型范围"
+        },
+        "meaning": {
+          "status": "supported",
+          "reason": "否定性限定与原文一致"
+        }
+      }
+    }
+  }
+]

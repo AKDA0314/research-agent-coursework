@@ -1,0 +1,41 @@
+{
+  "questions": [
+    {
+      "claim_key": "Q1",
+      "question": "在固定工作中心（-32.1158872, 115.8494353）半径2000米内，冻结资料中可核验的 house 成交样本有哪些（地址、实际 suburb、坐标来源、到中心距离、是否在圈内、成交价、成交日期、土地面积、卧室/卫浴、房型标签），以及最新资料中两个已完成可比年度的 house 中位价与样本量各是多少（含来源字段、年份/准确起止、更新时间、地理范围、房型、指标）？",
+      "completion_condition": "逐条列出圈内/范围未确认样本并绑定来源与访问日期；中位价仅在有结构化年度字段时报告，CalendarYear 起止未明确则标未明确，当前滚动12个月与历史年度分列，2026年未结束不得称完整日历年；无两宗以上可比样本时明确不能推断区域价格趋势。",
+      "query": "REIWA Cockburn Central house sold median price annual sample size; Furlong Street Cockburn Central house sold 成交 土地面积 卧室",
+      "source_type": "房产门户房源页与 suburb profile 结构化数据（reiwa-11/27、equitation31/4、lodge12、paddock29/27/37/61、muriel68、profile、semple-map-11、distance-calculations）"
+    },
+    {
+      "claim_key": "Q2",
+      "question": "同一2公里范围、同一 house 定义下，冻结资料能支持哪些时点的在售数量与当前挂牌（报价、状态、访问时间、成交分栏），以及已取得的政府规划资料（时间、原文页码、适用范围）分别支持哪些规划事实？",
+      "completion_condition": "当前挂牌逐条列报价/状态/访问时间并注明平台标点非测绘边界；历史完整快照缺失则库存变化记 missing；'及周边 suburbs'搜索总数、分页数、挑选案例数不得作圈内库存总量；规划资料只支持规划事实，既往预计住宅数不得当作当前待售/已批准/已开工/已完工套数，缺当期批准/开工/完工数据照实记录。",
+      "query": "REIWA Cockburn Central houses for sale listing count; Cockburn Central Town Centre structure plan dwelling yield Muriel Court local structure plan",
+      "source_type": "在售列表页（current）、suburb profile、政府规划文件（planning、city、muriel-plan）与采集缺口日志（collection-gaps）"
+    },
+    {
+      "claim_key": "Q3",
+      "question": "在教学假设购价 AUD 1,000,000、固定贷款余额 AUD 800,000 下，房产净权益为零与为负的临界市场价值及相对购价的价格下跌比例分别是多少，公式与带单位输入如何表述？",
+      "completion_condition": "给出临界市场价值=AUD 800,000、下跌比例=(1,000,000-800,000)/1,000,000=0.2=20%（保留位数明确）；区分等于临界值（净权益为零）与低于临界值（净权益为负）；声明不计交易成本、出售成本、税费与贷款余额变化，且条件算术不等于市场预测或下跌概率。",
+      "query": "negative equity threshold calculation loan balance 800000 purchase price 1000000 percentage decline",
+      "source_type": "程序计算（基于任务给定教学假设，非页面数据）"
+    }
+  ],
+  "scope_requirements": [
+    "固定工作中心为纬度 -32.1158872、经度 115.8494353 的道路代表点，半径2000米直线距离；不采用沿整条道路外扩缓冲区，不视为11号门牌中心。",
+    "每个样本须记录地址、实际 suburb、坐标来源、到中心距离、是否在2000米内；无坐标样本列为范围未确认，不靠街名猜测。",
+    "REIWA/中介地图坐标仅作平台标点证据，非测绘或产权边界证明；Nominatim 未返回门牌不构成其他来源无法定位的断言。",
+    "房型主对象为 house；平台标 House 但正文称 townhouse 的保留双重标签单列，不称独立屋；unit/apartment/空地/开发地块不混入 house 对比。",
+    "坐标样本为主动选取的公开案例，非全量成交或完整库存，不得宣称圈内总体样本齐全。",
+    "suburb 整体与 Perth 数据仅作单列背景，不升级为2公里范围统计；须披露房型、土地面积、卧室差异。",
+    "不同房屋成交价差不等同同房涨幅；不得据两宗房产判断区域价格趋势。",
+    "结构化金额按原始符号记录，标准化说明属提取记录，保留原始字段与转换来源，不伪装为网页原文。",
+    "区分原始页面、页面内结构化数据、程序计算距离、人工摘录与检索失败记录等来源类型。",
+    "每条事实就近引用 claim_key，证据表附来源、访问日期、数据期间、发布日期（未给出则未给出）与核验状态；支持部分时拆窄陈述或 missing。",
+    "信息截止 2026-11-04 Australia/Perth，运行时不联网补抓；仅使用冻结资料，缺证事实不凭模型记忆补全。",
+    "本次使用 DeepSeek 与冻结资料，不声称复现原 HyperResearch 同模型或单因素实验；旧报告仅作历史参照，不进入模型提示。",
+    "不输出保证收益或确定买入建议；房产完整风险评估超出本次三个事项。",
+    "审查通过不等于独立人工复核通过，human_review 单独记录；RACE/FACT 未运行、未提交。"
+  ]
+}

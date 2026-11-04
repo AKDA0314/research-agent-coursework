@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "claim_key": "Q1",
+      "question": "11 Furlong St, Cockburn Central, WA 的地址拼写、定位与所属 suburb 是否可核实，且 1 公里直线半径内 house 的成交价与 suburb 整体中位价在最近两个完整可比年度区间内分别如何变化？",
+      "completion_condition": "给出核实后的地址/坐标/定位来源与 suburb；列出 1 公里内 house 成交记录（成交日期、价格、面积/卧室等可比条件，挂牌与成交分开）及 suburb 中位价的年度区间起止、发布日期、统计范围、房型、指标、样本量；样本不足或无可比数据时明确标 missing，不拼接不同范围或指标。",
+      "query": "11 Furlong Street Cockburn Central WA 6164 geocode suburb; REIWA Cockburn Central house median price annual; sold house Cockburn Central 6164 1km Furlong Street",
+      "source_type": "政府/地图定位服务、REIWA 郊区统计与成交记录、房产门户成交页"
+    },
+    {
+      "claim_key": "Q2",
+      "question": "同一地理范围（地址 1 公里半径）内 house 类型的在售库存数量在两个时点或期间是否可比较，变化如何；若仅有单时点或仅有 suburb 背景数据，缺口是什么？",
+      "completion_condition": "给出同一范围、house 类型、同一统计定义的在售数量及对应时点/期间与来源；只有一个时点时明确说明不能判断增减；地址附近历史库存缺失时标 missing，suburb 背景数据单列且不升级为附近事实；新房供应/批准/开工/完工若找到仅作单列补充。",
+      "query": "REIWA Cockburn Central for sale house listings count; Cockburn Central house inventory history; Perth house listings 2026 REIWA",
+      "source_type": "REIWA 在售列表页与市场报告、房产门户列表页"
+    },
+    {
+      "claim_key": "Q3",
+      "question": "在购价 AUD 1,000,000、固定贷款余额 AUD 800,000 的教学假设下，房屋当前市场价值的负资产临界值是多少，抗跌幅度如何计算，等于与超过临界值有何区别？",
+      "completion_condition": "列出计算式与算术核验：临界市场价值=800,000，相对购价跌幅=20%；说明等于临界值（净权益为0）与低于临界值（净权益为负）的区别；披露不计交易成本、出售成本、税费及贷款余额随时间变化的简化，并声明抗跌幅度不等于下跌概率预测。",
+      "query": "negative equity definition home value below loan balance; loan-to-value 80% calculation",
+      "source_type": "定义性/教学计算，无需外部市场来源"
+    }
+  ],
+  "scope_requirements": [
+    "信息截止日固定为 2026-10-30 Australia/Perth；更晚发布信息不得冒充截止日前已知。",
+    "地理锚点 11 Furlong St, Cockburn Central, WA；先核实拼写、定位与 suburb，不预设该地址在售或房型已确认。",
+    "研究对象为该地址附近 house 市场，排除 apartment/unit、空地及其他房型；不评估该单幢房屋具体买卖价值。",
+    "“附近”默认 1 公里直线半径，须展示该范围；无法定位时不得声称取得附近数据；扩展范围须写明新边界与理由并单独展示，不静默合并。",
+    "地址附近样本与 Cockburn Central suburb 整体统计分栏；6164 仅辅助定位，不得把邮编或 Perth 数据写成附近数据。",
+    "挂牌价与成交价分开；suburb 中位价仅作区域背景，不代表该房屋估值，不把样本构成变化当作同一房产涨跌。",
+    "三事项证据表须含来源 URL/笔记 ID、发布日期、数据期间、访问日期、核验状态；搜索摘要不得冒充已读原文。",
+    "支持/反对/缺口分开写，历史上涨不得推为未来必涨；不输出保证收益或确定买入建议。",
+    "明确结论边界：三事项不足以完整判断购房风险，未调查风险不得写成不存在。",
+    "本次运行使用 DeepSeek 与冻结资料，不声称复现原 HyperResearch 同模型或单因素实验；RACE/FACT 保持未运行、未提交。"
+  ]
+}

@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from six_step import run_framework, verify_candidate
+from offline_rules import run_framework, verify_candidate
 
 
 def save(path, data):

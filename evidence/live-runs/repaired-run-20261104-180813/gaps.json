@@ -1,0 +1,140 @@
+[
+  {
+    "question": {
+      "claim_key": "Q1",
+      "question": "11 Furlong St, Cockburn Central, WA 的地址拼写、定位与所属 suburb 是否可核实，且 1 公里直线半径内 house 的成交价与 suburb 整体中位价在最近两个完整可比年度区间内分别如何变化？",
+      "completion_condition": "给出核实后的地址/坐标/定位来源与 suburb；列出 1 公里内 house 成交记录（成交日期、价格、面积/卧室等可比条件，挂牌与成交分开）及 suburb 中位价的年度区间起止、发布日期、统计范围、房型、指标、样本量；样本不足或无可比数据时明确标 missing，不拼接不同范围或指标。",
+      "query": "11 Furlong Street Cockburn Central WA 6164 geocode suburb; REIWA Cockburn Central house median price annual; sold house Cockburn Central 6164 1km Furlong Street",
+      "source_type": "政府/地图定位服务、REIWA 郊区统计与成交记录、房产门户成交页"
+    },
+    "gaps": [
+      "地址核实不完整：Nominatim 仅返回 Furlong Street 道路级结果（place_rank 26），未返回 11 号门牌点位，无法确认 11 Furlong St 的精确坐标；suburb 归属 Cockburn Central WA 6164 可由 REIWA 房源页与道路结果支持，但缺少政府/地图服务的门牌级核验。",
+      "1 公里直线半径内 house 成交样本未系统取得：现有 11、27 Furlong St 与 27 Paddock Pde 等记录均未提供与锚点的距离，无法确认是否落在 1 公里内，也未披露半径内样本量。",
+      "suburb 中位价缺少两个完整可比年度区间的成对数值：REIWA 仅给出截至2026年9月的12个月中位价 $975,000 与 21.7% 年增长，未给出前一年度中位价、样本量及精确起止日期，无法计算或核验年度变化。",
+      "挂牌价与成交价未系统分列：仅有零散挂牌（如 31 Equitation Terrace From $895,000、12 Lodge Court Offers Over $1,150,000），无对应成交结果。",
+      "OnTheHouse 的 $939,034 为 AVM 中位估值，与 REIWA 中位成交价口径不同，不能替代成交中位价或用于年度对比。",
+      "REIWA 郊区页的 21.7% 增长未注明是 house 还是全部住宅、也未注明对比期间，存在口径不明。"
+    ]
+  },
+  {
+    "claim_key": "Q1C7",
+    "status": "missing",
+    "reason": "invalid_or_unbound_calculation; unbound_numeric_anchor:$:800000; unbound_numeric_anchor:percent:20",
+    "binding_errors": [
+      "invalid_or_unbound_calculation",
+      "unbound_numeric_anchor:$:800000",
+      "unbound_numeric_anchor:percent:20"
+    ]
+  },
+  {
+    "claim_key": "Q1C8",
+    "status": "missing",
+    "reason": "unbound_numeric_anchor:$:975000",
+    "binding_errors": [
+      "unbound_numeric_anchor:$:975000"
+    ]
+  },
+  {
+    "question": {
+      "claim_key": "Q2",
+      "question": "同一地理范围（地址 1 公里半径）内 house 类型的在售库存数量在两个时点或期间是否可比较，变化如何；若仅有单时点或仅有 suburb 背景数据，缺口是什么？",
+      "completion_condition": "给出同一范围、house 类型、同一统计定义的在售数量及对应时点/期间与来源；只有一个时点时明确说明不能判断增减；地址附近历史库存缺失时标 missing，suburb 背景数据单列且不升级为附近事实；新房供应/批准/开工/完工若找到仅作单列补充。",
+      "query": "REIWA Cockburn Central for sale house listings count; Cockburn Central house inventory history; Perth house listings 2026 REIWA",
+      "source_type": "REIWA 在售列表页与市场报告、房产门户列表页"
+    },
+    "gaps": [
+      "地址 1 公里直线半径内的 house 在售库存：missing。所有来源均未提供以 11 Furlong St 定位点为圆心、1 公里半径内的在售 house 数量，也未披露该半径内的样本量。",
+      "同一地理范围（地址 1 公里半径）、house 房型、同一统计定义在两个时点或期间的在售数量：missing。现有库存数字均为单时点，且口径为 suburb 或 Perth 全市，无法据此判断地址附近库存增加或减少。",
+      "suburb 级 house 在售库存历史：missing。REIWA 与 OnTheHouse 仅给出抓取时点的 suburb 在售总数（268 条含周边 suburb、37 条 suburb 范围），均未按 house 拆分，也无历史时点。",
+      "Perth 全市 active listings 的时点数据（2025 年底低于 2,000、2026 年 4 月 3,669、2026 年 5 月底 5,137）只能作为全市背景单列，不能升级为 Cockburn Central 或地址 1 公里范围的事实。",
+      "口径冲突：REIWA 在售页称 210 properties and houses for sale in Cockburn Central and surrounding suburbs，同页又显示 268 results，两个数字范围与定义不一致，无法作为可比的库存计数。",
+      "新房供应、建筑批准量、开工量、完工量：未取得可单列补充的 Cockburn Central 或地址附近数据；仅有 Perth 全市层面的定性表述，不能替代在售库存变化。"
+    ]
+  },
+  {
+    "claim_key": "Q2C1",
+    "status": "conflict",
+    "reason": "绑定片段自相矛盾：一处称 210 properties and houses（含周边 suburb），另两处称 268 results/properties；且片段未说明抓取日期为 2026-10-30，也未证明未按 house 拆分。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q2C2",
+    "status": "missing",
+    "reason": "片段仅支持 Cockburn Central 有 37 套在售、6 套出租，未提及抓取日期 2026-10-30，也未说明是否按 house 拆分或有无历史时点。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q2C3",
+    "status": "missing",
+    "reason": "unbound_numeric_anchor:percent:16.0; unbound_numeric_anchor:percent:20.7",
+    "binding_errors": [
+      "unbound_numeric_anchor:percent:16.0",
+      "unbound_numeric_anchor:percent:20.7"
+    ]
+  },
+  {
+    "claim_key": "Q2C4",
+    "status": "missing",
+    "reason": "片段称 active listings 在 end of December 降至 2,000 以下，但未标明是 2025 年 12 月底；年份与具体时点无绑定证据。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q2C6",
+    "status": "missing",
+    "reason": "片段仅显示当前住宅挂牌标题及 31 Equitation Terrace 一条 House 挂牌，未支持“共 6 条”“仅 1 条 House”“其余为 Unit/Apartment”，也未证明抓取日期或无历史时点。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q2C7",
+    "status": "missing",
+    "reason": "片段仅列出 31 Equitation Terrace、12 Lodge Court、4 Equitation Terrace、51 Muriel Court 的挂牌价，未标注房型为 House/Townhouse，未含 S4 Verna Court，也未证明前 20 条范围或抓取日期。",
+    "binding_errors": []
+  },
+  {
+    "question": {
+      "claim_key": "Q3",
+      "question": "在购价 AUD 1,000,000、固定贷款余额 AUD 800,000 的教学假设下，房屋当前市场价值的负资产临界值是多少，抗跌幅度如何计算，等于与超过临界值有何区别？",
+      "completion_condition": "列出计算式与算术核验：临界市场价值=800,000，相对购价跌幅=20%；说明等于临界值（净权益为0）与低于临界值（净权益为负）的区别；披露不计交易成本、出售成本、税费及贷款余额随时间变化的简化，并声明抗跌幅度不等于下跌概率预测。",
+      "query": "negative equity definition home value below loan balance; loan-to-value 80% calculation",
+      "source_type": "定义性/教学计算，无需外部市场来源"
+    },
+    "gaps": [
+      "本项为教学静态情景，购价与贷款余额非用户真实财务信息，也非目标地址市场估值。",
+      "未计入交易成本、出售成本、税费及贷款余额随时间变化；扣除出售成本的净回款需另列定义与假设，本回答未计算。",
+      "抗跌幅度仅为临界条件计算，不构成下跌概率预测或买入建议。"
+    ]
+  },
+  {
+    "claim_key": "Q3C2",
+    "status": "missing",
+    "reason": "invalid_or_unbound_calculation",
+    "binding_errors": [
+      "invalid_or_unbound_calculation"
+    ]
+  },
+  {
+    "claim_key": "Q3C3",
+    "status": "missing",
+    "reason": "invalid_or_unbound_calculation; unbound_numeric_anchor:percent:20",
+    "binding_errors": [
+      "invalid_or_unbound_calculation",
+      "unbound_numeric_anchor:percent:20"
+    ]
+  },
+  {
+    "claim_key": "Q3C4",
+    "status": "missing",
+    "reason": "unbound_numeric_anchor:AUD:800000",
+    "binding_errors": [
+      "unbound_numeric_anchor:AUD:800000"
+    ]
+  },
+  {
+    "claim_key": "Q3C5",
+    "status": "missing",
+    "reason": "unbound_numeric_anchor:AUD:800000",
+    "binding_errors": [
+      "unbound_numeric_anchor:AUD:800000"
+    ]
+  }
+]

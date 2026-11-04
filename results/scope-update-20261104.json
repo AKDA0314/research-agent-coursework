@@ -1,0 +1,35 @@
+{
+  "status": "scope_revision_recorded_not_run",
+  "user_instruction": "Furlong Street 道路附近2公里的范围都可以。这里是个开发区。",
+  "previous_task_sha256": "5203bace7a264be8dbdfc8b8ea1aa4a9bd47510300eb2ec961d1133b0f8d01e8",
+  "new_working_scope": {
+    "radius_m": 2000,
+    "distance": "straight_line",
+    "anchor": {
+      "type": "street_representative_point_not_house_number",
+      "name": "Furlong Street, Cockburn Central",
+      "lat": -32.1158872,
+      "lon": 115.8494353,
+      "source": "existing frozen Nominatim result; OSM way 1082972044",
+      "precision_limit": "Not the verified location of 11 Furlong Street; not a 2km buffer around the entire road geometry"
+    },
+    "population": "house only; apartment/unit/land separate",
+    "suburb_rule": "Include a property only after checking distance; label actual suburb, do not substitute whole-suburb data for radius samples"
+  },
+  "planning_context": {
+    "user_description": "development area",
+    "official_discovery_links": [
+      "https://www.cockburn.wa.gov.au/Building-Planning-and-Roads/Town-Planning-and-Development/Structure-Plans/Current-Development-Projects/Cockburn-Central-Town-Centre",
+      "https://www.wa.gov.au/government/document-collections/city-of-cockburn-planning-information"
+    ],
+    "limit": "These links establish local planning resources, not the exact plan or zoning of Furlong Street. Check parcel/plan boundaries before assigning it to a development precinct."
+  },
+  "next_evidence_needed": [
+    "Coordinates or mapped geometry for each property, distance to declared anchor, source and timestamp",
+    "Comparable house transaction dates/attributes",
+    "Historical inventory snapshots with consistent spatial/property definitions",
+    "Planning boundaries and project delivery stage; approvals are not completed supply"
+  ],
+  "provenance": "New user-authorized scope. Do not edit old frozen task/corpus/reports or describe future 2km work as the same-task comparison. New task version and freeze required before another research run.",
+  "api_calls": 0
+}

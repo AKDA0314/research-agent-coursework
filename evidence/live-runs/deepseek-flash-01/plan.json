@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "claim_key": "Q1",
+      "question": "11 Furlong St, Cockburn Central, WA 的地址拼写、定位与所属 suburb 是否可核实，且以该定位点 1 公里直线半径内的 house 成交（日期、价格、面积/卧室等可比条件）有哪些？",
+      "completion_condition": "给出核实后的地址与定位来源；披露 1 公里半径内 house 成交样本量与逐条记录（成交日期、价格、可比条件、来源 ID、发布日期、访问日期、核验状态）；样本不足时明确标 missing 并说明是否扩展边界及理由。",
+      "query": "11 Furlong Street Cockburn Central WA geocode; REIWA sold Cockburn Central house 1km Furlong Street",
+      "source_type": "地理编码服务 + 房产成交记录（REIWA/OnTheHouse）"
+    },
+    {
+      "claim_key": "Q2",
+      "question": "Cockburn Central 同一地理范围、house 类型的价格变化与在售库存变化，在最近两个已发布完整可比的年度区间及两个时点分别是什么？suburb 整体统计与地址附近样本如何分栏？",
+      "completion_condition": "逐项记录统计期起止、发布日期、范围、房型、指标、样本量；挂牌价与成交价分开；库存若仅单一时点则标 missing，不以新房供应/批准量替代；suburb 背景数据单列不升级为附近事实。",
+      "query": "REIWA Cockburn Central suburb median house price annual; REIWA for sale Cockburn Central listings count; Perth September 2026 quarter price growth",
+      "source_type": "suburb 统计页 + 在售列表页 + 市场报告"
+    },
+    {
+      "claim_key": "Q3",
+      "question": "在购价 AUD 1,000,000、固定贷款余额 AUD 800,000 的静态假设下，房屋市值低于贷款余额的临界值、抗跌幅度及等于/超过临界值的区别是什么，简化假设有哪些？",
+      "completion_condition": "列出计算式与算术核验；说明临界市值=800,000、抗跌幅度=20%；区分等于与低于临界值；披露不计交易成本、出售成本、税费及贷款余额变化；声明不等于下跌概率预测。",
+      "query": "negative equity threshold calculation loan balance 800000 purchase price 1000000",
+      "source_type": "条件计算（基于任务给定假设，无需外部来源）"
+    }
+  ],
+  "scope_requirements": [
+    "信息截止日固定为 2026-10-30 Australia/Perth，更晚信息不得冒充截止日前已知",
+    "地理锚点 11 Furlong St, Cockburn Central, WA；先核实地址，不预设该房在售或房型已确认",
+    "研究对象为该地址附近 house 市场，排除 apartment/unit、空地及其他房型",
+    "“附近”默认 1 公里直线半径，须展示范围；无法定位不得声称取得附近数据",
+    "地址附近样本与 Cockburn Central suburb 整体统计分栏；6164 仅辅助定位，不把邮编或 Perth 数据写成附近数据",
+    "样本少时先披露样本量与不足；扩展范围须写明新边界与理由并单独展示，不静默合并",
+    "三事项证据表须含来源 URL/笔记 ID、发布日期、数据期间、访问日期、核验状态",
+    "区分观察到的事实、条件计算与推断；搜索摘要不得冒充已读原文",
+    "结论边界：三事项不足以完整判断购房风险，不把未调查风险写成不存在，不输出保证收益或确定买入建议",
+    "历史 HyperResearch 安装/路线为历史执行约束；本次用 DeepSeek 与冻结资料，不声称复现同模型或单因素实验"
+  ]
+}

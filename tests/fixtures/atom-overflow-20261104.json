@@ -1,0 +1,527 @@
+{
+  "source_run": "furlong-2km-fixed-20261104-190259",
+  "response_sha256": "7d7a73c592180e5714826f654176e9b79c283fc9becf3c8fc85d1a92f6b7af9d",
+  "finish_reason": "stop",
+  "proposal": {
+    "candidates": [
+      {
+        "atoms": [
+          {
+            "statement": "11 Furlong Street, Cockburn Central WA 6164 的成交价为 $768,000，成交日期 13 May 2025。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "reiwa-11",
+                "quote": "Sold price: $768,000"
+              },
+              {
+                "source_id": "reiwa-11",
+                "quote": "Sold: 13 May 2025"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "11 Furlong Street 平台标 House，但正文称其为 4x3 Townhouse（双重标签）。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "reiwa-11",
+                "quote": "\"PropertyType\": \"House\""
+              },
+              {
+                "source_id": "reiwa-11",
+                "quote": "Modern Mojo Living: 4x3 Townhouse!"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "11 Furlong Street 为 4 卧 3 卫 2 车位，土地面积 172m²。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "reiwa-11",
+                "quote": "\"Beds\": 4,"
+              },
+              {
+                "source_id": "reiwa-11",
+                "quote": "\"Baths\": 3,"
+              },
+              {
+                "source_id": "reiwa-11",
+                "quote": "\"Cars\": 2,"
+              },
+              {
+                "source_id": "reiwa-11",
+                "quote": "\"LandsizeHtml\": \"172m<sup><small>2</small></sup>\""
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "11 Furlong Street 平台地图坐标 -32.1160059, 115.849158，距工作中心 29.3 米，在 2000 米圈内。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"source_id\": \"reiwa-11\""
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"distance_m\": 29.3,"
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"within_2000m\": true,"
+              }
+            ],
+            "derivations": []
+          }
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "statement": "27 Furlong Street, Cockburn Central WA 6164 的成交价为 $940,000，成交日期 29 Jan 2026。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "reiwa-27",
+                "quote": "Sold price: $940,000"
+              },
+              {
+                "source_id": "reiwa-27",
+                "quote": "Sold: 29 Jan 2026"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "27 Furlong Street 平台标 House，为 4 卧 2 卫 2 车位，土地面积 187m²。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "reiwa-27",
+                "quote": "\"PropertyType\": \"House\","
+              },
+              {
+                "source_id": "reiwa-27",
+                "quote": "\"Beds\": 4,"
+              },
+              {
+                "source_id": "reiwa-27",
+                "quote": "\"Baths\": 2,"
+              },
+              {
+                "source_id": "reiwa-27",
+                "quote": "\"LandsizeHtml\": \"187m<sup><small>2</small></sup>\""
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "27 Furlong Street 平台地图坐标 -32.1154786, 115.8493133，距工作中心 46.9 米，在 2000 米圈内。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"source_id\": \"reiwa-27\""
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"distance_m\": 46.9,"
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"within_2000m\": true,"
+              }
+            ],
+            "derivations": []
+          }
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "statement": "68 Muriel Court, Cockburn Central WA 6164 的成交价为 $915,000，成交日期 09 Dec 2025。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "muriel68",
+                "quote": "Sold price: $915,000"
+              },
+              {
+                "source_id": "muriel68",
+                "quote": "Sold: 09 Dec 2025"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "68 Muriel Court 平台标 House，为 4 卧 2 卫 2 车位，土地面积 168m²。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "muriel68",
+                "quote": "\"PropertyType\": \"House\","
+              },
+              {
+                "source_id": "muriel68",
+                "quote": "\"Beds\": 4,"
+              },
+              {
+                "source_id": "muriel68",
+                "quote": "\"Baths\": 2,"
+              },
+              {
+                "source_id": "muriel68",
+                "quote": "\"LandsizeHtml\": \"168m<sup><small>2</small></sup>\""
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "68 Muriel Court 平台地图坐标 -32.116762, 115.8489532，距工作中心 107.3 米，在 2000 米圈内。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"source_id\": \"muriel68\""
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"distance_m\": 107.3,"
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"within_2000m\": true,"
+              }
+            ],
+            "derivations": []
+          }
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "statement": "27 Paddock Parade, Cockburn Central WA 6164 的成交价为 $1,000,000，成交日期 22 May 2026。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "paddock27",
+                "quote": "Sold price: $1,000,000"
+              },
+              {
+                "source_id": "paddock27",
+                "quote": "Sold: 22 May 2026"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "27 Paddock Parade 平台标 House，正文称 townhouse（双重标签），3 卧 2 卫 2 车位，土地面积 158m²。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "paddock27",
+                "quote": "\"PropertyType\": \"House\","
+              },
+              {
+                "source_id": "paddock27",
+                "quote": "move-in ready townhouse"
+              },
+              {
+                "source_id": "paddock27",
+                "quote": "\"Beds\": 3,"
+              },
+              {
+                "source_id": "paddock27",
+                "quote": "\"LandsizeHtml\": \"158m<sup><small>2</small></sup>\""
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "27 Paddock Parade 平台地图坐标 -32.1176315, 115.8477632，距工作中心 249.8 米，在 2000 米圈内。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"source_id\": \"paddock27\""
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"distance_m\": 249.8,"
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"within_2000m\": true,"
+              }
+            ],
+            "derivations": []
+          }
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "statement": "37 Paddock Parade, Cockburn Central WA 6164 的成交价为 $995,000，成交日期 24 Jul 2026。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "paddock37",
+                "quote": "Sold price: $995,000"
+              },
+              {
+                "source_id": "paddock37",
+                "quote": "Sold: 24 Jul 2026"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "37 Paddock Parade 平台标 House，为 4 卧 2 卫 2 车位，土地面积 192m²。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "paddock37",
+                "quote": "\"PropertyType\": \"House\","
+              },
+              {
+                "source_id": "paddock37",
+                "quote": "\"Beds\": 4,"
+              },
+              {
+                "source_id": "paddock37",
+                "quote": "\"Baths\": 2,"
+              },
+              {
+                "source_id": "paddock37",
+                "quote": "\"LandsizeHtml\": \"192m<sup><small>2</small></sup>\""
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "37 Paddock Parade 平台地图坐标 -32.1176772, 115.8480752，距工作中心 236.7 米，在 2000 米圈内。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"source_id\": \"paddock37\""
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"distance_m\": 236.7,"
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"within_2000m\": true,"
+              }
+            ],
+            "derivations": []
+          }
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "statement": "61 Paddock Parade, Cockburn Central WA 6164 的成交价为 $950,000，成交日期 27 Jun 2026。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "paddock61",
+                "quote": "Sold price: $950,000"
+              },
+              {
+                "source_id": "paddock61",
+                "quote": "Sold: 27 Jun 2026"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "61 Paddock Parade 平台标 House，为 3 卧 2 卫 2 车位，土地面积 192m²。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "paddock61",
+                "quote": "\"PropertyType\": \"House\","
+              },
+              {
+                "source_id": "paddock61",
+                "quote": "\"Beds\": 3,"
+              },
+              {
+                "source_id": "paddock61",
+                "quote": "\"Baths\": 2,"
+              },
+              {
+                "source_id": "paddock61",
+                "quote": "\"LandsizeHtml\": \"192m<sup><small>2</small></sup>\""
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "61 Paddock Parade 平台地图坐标 -32.1180945, 115.8491033，距工作中心 247.4 米，在 2000 米圈内。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"source_id\": \"paddock61\""
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"distance_m\": 247.4,"
+              },
+              {
+                "source_id": "distance-calculations",
+                "quote": "\"within_2000m\": true,"
+              }
+            ],
+            "derivations": []
+          }
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "statement": "REIWA Cockburn Central 郊区结构化字段 CalendarYear 2025 的 house 中位价为 845000，HouseCount 为 29。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "profile",
+                "quote": "\"CalendarYear\": 2025,"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"MedianHousePrice\": 845000,"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"HouseCount\": 29,"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "REIWA Cockburn Central 郊区结构化字段 CalendarYear 2024 的 house 中位价为 750000，HouseCount 为 20。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "profile",
+                "quote": "\"CalendarYear\": 2024,"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"MedianHousePrice\": 750000,"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"HouseCount\": 20,"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "上述年度字段仅标 CalendarYear，准确起止未明确；标准化记录将 2025 年写为 AUD 845,000、2024 年写为 AUD 750,000，属提取记录而非网页原句。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "profile",
+                "quote": "\"CalendarYear\": 2025,"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"normalized_price\": \"AUD 845,000\""
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"normalized_price\": \"AUD 750,000\""
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "2025 年相对 2024 年 house 中位价变化约为 +12.67%（(845000-750000)/750000，保留两位小数）。",
+            "kind": "calculation",
+            "bindings": [
+              {
+                "source_id": "profile",
+                "quote": "\"MedianHousePrice\": 845000,"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"MedianHousePrice\": 750000,"
+              }
+            ],
+            "derivations": [
+              {
+                "result": "12.67%",
+                "expression": "(p2025 - p2024) / p2024",
+                "inputs": {
+                  "p2025": "845000",
+                  "p2024": "750000"
+                },
+                "decimal_places": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "statement": "REIWA 郊区页面当前滚动口径为截至 2026 年 10 月的 12 个月，中位房价 $999,500，数据更新于 2026-11-04，属 suburb 背景而非 2 公里范围统计。",
+            "kind": "fact",
+            "bindings": [
+              {
+                "source_id": "profile",
+                "quote": "Median price data last updated 4 November 2026 containing transactions for the 12 month period ending October 2026"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"MedianHouseSalePrice\": 999500,"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"CountOfHousesSold\": 25,"
+              }
+            ],
+            "derivations": []
+          },
+          {
+            "statement": "结构化字段 CalendarYear 2026 的 house 中位价 999500、HouseCount 25，但 2026 年未结束，不能称为完整日历年。",
+            "kind": "inference",
+            "bindings": [
+              {
+                "source_id": "profile",
+                "quote": "\"CalendarYear\": 2026,"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"MedianHousePrice\": 999500,"
+              },
+              {
+                "source_id": "profile",
+                "quote": "\"HouseCount\": 25,"
+              }
+            ],
+            "derivations": []
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      "圈内成交样本仅 6 宗（11 Furlong、27 Furlong、68 Muriel、27/37/61 Paddock），均为主动选取案例，不是全量成交；不能据此推断区域价格趋势。",
+      "11 Furlong 与 27 Paddock 平台标 House 但正文称 townhouse，属双重标签，不能作为独立屋对比。",
+      "profile 年度字段仅标 CalendarYear，准确起止与首次发布日期未核实；2026 年未结束，当前滚动 12 个月与历史年度已分列。",
+      "profile 数据地理范围为 Cockburn Central suburb，不能升级为 2 公里范围统计。",
+      "在售样本（31/4 Equitation、12 Lodge、29 Paddock）无 SoldDate，仅能说挂牌报价，不能当成交。",
+      "坐标均为平台地图标点，非测绘或产权边界证明；距离为程序 Haversine 派生数据。",
+      "未取得两个时点同范围同定义的 2 公里 house 完整库存快照，库存变化 missing。"
+    ]
+  }
+}

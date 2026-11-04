@@ -1,0 +1,62 @@
+{
+  "kind": "same-input observational comparison; not stability or quality benchmark",
+  "old": {
+    "run": "my-run-20261101-144909",
+    "status": "failed",
+    "api_calls": 9,
+    "estimated_cost_cny": 0.767612,
+    "task_sha256": "5203bace7a264be8dbdfc8b8ea1aa4a9bd47510300eb2ec961d1133b0f8d01e8",
+    "corpus_sha256": "f677d26e094f67e1e8195d0a68b9a8c2f56e6926bf114b59826795a628c7fcf3",
+    "claim_counts": {
+      "supported": 21,
+      "missing": 2
+    },
+    "audit_completion_tokens": 5000,
+    "audit_finish_reason": "length",
+    "report_sha256": "904ba34f8fc460f4d9da0f62a69f6b5368d783b81f21e5cba48044adbfee9d44"
+  },
+  "new": {
+    "run": "repaired-run-20261104-180813",
+    "status": "blocked_review",
+    "api_calls": 9,
+    "estimated_cost_cny": 0.511432,
+    "task_sha256": "5203bace7a264be8dbdfc8b8ea1aa4a9bd47510300eb2ec961d1133b0f8d01e8",
+    "corpus_sha256": "f677d26e094f67e1e8195d0a68b9a8c2f56e6926bf114b59826795a628c7fcf3",
+    "claim_counts": {
+      "supported": 10,
+      "missing": 11,
+      "conflict": 1
+    },
+    "audit_completion_tokens": 1589,
+    "audit_finish_reason": "stop",
+    "report_sha256": "528fc25bd0719c70812a88219570f4aa164821432a9bdef54c2a08708dad6aa9"
+  },
+  "same_task": true,
+  "same_corpus": true,
+  "new_audit": {
+    "issues_count": 10,
+    "coverage_count": 15,
+    "coverage_all_covered": true,
+    "mechanical_issues": [],
+    "effective_passed": false
+  },
+  "findings": [
+    "旧 Q1C4 的中位价主张在新运行对应 Q1C3，现已绑定 #### $975,000；其他子句仍有缺证。跨运行不能按编号直接对照。",
+    "旧 Q1C6 的 90.60% 主张没有在新运行重新提出；不能声称它在本次真实运行已修好。",
+    "新 Q1C8 未绑定比较用的 $975,000，被数值规则拒绝。",
+    "新 Q2C3 绑定原文确有 16.0 per cent 和 20.7 per cent；旧正则不识别分词拼写，造成误拦。已补代码与测试；本次状态保持不变。",
+    "新 Q1C3、Q2C5 的模型理由承认部分子句缺证，仍给整条 supported；全句语义核验仍不可靠。",
+    "计算输入将 TASK 中 AUD 改写为 $，另有未命名常数100或比例/百分比转换不完整。当前契约未被模型正确遵循；不能将算术拒绝解释为数学结果错误。",
+    "新报告仍用 house 年增长/同街上行等超过证据边界的说法。报告审查也需复核：issues 第8/9条本身承认信息已披露，不能把所有问题等同实质错误。",
+    "39 tests pass after percent-spelling fix. No API calls or report rewrite in this review."
+  ],
+  "post_run_fix": {
+    "mechanical_replay_claim": "Q2C3",
+    "remaining_binding_errors": [],
+    "semantic_review": "not rerun",
+    "code_sha256": "2c3bdf437d3c844e0afa977baf4cec0023c63c3885da3a8769b488438785cbc4"
+  },
+  "preserved_files": 97,
+  "changed_historical_files": [],
+  "formal_race_fact": "not_run"
+}

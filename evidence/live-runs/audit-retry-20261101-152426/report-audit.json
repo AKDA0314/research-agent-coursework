@@ -1,0 +1,101 @@
+{
+  "passed": false,
+  "issues": [
+    "Q1C1 称地址核实一致，但仅道路级定位，门牌级未核实，范围说明夸大",
+    "Q1C4 中位价 $975,000 未在绑定引文中出现，仅引文含更新日期",
+    "Q1C6 90.60% 上涨未在绑定引文中出现，绑定仅含中位估值",
+    "Q1C5 绑定引文仅含 3BR/4BR 数值，未含无样本量/无上期区间",
+    "Q2C2 绑定引文仅列地址，未含房型混含原文，绑定偏弱",
+    "Q2C5 两时点数据来自不同文章，未说明同一统计定义，拼接风险",
+    "Q2C6 引文称 surged by 20% to 3,669，报告未提20%增幅，选择性引用",
+    "事项3 缺口称未考虑只还息/再融资，超出任务要求，属扩大范围",
+    "3.1 将同街两笔不同房产价差列为支持材料，易被读成上涨证据",
+    "报告称 Q1C8/Q2C7 为观察到的事实，但属定位检索限制推断",
+    "结论边界称三事项不足判断风险，但未明确未调查风险不等于不存在已写，尚可",
+    "引用索引 Q1C1/Q1C2 等重复列出，未影响结论但显示生成瑕疵"
+  ],
+  "task_coverage": [
+    {
+      "requirement": "核实地址拼写、定位与所属 suburb",
+      "status": "covered",
+      "reason": "报告披露仅道路级定位、门牌级未核实，未预设出售"
+    },
+    {
+      "requirement": "展示1公里半径范围；无法定位不得声称附近数据",
+      "status": "covered",
+      "reason": "明确1公里半径未能界定，不声称取得附近样本"
+    },
+    {
+      "requirement": "附近样本与 suburb 整体统计分栏，6164仅辅助",
+      "status": "covered",
+      "reason": "报告分栏并反复限定 suburb 背景"
+    },
+    {
+      "requirement": "事项1：最近两个完整可比年度区间及样本量",
+      "status": "covered",
+      "reason": "明确记录无可比年度区间缺口，未拼接趋势"
+    },
+    {
+      "requirement": "事项1：附近 house 成交记录及挂牌/成交分开",
+      "status": "covered",
+      "reason": "列单笔成交，挂牌与成交未系统配对已披露"
+    },
+    {
+      "requirement": "事项2：同范围同房型同时点库存变化",
+      "status": "covered",
+      "reason": "地址附近历史库存标 missing，suburb/Perth 不升级"
+    },
+    {
+      "requirement": "事项2：新房供应/批准量单列不替代库存",
+      "status": "covered",
+      "reason": "披露未取得且不能替代在售库存"
+    },
+    {
+      "requirement": "事项3：计算式、临界值、等于/超过区别及算术",
+      "status": "covered",
+      "reason": "Q3C3–Q3C7 给出并复核算术"
+    },
+    {
+      "requirement": "事项3：披露交易成本等简化及非概率预测",
+      "status": "covered",
+      "reason": "Q3C8 披露简化与抗跌幅度非概率"
+    },
+    {
+      "requirement": "输出三事项证据表含URL、日期、期间、核验状态",
+      "status": "covered",
+      "reason": "表格含来源、访问日、期间与 supported 状态"
+    },
+    {
+      "requirement": "支持/反对/缺口分开，窄结论不推未来必涨",
+      "status": "covered",
+      "reason": "3.1–3.3 分列并限定窄结论"
+    },
+    {
+      "requirement": "区分事实、条件计算与推断",
+      "status": "covered",
+      "reason": "第4节分类列出"
+    },
+    {
+      "requirement": "结论边界：三事项不足判断风险，不保证收益",
+      "status": "covered",
+      "reason": "第5节明确不足与不输出买入建议"
+    },
+    {
+      "requirement": "引用绑定须逐字支持数值",
+      "status": "missing",
+      "reason": "Q1C4 $975,000、Q1C6 90.60% 等数值未在绑定引文中出现"
+    },
+    {
+      "requirement": "执行约束：light路线、不宣称14.5、RACE/FACT未运行",
+      "status": "covered",
+      "reason": "第6节声明未执行14.5、RACE/FACT未运行"
+    }
+  ],
+  "review_complete": true,
+  "issues_truncated": false,
+  "coverage_truncated": false,
+  "mechanical_issues": [],
+  "effective_passed": false,
+  "human_review": "pending",
+  "same_model_checker": true
+}

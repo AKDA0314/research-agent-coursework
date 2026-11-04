@@ -1,0 +1,7 @@
+{
+  "complete_generation_pairs": 9,
+  "automatic_retries": 0,
+  "key_found_in_run_artifacts": false,
+  "runtime_code_matches_protocol": true,
+  "source_snapshot_scope": "15 post-run saved source bodies; identical historical per-step exposure not established"
+}

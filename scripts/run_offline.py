@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from react_loop import react_loop
-from six_step import run_framework, verify_candidate, citation_only
+from offline_rules import run_framework, verify_candidate, citation_only
 
 
 def save(name, value):

@@ -6,7 +6,27 @@ Formal **RACE and FACT were not run or submitted**.
 
 Authorized public submission repository: [AKDA0314/research-agent-coursework](https://github.com/AKDA0314/research-agent-coursework).
 
+## Latest update — 2026-11-04
+
+- **Current state:** the latest paid run failed at proposal 1 (25 atoms exceeded the 16-atom limit). The overflow repair is tested offline, **not yet rerun against the live model**. No claim of `done`, stability, or instructor acceptance.
+- **63 offline tests pass.** New regressions use saved failed responses, including evidence binding, calculation formats and overflow handling.
+- **Six real run records are now published as review copies:** [run-by-run history](docs/practice-history.md), [reports and traces](evidence/live-runs/README.md), [export manifest](evidence/live-runs/export-manifest.json). Full API payloads and full frozen corpora remain local; public traces retain all events but replace source bodies with hashes.
+- **The 2 km task is a new version:** [task](tasks/furlong-2km-v2/task.md), [scope and snapshot guide](docs/furlong-2km-v2.md). It is not the original HyperResearch task and does not establish a controlled same-task comparison.
+- Latest implementation notes: [binding repair](docs/binding-fix.md), [V2 regression repair](docs/furlong-review-fix.md), [overflow repair](docs/atom-overflow-fix.md).
+
 ## Reproduce the offline work
+
+The historical rule-based runner is now isolated in `src/offline_rules.py`.
+The new [live runner guide](docs/live-run.md) explains the DeepSeek entry point in
+`src/six_step.py`: actual model planning, proposals, checks and report generation
+from the exact task and saved source bodies. It does not import the handcrafted
+classroom candidates. Original local run artifacts are excluded from Git; selected public review copies are exported separately.
+
+The [first real DeepSeek run and comparison](docs/live-comparison-01.md) used
+9 generation calls on 2026-11-01, with an estimated CNY 0.733804 at conservative
+peak rates. A report was generated but remains `blocked_review`. The comparison
+documents report errors, checker misses and audit false alarms; it is not a
+stability or framework-superiority claim.
 
 Python 3.9+ and the standard library are sufficient for the new coursework code:
 
@@ -28,7 +48,7 @@ These commands make no network requests, invoke no language model, and do not ch
 | 2: data flow and actual returns | [Data flow](docs/dataflow.md), [search](evidence/evidence-search-return.txt), [fetch](evidence/evidence-fetch-return.txt) | Historical returned text; fetch JSON was truncated by the original command |
 | 2: isolation and one-factor experiment | [Isolation](results/isolation.json), [property replay A/B](results/property-ablation.json) | Source-module isolation + deterministic offline checker ablation; not a second HyperResearch agent run |
 | 2: product comparison and evaluation protocol | [Comparison](docs/product-comparison.md), [RACE/FACT](docs/evaluation.md) | Public/source evidence; no commercial same-task experiment or official benchmark score |
-| 3: six-step framework | [Code](src/six_step.py), [six-step guide](docs/six-step.md) | Six duties, proposal/check budget, separate stop and review state |
+| 3: six-step framework | [Live code](src/six_step.py), [live guide](docs/live-run.md), [historical replay](src/offline_rules.py) | Live model path separated from the deterministic classroom demonstration |
 | 3: same original property task | [Frozen task](evidence/task.md), [trace](results/six-property.json), [seven-row comparison](docs/six-step.md#same-task-comparison) | Same task text replayed against frozen gaps/assumptions; incomplete evidence remains incomplete |
 | 3: success/conflict demonstrations | [Success](results/six-success.json), [conflict](results/six-conflict.json) | Same checkpoint teaching task, six-unit ceiling; not full-property success |
 | 3: same-source property-subtask pair | [REIWA success](results/six-reiwa-success.json), [REIWA conflict](results/six-reiwa-conflict.json) | Same explicitly narrowed historical-price task and quotation; six units each |
@@ -50,7 +70,7 @@ The six operation units in the classroom are not USD and are not directly compar
 Only whitelisted evidence is exported. Local usernames and absolute home paths are replaced; the export manifest records before/after SHA-256 digests.
 Virtual environments, credentials, OAuth URLs, full chat sessions, and browser profiles are excluded.
 The submission still contains the public property address used in the assignment; prefer a private repository if that research interest is sensitive.
-The external source page is represented by a short quotation and URL, not a full redistributed webpage.
+Historical reports and regression fixtures include selected source material needed to inspect failures. Full raw fetch archives and complete frozen corpus files are not part of this export.
 Upstream HyperResearch source is linked at its commit, not vendored; it is MIT-licensed upstream. Third-party materials retain their original rights.
 
 ## AI assistance and learner responsibility
@@ -60,3 +80,5 @@ Claude's earlier research and closeout are preserved as historical evidence; new
 The learner has not yet personally explained all six decisions or rewritten the AI-authored ReAct loop.
 If “handwritten” requires unaided authorship, this scaffold must be revised by the learner before final submission; this README does not claim otherwise.
 See the [remaining checklist](docs/submission-status.md) before presenting the work as fully accepted coursework.
+
+Evidence-binding repair and regression evidence: [binding-fix](docs/binding-fix.md).

@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts")]
 from react_loop import react_loop
-from six_step import verify_candidate, run_framework, citation_only
+from offline_rules import verify_candidate, run_framework, citation_only
 from run_offline import react_tools
 
 

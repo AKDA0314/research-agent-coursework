@@ -1,0 +1,52 @@
+[
+  {
+    "question": {
+      "claim_key": "Q1",
+      "question": "11 Furlong St, Cockburn Central, WA 的地址拼写、定位与所属 suburb 是否可核实，且以该定位点 1 公里直线半径内的 house 成交（日期、价格、面积/卧室等可比条件）有哪些？",
+      "completion_condition": "给出核实后的地址与定位来源；披露 1 公里半径内 house 成交样本量与逐条记录（成交日期、价格、可比条件、来源 ID、发布日期、访问日期、核验状态）；样本不足时明确标 missing 并说明是否扩展边界及理由。",
+      "query": "11 Furlong Street Cockburn Central WA geocode; REIWA sold Cockburn Central house 1km Furlong Street",
+      "source_type": "地理编码服务 + 房产成交记录（REIWA/OnTheHouse）"
+    },
+    "gaps": [
+      "地址拼写：REIWA 与 Nominatim 均写作“Furlong Street”，与用户“furlong st”一致；但 Nominatim 未返回门牌号 11 的精确坐标，仅返回整条街道，故 11 号的定位与 1 公里半径圆心尚未独立核实。",
+      "1 公里半径内 house 成交样本量无法从现有资料确定：各来源均未提供以 11 Furlong St 为圆心的距离筛选或半径内成交清单；上述成交仅能确认在 Cockburn Central suburb 内，不能确认落在 1 公里内。",
+      "房型口径冲突：11 Furlong St 被 REIWA 标为 House 但描述为 townhouse；27 Paddock Parade 亦为 townhouse 式描述；是否计入“house”需明确规则。",
+      "可比条件不全：多数成交缺建筑面积、卧室数或土地面积（如 37 Paddock Parade、178 Semple Court、3/2 Stockton Bend 仅有价格与日期），无法做同条件价格比较。",
+      "来源发布日期：REIWA 单条成交页未给出页面发布日期，仅有成交日期与抓取时间 2026-10-30；OnTheHouse 页面亦无明确发布日期。",
+      "若需扩展边界（如 suburb 级或更大半径），须按任务单单独展示并说明理由，不得与 1 公里样本静默合并。"
+    ]
+  },
+  {
+    "question": {
+      "claim_key": "Q2",
+      "question": "Cockburn Central 同一地理范围、house 类型的价格变化与在售库存变化，在最近两个已发布完整可比的年度区间及两个时点分别是什么？suburb 整体统计与地址附近样本如何分栏？",
+      "completion_condition": "逐项记录统计期起止、发布日期、范围、房型、指标、样本量；挂牌价与成交价分开；库存若仅单一时点则标 missing，不以新房供应/批准量替代；suburb 背景数据单列不升级为附近事实。",
+      "query": "REIWA Cockburn Central suburb median house price annual; REIWA for sale Cockburn Central listings count; Perth September 2026 quarter price growth",
+      "source_type": "suburb 统计页 + 在售列表页 + 市场报告"
+    },
+    "gaps": [
+      "Cockburn Central 的 house 中位价只有截至 2026 年 9 月的 12 个月这一个期间；缺少前一个完整可比年度的中位价数值，无法计算两个年度区间的价格变化。",
+      "suburb 页的 21.7% 增长没有注明统计期间、房型、指标定义和样本量，不能当作两个完整年度区间的可比涨幅。",
+      "地址附近 1 公里半径内的 house 价格变化：没有以 11 Furlong St 为圆心的半径筛选数据，也没有半径内的成交清单。",
+      "地址附近 1 公里半径内的在售库存：没有历史时点数据，也没有按 house 类型拆分的库存数，应标 missing。",
+      "suburb 级在售库存：REIWA 列表页的 210 套（周边 suburb）和 268 条结果，与 OnTheHouse 的 37 套口径不同，且都只有一个时点，不能据此判断库存增减。",
+      "Perth 全市挂牌数（5,137 套，2026 年 5 月底）和全市价格增长率属于全市背景，不能升级为 Cockburn Central 或地址附近的事实。",
+      "挂牌价与成交价：在售列表只给出挂牌价（如 31 Equitation Terrace 从 $895,000 起、12 Lodge Court 要价超过 $1,150,000），没有对应的成交价，不能混用。",
+      "房型口径冲突：11 Furlong St 被 REIWA 标为 House，但描述为 townhouse；27 Paddock Parade 也是 townhouse 式描述，是否计入 house 需要明确规则。"
+    ]
+  },
+  {
+    "question": {
+      "claim_key": "Q3",
+      "question": "在购价 AUD 1,000,000、固定贷款余额 AUD 800,000 的静态假设下，房屋市值低于贷款余额的临界值、抗跌幅度及等于/超过临界值的区别是什么，简化假设有哪些？",
+      "completion_condition": "列出计算式与算术核验；说明临界市值=800,000、抗跌幅度=20%；区分等于与低于临界值；披露不计交易成本、出售成本、税费及贷款余额变化；声明不等于下跌概率预测。",
+      "query": "negative equity threshold calculation loan balance 800000 purchase price 1000000",
+      "source_type": "条件计算（基于任务给定假设，无需外部来源）"
+    },
+    "gaps": [
+      "若计入出售成本/税费，负资产临界市值会高于 800,000，需另列定义与假设；本资料未给出任何成本数值。",
+      "贷款余额随时间变化（如还本、只付息）会改变临界值，本静态计算未涵盖。",
+      "该计算不涉及 Cockburn Central 实际房价走势，不能据此推断该地址买入风险。"
+    ]
+  }
+]

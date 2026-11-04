@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "stop_reason": "execution_error",
+  "error_type": "RuntimeError",
+  "error": "API stage failed; see redacted error artifact: 09-report_audit",
+  "spent": 6,
+  "remaining_budget": 0,
+  "deliverable": false,
+  "human_review": "pending",
+  "api_calls": 9,
+  "estimated_cost_cny": 0.767612,
+  "max_cny": 5.0,
+  "task_sha256": "5203bace7a264be8dbdfc8b8ea1aa4a9bd47510300eb2ec961d1133b0f8d01e8",
+  "corpus_sha256": "f677d26e094f67e1e8195d0a68b9a8c2f56e6926bf114b59826795a628c7fcf3",
+  "finished_utc": "2026-11-01T06:50:41.011625+00:00",
+  "formal_race_fact": "not_run"
+}

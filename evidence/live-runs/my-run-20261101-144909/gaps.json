@@ -1,0 +1,49 @@
+[
+  {
+    "question": {
+      "claim_key": "Q1",
+      "question": "在 11 Furlong St, Cockburn Central, WA 的 1 公里直线半径内，house 类型的成交价在最近两个已发布、完整且可比的年度区间中如何变化？逐项记录实际起止日期、发布日期、统计范围、房型、指标和样本量；挂牌价与成交价分开。",
+      "completion_condition": "已核实地址定位与所属 suburb；已列出至少两个可比年度区间的 house 成交指标（含起止日期、发布日期、样本量），或明确记录无法取得可比数据的具体缺口；附近样本与 suburb 整体统计分栏呈现。",
+      "query": "Cockburn Central WA house sold prices 2025 2026 REIWA 11 Furlong Street median house price annual",
+      "source_type": "房产交易记录与官方 suburb 统计（REIWA sold listings、suburb profile、OnTheHouse）"
+    },
+    "gaps": [
+      "未取得 11 Furlong St 的门牌级坐标，无法界定 1 公里直线半径，因而无法确认哪些成交落在半径内。",
+      "未找到任何按 1 公里半径统计的 house 成交中位价或样本量数据；现有成交均为单笔挂牌页记录。",
+      "未取得最近两个已发布、完整且可比的年度区间（含起止日期、发布日期、样本量）的 house 成交指标；REIWA suburb 页面只给单一 12 个月期间中位数，无样本量、无上一可比期间数值。",
+      "挂牌价与成交价未系统分列：仅有零散在售挂牌（如 31 Equitation Terrace From $895,000、12 Lodge Court Offers Over $1,150,000），无对应成交配对。",
+      "suburb 级指标口径冲突：REIWA 中位 $975,000（成交中位）与 Cotality AVM 中位估值 $939,034 定义不同，不可互换或拼接成趋势。",
+      "OnTheHouse 的 27 Paddock Parade 两时点成交未标注与目标地址的距离，不能升级为附近事实。"
+    ]
+  },
+  {
+    "question": {
+      "claim_key": "Q2",
+      "question": "在同一地理范围（地址 1 公里半径）与 house 类型、同一统计定义下，Cockburn Central 的在售库存数量在两个时点或期间如何变化？若只有单一时点数据，须标为 missing 而非推断增减。",
+      "completion_condition": "已找到同一范围、同一房型、同一统计定义的两个时点/期间在售数量，或明确记录地址附近历史库存为 missing；suburb 背景库存数据单独说明，不升级为附近事实；新房供应/建筑批准等指标单列且不替代在售库存。",
+      "query": "Cockburn Central WA houses for sale listings count 2025 2026 REIWA for-sale inventory",
+      "source_type": "在售挂牌列表与市场报告（REIWA for-sale、市场文章）"
+    },
+    "gaps": [
+      "未找到同一地理范围（11 Furlong St 1 公里直线半径）、house 类型、同一统计定义在两个时点或期间的在售数量；地址附近历史库存标为 missing。",
+      "未取得门牌级坐标，1 公里半径无法界定，因此任何 suburb 或 Perth 数据都不能升级为附近事实。",
+      "suburb 级在售数存在口径冲突：REIWA 页面 268 条结果（含周边 suburb 与多房型）与 OnTheHouse 37 套（未分房型）不可互换，且均非 house 单列。",
+      "Perth 全市活跃挂牌的多个时点（2025 年末 <2,000、2026-04-12 四周 3,669、2026-05 末 5,137）统计窗口与范围不一致，不能拼接成 Cockburn Central 库存趋势。",
+      "新房供应、建筑批准量、开工量、完工量等指标未取得，且按任务边界不能替代在售库存变化。"
+    ]
+  },
+  {
+    "question": {
+      "claim_key": "Q3",
+      "question": "在购价 AUD 1,000,000、固定贷款余额 AUD 800,000 的教学假设下，房屋当前市场价值低于多少时净权益为负？列出计算式、临界值，并区分等于临界值与超过临界值的情形，检查算术。",
+      "completion_condition": "已给出计算式与临界值（市场价值 < AUD 800,000 时净权益为负）、等于临界值（净权益为 0）与超过临界值（净权益为负）的区别，算术经复核；已披露不计交易成本、出售成本、税费及贷款余额随时间变化的简化，并声明抗跌幅度不等于下跌概率预测。",
+      "query": "negative equity loan balance 800000 property value threshold calculation",
+      "source_type": "条件计算（基于任务给定假设，无需外部来源）"
+    },
+    "gaps": [
+      "本项为任务给定假设下的静态条件计算，未使用任何外部市场数据，不能据此推断目标地址或 Cockburn Central house 的实际负资产概率。",
+      "未计入交易成本、出售成本、税费及贷款余额随时间变化；若讨论扣除出售成本后的净回款，需另列定义与假设，本轮未做。",
+      "固定贷款余额为简化假设，未考虑只还息/本息摊还、再融资或房价与贷款余额同时变动的情形。"
+    ]
+  }
+]

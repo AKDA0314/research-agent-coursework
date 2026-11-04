@@ -1,0 +1,14 @@
+{
+  "offline_tests_passed": 63,
+  "new_tests": 5,
+  "fixture": "tests/fixtures/atom-overflow-20261104.json",
+  "actual_atoms": 25,
+  "selected_atoms": 16,
+  "deferred_atoms": 9,
+  "paid_api_calls": 0,
+  "preservation": {
+    "checked_files": 62814,
+    "changed_files": [],
+    "preserved": true
+  }
+}

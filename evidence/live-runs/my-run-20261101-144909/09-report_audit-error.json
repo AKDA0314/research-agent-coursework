@@ -1,0 +1,7 @@
+{
+  "type": "ValueError",
+  "message": "Output not complete: length",
+  "stage": "report_audit",
+  "elapsed_seconds": 32.857281667,
+  "retry": false
+}

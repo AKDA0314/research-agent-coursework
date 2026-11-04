@@ -1,0 +1,22 @@
+{
+  "status": "blocked_review",
+  "stop_reason": "planned_rounds_completed",
+  "spent": 6,
+  "remaining_budget": 0,
+  "review_status": "not_passed",
+  "human_review": "pending",
+  "deliverable": false,
+  "claim_counts": {
+    "supported": 21,
+    "conflict": 0,
+    "missing": 0
+  },
+  "limits": "One live run; not a stability test, independent expert review, or RACE/FACT evaluation.",
+  "api_calls": 9,
+  "estimated_cost_cny": 0.733804,
+  "max_cny": 5.0,
+  "task_sha256": "5203bace7a264be8dbdfc8b8ea1aa4a9bd47510300eb2ec961d1133b0f8d01e8",
+  "corpus_sha256": "f677d26e094f67e1e8195d0a68b9a8c2f56e6926bf114b59826795a628c7fcf3",
+  "finished_utc": "2026-11-01T06:14:37.572424+00:00",
+  "formal_race_fact": "not_run"
+}

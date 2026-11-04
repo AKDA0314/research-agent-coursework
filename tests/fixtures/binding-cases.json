@@ -1,0 +1,71 @@
+{
+  "provenance": "Real saved candidates from my-run-20261101-144909. Source excerpts only; source line numbers refer to body excluding YAML. No expected verdicts supplied to generation.",
+  "cases": [
+    {
+      "candidate": {
+        "statement": "Cockburn Central suburb 整体 house 中位价为 $975,000，数据最后更新 2026-10-30，含截至 2026 年 9 月的 12 个月成交，来源 Landgate/REIWA；这是 suburb 背景，不是 1 公里半径内数据。",
+        "kind": "fact",
+        "bindings": [
+          {
+            "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+            "quote": "Median price data last updated 30 October 2026 containing transactions for the 12 month period ending September 2026"
+          }
+        ],
+        "calculation": null,
+        "claim_key": "Q1C4",
+        "literal_errors": []
+      },
+      "model_verdict": {
+        "claim_key": "Q1C4",
+        "status": "supported",
+        "reason": "suburb 页面原文含 Median price data last updated 30 October 2026 containing transactions for the 12 month period ending September 2026，Source: Landgate/REIWA，中位 $975,000；候选已声明为 suburb 背景而非 1 公里半径。"
+      },
+      "verdict": {
+        "claim_key": "Q1C4",
+        "status": "supported",
+        "reason": "suburb 页面原文含 Median price data last updated 30 October 2026 containing transactions for the 12 month period ending September 2026，Source: Landgate/REIWA，中位 $975,000；候选已声明为 suburb 背景而非 1 公里半径。"
+      }
+    },
+    {
+      "candidate": {
+        "statement": "OnTheHouse/Cotality 给出 Cockburn Central house 中位估值 $939,034（截至 2026-09-30），并称过去 5 年 house 中位值上涨 90.60%；这是 suburb 级 AVM 估值，非成交价，也非 1 公里半径数据。",
+        "kind": "fact",
+        "bindings": [
+          {
+            "source_id": "27-paddock-parade-cockburn-central-wa-6164-sold-on-22-may-2026-onthehouse",
+            "quote": "The median value for Houses in Cockburn Central is $939,034"
+          }
+        ],
+        "calculation": null,
+        "claim_key": "Q1C6",
+        "literal_errors": []
+      },
+      "model_verdict": {
+        "claim_key": "Q1C6",
+        "status": "supported",
+        "reason": "OnTheHouse 原文含 median value for Houses in Cockburn Central is $939,034、as at 30 September 2026、5 年 90.60% 上涨，并注明为 AVM 估值；候选已限定为 suburb 级非成交价。"
+      },
+      "verdict": {
+        "claim_key": "Q1C6",
+        "status": "supported",
+        "reason": "OnTheHouse 原文含 median value for Houses in Cockburn Central is $939,034、as at 30 September 2026、5 年 90.60% 上涨，并注明为 AVM 估值；候选已限定为 suburb 级非成交价。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "27-paddock-parade-cockburn-central-wa-6164-sold-on-22-may-2026-onthehouse",
+      "url": "https://www.onthehouse.com.au/property/wa/cockburn-central-6164/27-paddock-pde-cockburn-central-wa-6164-39555896",
+      "fetched_at": "2026-10-30T10:18:49.815899Z",
+      "text": "## About Cockburn Central 6164\nThe size of Cockburn Central is approximately 2.8 square kilometres. There are 7 parks, covering nearly 16.5% of the total area. The population of Cockburn Central in 2016 was 1260 people. By 2021 the population was 1521 showing a population growth of 20.7% in the area during that time. The predominant age group in Cockburn Central is 20-29 years. Households in Cockburn Central are primarily childless couples and are likely to be repaying $1400 - $1799 per month on mortgage repayments. In general, people in Cockburn Central work in a professional occupation.In 2021, 34.90% of the homes in Cockburn Central were owner-occupied compared with 39.30% in 2016.\nCockburn Central has 2,446 properties. Over the last 5 years, Houses in Cockburn Central have seen a 90.60% increase in median value, while Units have seen a 106.92% increase. As at 30 September 2026:\n  * The median value for Houses in Cockburn Central is $939,034 while the median value for Units is $612,424.\n  * Houses have a median rent of $850 while Units have a median rent of $650.",
+      "original_body_line_start": 140
+    },
+    {
+      "source_id": "cockburn-central-suburb-profile-property-market-house-prices-and-more-reiwa",
+      "url": "https://reiwa.com.au/suburb/cockburn-central/",
+      "fetched_at": "2026-10-30T10:19:03.106139Z",
+      "text": "## Suburb prices\nHouse  Unit  Land  Trend \n_ Median price data last updated 30 October 2026 containing transactions for the 12 month period ending September 2026 Sales data is annual up to the latest completed month. Rental data is year-on-year 3-month rolling up to the latest completed month. Data in this graph is revised as more transactions are settled. Source: Landgate/REIWA _\n#### $975,000",
+      "original_body_line_start": 40
+    }
+  ]
+}

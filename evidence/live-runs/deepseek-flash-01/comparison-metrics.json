@@ -1,0 +1,31 @@
+{
+  "comparison_kind": "single observational comparison; not a controlled framework-quality experiment",
+  "same_task_sha256": "5203bace7a264be8dbdfc8b8ea1aa4a9bd47510300eb2ec961d1133b0f8d01e8",
+  "frozen_corpus_sha256": "f677d26e094f67e1e8195d0a68b9a8c2f56e6926bf114b59826795a628c7fcf3",
+  "historical_status": "blocked",
+  "live_status": "blocked_review",
+  "live_api_calls": 9,
+  "returned_models": [
+    "deepseek-flash"
+  ],
+  "live_conservative_cost_cny": 0.733804,
+  "live_claim_counts": {
+    "supported": 21,
+    "conflict": 0,
+    "missing": 0
+  },
+  "historical_report_size": {
+    "characters": 11457,
+    "han_characters": 2840,
+    "unique_citation_markers": 12
+  },
+  "live_report_size": {
+    "characters": 11911,
+    "han_characters": 2127,
+    "unique_citation_markers": 21
+  },
+  "size_warning": "Different citation conventions and appendices; counts are NOT quality scores.",
+  "formal_race_fact": "not_run",
+  "repeat_stability": "not_tested",
+  "human_quality_review": "pending"
+}

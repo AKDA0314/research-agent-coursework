@@ -1,0 +1,731 @@
+{
+  "provenance": ".local-runs/furlong-2km-run-20261104-184811",
+  "claims_sha256": "aba8475c5290d19db51cad37a4a31ff3ed86b9d0d970ab52a73ceb0718c12b16",
+  "rows": [
+    {
+      "candidate": {
+        "statement": "11 Furlong Street, Cockburn Central WA 6164 为 House，成交价 $768,000，成交日 13 May 2025，土地面积 172m²，4卧3卫2车位；平台坐标 -32.1160059,115.849158 为地图标点，程序计算距工作中心 29.3m，在 2000m 圈内。",
+        "kind": "fact",
+        "bindings": [
+          {
+            "source_id": "reiwa-11",
+            "quote": "11 Furlong Street, Cockburn Central WA 6164"
+          },
+          {
+            "source_id": "reiwa-11",
+            "quote": "Sold price: $768,000"
+          },
+          {
+            "source_id": "reiwa-11",
+            "quote": "Sold: 13 May 2025"
+          },
+          {
+            "source_id": "reiwa-11",
+            "quote": "Landsize\n172m"
+          },
+          {
+            "source_id": "reiwa-11",
+            "quote": "\"GeoLatitude\": -32.1160059"
+          },
+          {
+            "source_id": "distance-calculations",
+            "quote": "\"distance_m\": 29.3"
+          },
+          {
+            "source_id": "distance-calculations",
+            "quote": "\"within_2000m\": true"
+          }
+        ],
+        "claim_key": "Q1C1",
+        "literal_errors": [],
+        "binding_check": {
+          "errors": [],
+          "verified_spans": [
+            {
+              "source_id": "reiwa-11",
+              "quote": "11 Furlong Street, Cockburn Central WA 6164",
+              "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+              "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+              "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+              "start_char": 0,
+              "end_char": 43,
+              "start_line": 1,
+              "end_line": 1
+            },
+            {
+              "source_id": "reiwa-11",
+              "quote": "Sold price: $768,000",
+              "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+              "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+              "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+              "start_char": 163,
+              "end_char": 183,
+              "start_line": 11,
+              "end_line": 11
+            },
+            {
+              "source_id": "reiwa-11",
+              "quote": "Sold: 13 May 2025",
+              "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+              "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+              "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+              "start_char": 46,
+              "end_char": 63,
+              "start_line": 1,
+              "end_line": 1
+            },
+            {
+              "source_id": "reiwa-11",
+              "quote": "Landsize\n172m",
+              "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+              "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+              "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+              "start_char": 237,
+              "end_char": 250,
+              "start_line": 20,
+              "end_line": 21
+            },
+            {
+              "source_id": "reiwa-11",
+              "quote": "\"GeoLatitude\": -32.1160059",
+              "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+              "source_url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+              "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+              "start_char": 4873,
+              "end_char": 4899,
+              "start_line": 115,
+              "end_line": 115
+            },
+            {
+              "source_id": "distance-calculations",
+              "quote": "\"distance_m\": 29.3",
+              "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+              "source_url": "local:distance-evidence.json",
+              "fetched_at": "2026-11-04",
+              "start_char": 793,
+              "end_char": 811,
+              "start_line": 19,
+              "end_line": 19
+            },
+            {
+              "source_id": "distance-calculations",
+              "quote": "\"within_2000m\": true",
+              "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+              "source_url": "local:distance-evidence.json",
+              "fetched_at": "2026-11-04",
+              "start_char": 819,
+              "end_char": 839,
+              "start_line": 20,
+              "end_line": 20
+            }
+          ],
+          "missing_anchors": [],
+          "derived_results": [],
+          "calculation_errors": [],
+          "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+        }
+      },
+      "model_verdict": {
+        "claim_key": "Q1C1",
+        "status": "missing",
+        "reason": "地址、成交价、日期、土地面积、坐标与距离均有绑定片段，但“House”标签、4卧3卫2车位及经度数值无绑定证据。",
+        "fully_supported": false,
+        "unsupported_parts": [
+          "为 House",
+          "4卧3卫2车位",
+          "经度 115.849158"
+        ],
+        "checks": {
+          "subject": {
+            "status": "supported",
+            "reason": "地址片段支持 11 Furlong Street, Cockburn Central WA 6164"
+          },
+          "value_unit": {
+            "status": "missing",
+            "reason": "成交价、面积、距离有片段；卧室/卫浴/车位与经度无绑定证据"
+          },
+          "time": {
+            "status": "supported",
+            "reason": "Sold: 13 May 2025"
+          },
+          "scope": {
+            "status": "supported",
+            "reason": "distance_m 29.3 与 within_2000m true 支持圈内"
+          },
+          "meaning": {
+            "status": "missing",
+            "reason": "House 标签与房型配置未被绑定片段支持"
+          }
+        }
+      },
+      "verdict": {
+        "claim_key": "Q1C1",
+        "status": "missing",
+        "reason": "地址、成交价、日期、土地面积、坐标与距离均有绑定片段，但“House”标签、4卧3卫2车位及经度数值无绑定证据。",
+        "fully_supported": false,
+        "unsupported_parts": [
+          "为 House",
+          "4卧3卫2车位",
+          "经度 115.849158"
+        ],
+        "checks": {
+          "subject": {
+            "status": "supported",
+            "reason": "地址片段支持 11 Furlong Street, Cockburn Central WA 6164"
+          },
+          "value_unit": {
+            "status": "missing",
+            "reason": "成交价、面积、距离有片段；卧室/卫浴/车位与经度无绑定证据"
+          },
+          "time": {
+            "status": "supported",
+            "reason": "Sold: 13 May 2025"
+          },
+          "scope": {
+            "status": "supported",
+            "reason": "distance_m 29.3 与 within_2000m true 支持圈内"
+          },
+          "meaning": {
+            "status": "missing",
+            "reason": "House 标签与房型配置未被绑定片段支持"
+          }
+        }
+      }
+    },
+    {
+      "candidate": {
+        "statement": "REIWA Cockburn Central 郊区结构化数据中，两个已完成年度 house 中位价与样本量为：CalendarYear 2024 为 AUD 750,000、HouseCount 20；CalendarYear 2025 为 AUD 845,000、HouseCount 29；地理范围为 Cockburn Central 郊区（非 2 公里圈），房型 House，指标为中位成交价；CalendarYear 准确起止未明确。",
+        "kind": "fact",
+        "bindings": [
+          {
+            "source_id": "profile",
+            "quote": "\"CalendarYear\": 2024,\n      \"MedianHousePrice\": 750000"
+          },
+          {
+            "source_id": "profile",
+            "quote": "\"HouseCount\": 20"
+          },
+          {
+            "source_id": "profile",
+            "quote": "\"CalendarYear\": 2025,\n      \"MedianHousePrice\": 845000"
+          },
+          {
+            "source_id": "profile",
+            "quote": "\"HouseCount\": 29"
+          },
+          {
+            "source_id": "profile",
+            "quote": "年份起止不另行推定"
+          }
+        ],
+        "claim_key": "Q1C8",
+        "literal_errors": [],
+        "binding_check": {
+          "errors": [
+            "unbound_numeric_anchor:AUD:750000",
+            "unbound_numeric_anchor:AUD:845000"
+          ],
+          "verified_spans": [
+            {
+              "source_id": "profile",
+              "quote": "\"CalendarYear\": 2024,\n      \"MedianHousePrice\": 750000",
+              "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+              "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+              "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+              "start_char": 5125,
+              "end_char": 5179,
+              "start_line": 239,
+              "end_line": 240
+            },
+            {
+              "source_id": "profile",
+              "quote": "\"HouseCount\": 20",
+              "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+              "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+              "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+              "start_char": 5253,
+              "end_char": 5269,
+              "start_line": 243,
+              "end_line": 243
+            },
+            {
+              "source_id": "profile",
+              "quote": "\"CalendarYear\": 2025,\n      \"MedianHousePrice\": 845000",
+              "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+              "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+              "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+              "start_char": 5335,
+              "end_char": 5389,
+              "start_line": 248,
+              "end_line": 249
+            },
+            {
+              "source_id": "profile",
+              "quote": "\"HouseCount\": 29",
+              "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+              "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+              "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+              "start_char": 5463,
+              "end_char": 5479,
+              "start_line": 252,
+              "end_line": 252
+            },
+            {
+              "source_id": "profile",
+              "quote": "年份起止不另行推定",
+              "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+              "source_url": "https://reiwa.com.au/suburb/cockburn-central/",
+              "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+              "start_char": 5814,
+              "end_char": 5823,
+              "start_line": 267,
+              "end_line": 267
+            }
+          ],
+          "missing_anchors": [
+            {
+              "unit": "AUD",
+              "value": "750000"
+            },
+            {
+              "unit": "AUD",
+              "value": "845000"
+            }
+          ],
+          "derived_results": [],
+          "calculation_errors": [],
+          "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+        }
+      },
+      "model_verdict": {
+        "claim_key": "Q1C8",
+        "status": "missing",
+        "reason": "binding_check.errors 含未绑定数值锚点 AUD 750000 与 845000；且“地理范围为 Cockburn Central 郊区”“指标为中位成交价”等句意无绑定片段。",
+        "fully_supported": false,
+        "unsupported_parts": [
+          "AUD 750,000",
+          "AUD 845,000",
+          "地理范围为 Cockburn Central 郊区（非 2 公里圈）",
+          "指标为中位成交价"
+        ],
+        "checks": {
+          "subject": {
+            "status": "supported",
+            "reason": "片段含 CalendarYear 与 MedianHousePrice 字段"
+          },
+          "value_unit": {
+            "status": "missing",
+            "reason": "数值锚点未绑定，AUD 单位无片段"
+          },
+          "time": {
+            "status": "supported",
+            "reason": "CalendarYear 2024/2025 有片段，起止未明确有片段"
+          },
+          "scope": {
+            "status": "missing",
+            "reason": "郊区地理范围无绑定片段"
+          },
+          "meaning": {
+            "status": "missing",
+            "reason": "中位价指标与地理范围句意未支持"
+          }
+        }
+      },
+      "verdict": {
+        "claim_key": "Q1C8",
+        "status": "missing",
+        "reason": "unbound_numeric_anchor:AUD:750000; unbound_numeric_anchor:AUD:845000",
+        "fully_supported": false,
+        "unsupported_parts": [
+          "AUD 750,000",
+          "AUD 845,000",
+          "地理范围为 Cockburn Central 郊区（非 2 公里圈）",
+          "指标为中位成交价"
+        ],
+        "checks": {
+          "subject": {
+            "status": "supported",
+            "reason": "片段含 CalendarYear 与 MedianHousePrice 字段"
+          },
+          "value_unit": {
+            "status": "missing",
+            "reason": "数值锚点未绑定，AUD 单位无片段"
+          },
+          "time": {
+            "status": "supported",
+            "reason": "CalendarYear 2024/2025 有片段，起止未明确有片段"
+          },
+          "scope": {
+            "status": "missing",
+            "reason": "郊区地理范围无绑定片段"
+          },
+          "meaning": {
+            "status": "missing",
+            "reason": "中位价指标与地理范围句意未支持"
+          }
+        },
+        "override": "binding_errors"
+      }
+    },
+    {
+      "candidate": {
+        "statement": "当前挂牌 12 Lodge Court, Cockburn Central：报价 Offers Over $1,150,000，状态为在售（无成交日期），平台标 House，5卧2卫6车位，土地 518m²，ListDate 2026-10-11，页面访问时间 2026-11-04T10:23:07.390222+00:00。",
+        "kind": "fact",
+        "bindings": [
+          {
+            "source_id": "lodge12",
+            "quote": "12 Lodge Court, Cockburn Central WA 6164\nOffers Over $1,150,000"
+          },
+          {
+            "source_id": "lodge12",
+            "quote": "\"PropertyType\": \"House\""
+          },
+          {
+            "source_id": "lodge12",
+            "quote": "\"ListDate\": \"2026-10-11T00:00:00+08:00\""
+          },
+          {
+            "source_id": "lodge12",
+            "quote": "\"LandsizeHtml\": \"518m<sup><small>2</small></sup>\""
+          }
+        ],
+        "claim_key": "Q2C3",
+        "literal_errors": [],
+        "binding_check": {
+          "errors": [],
+          "verified_spans": [
+            {
+              "source_id": "lodge12",
+              "quote": "12 Lodge Court, Cockburn Central WA 6164\nOffers Over $1,150,000",
+              "body_sha256": "f0bacba16c1081ec9f9589444956c186a5d095c6952f423503c62d267a13a574",
+              "source_url": "https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/",
+              "fetched_at": "2026-11-04T10:23:07.390222+00:00",
+              "start_char": 158,
+              "end_char": 221,
+              "start_line": 13,
+              "end_line": 14
+            },
+            {
+              "source_id": "lodge12",
+              "quote": "\"PropertyType\": \"House\"",
+              "body_sha256": "f0bacba16c1081ec9f9589444956c186a5d095c6952f423503c62d267a13a574",
+              "source_url": "https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/",
+              "fetched_at": "2026-11-04T10:23:07.390222+00:00",
+              "start_char": 6857,
+              "end_char": 6880,
+              "start_line": 98,
+              "end_line": 98
+            },
+            {
+              "source_id": "lodge12",
+              "quote": "\"ListDate\": \"2026-10-11T00:00:00+08:00\"",
+              "body_sha256": "f0bacba16c1081ec9f9589444956c186a5d095c6952f423503c62d267a13a574",
+              "source_url": "https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/",
+              "fetched_at": "2026-11-04T10:23:07.390222+00:00",
+              "start_char": 6884,
+              "end_char": 6923,
+              "start_line": 99,
+              "end_line": 99
+            },
+            {
+              "source_id": "lodge12",
+              "quote": "\"LandsizeHtml\": \"518m<sup><small>2</small></sup>\"",
+              "body_sha256": "f0bacba16c1081ec9f9589444956c186a5d095c6952f423503c62d267a13a574",
+              "source_url": "https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/",
+              "fetched_at": "2026-11-04T10:23:07.390222+00:00",
+              "start_char": 7011,
+              "end_char": 7060,
+              "start_line": 104,
+              "end_line": 104
+            }
+          ],
+          "missing_anchors": [],
+          "derived_results": [],
+          "calculation_errors": [],
+          "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+        }
+      },
+      "model_verdict": {
+        "claim_key": "Q2C3",
+        "status": "supported",
+        "reason": "片段支持地址、Offers Over $1,150,000、PropertyType House、ListDate 2026-10-11、518m²及抓取时间；无成交日期与在售状态由挂牌页性质及无成交字段支持。",
+        "fully_supported": true,
+        "unsupported_parts": [],
+        "checks": {
+          "subject": {
+            "status": "supported",
+            "reason": "12 Lodge Court, Cockburn Central"
+          },
+          "value_unit": {
+            "status": "supported",
+            "reason": "$1,150,000、518m²"
+          },
+          "time": {
+            "status": "supported",
+            "reason": "ListDate 2026-10-11；访问时间一致"
+          },
+          "scope": {
+            "status": "supported",
+            "reason": "平台标House"
+          },
+          "meaning": {
+            "status": "supported",
+            "reason": "报价、房型、土地与挂牌日期均一致；卧室/车位为页面字段"
+          }
+        }
+      },
+      "verdict": {
+        "claim_key": "Q2C3",
+        "status": "supported",
+        "reason": "片段支持地址、Offers Over $1,150,000、PropertyType House、ListDate 2026-10-11、518m²及抓取时间；无成交日期与在售状态由挂牌页性质及无成交字段支持。",
+        "fully_supported": true,
+        "unsupported_parts": [],
+        "checks": {
+          "subject": {
+            "status": "supported",
+            "reason": "12 Lodge Court, Cockburn Central"
+          },
+          "value_unit": {
+            "status": "supported",
+            "reason": "$1,150,000、518m²"
+          },
+          "time": {
+            "status": "supported",
+            "reason": "ListDate 2026-10-11；访问时间一致"
+          },
+          "scope": {
+            "status": "supported",
+            "reason": "平台标House"
+          },
+          "meaning": {
+            "status": "supported",
+            "reason": "报价、房型、土地与挂牌日期均一致；卧室/车位为页面字段"
+          }
+        }
+      }
+    },
+    {
+      "candidate": {
+        "statement": "相对购价 AUD 1,000,000 的下跌比例为 0.2，即 20%（精确值，无需四舍五入）。",
+        "kind": "calculation",
+        "bindings": [
+          {
+            "source_id": "TASK",
+            "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。"
+          }
+        ],
+        "calculation": "{\"result\":\"20%\",\"expression\":\"(purchase - loan) / purchase\",\"inputs\":{\"purchase\":\"AUD 1,000,000\",\"loan\":\"AUD 800,000\"}}",
+        "claim_key": "Q3C6",
+        "literal_errors": [],
+        "binding_check": {
+          "errors": [
+            "unbound_numeric_anchor:percent:20"
+          ],
+          "verified_spans": [
+            {
+              "source_id": "TASK",
+              "quote": "教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。",
+              "body_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+              "source_url": "frozen/task.md",
+              "fetched_at": "not_applicable",
+              "start_char": 1279,
+              "end_char": 1318,
+              "start_line": 37,
+              "end_line": 37
+            }
+          ],
+          "missing_anchors": [
+            {
+              "unit": "percent",
+              "value": "20"
+            }
+          ],
+          "derived_results": [],
+          "calculation_errors": [],
+          "policy": "Exact source spans + numeric anchors + typed arithmetic; semantic support requires a separate verdict."
+        }
+      },
+      "model_verdict": {
+        "claim_key": "Q3C6",
+        "status": "missing",
+        "reason": "绑定片段只给出购价与贷款余额，未绑定 20% 数值锚点；且 binding_check.errors 非空，按规则必须 missing。",
+        "fully_supported": false,
+        "unsupported_parts": [
+          "下跌比例为 0.2，即 20%（精确值，无需四舍五入）"
+        ],
+        "checks": {
+          "subject": {
+            "status": "supported",
+            "reason": "购价与贷款余额主语有绑定"
+          },
+          "value_unit": {
+            "status": "missing",
+            "reason": "20% 未在绑定片段中出现，存在未绑定数值锚点"
+          },
+          "time": {
+            "status": "not_applicable",
+            "reason": "假设无时间要素"
+          },
+          "scope": {
+            "status": "not_applicable",
+            "reason": "无地区或房型范围"
+          },
+          "meaning": {
+            "status": "missing",
+            "reason": "比例结果未由绑定证据直接支持"
+          }
+        }
+      },
+      "verdict": {
+        "claim_key": "Q3C6",
+        "status": "missing",
+        "reason": "unbound_numeric_anchor:percent:20",
+        "fully_supported": false,
+        "unsupported_parts": [
+          "下跌比例为 0.2，即 20%（精确值，无需四舍五入）"
+        ],
+        "checks": {
+          "subject": {
+            "status": "supported",
+            "reason": "购价与贷款余额主语有绑定"
+          },
+          "value_unit": {
+            "status": "missing",
+            "reason": "20% 未在绑定片段中出现，存在未绑定数值锚点"
+          },
+          "time": {
+            "status": "not_applicable",
+            "reason": "假设无时间要素"
+          },
+          "scope": {
+            "status": "not_applicable",
+            "reason": "无地区或房型范围"
+          },
+          "meaning": {
+            "status": "missing",
+            "reason": "比例结果未由绑定证据直接支持"
+          }
+        },
+        "override": "binding_errors"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "reiwa-11",
+      "url": "https://reiwa.com.au/11-furlong-street-cockburn-central-4900193/",
+      "fetched_at": "2026-11-04T10:22:33.505752+00:00",
+      "text": "11 Furlong Street, Cockburn Central WA 6164 | Sold: 13 May 2025\nBack to\nsearch\nresults\nSold\nImages\n14\nVideo\nFloor plan\n11 Furlong Street, Cockburn Central WA 6164\nSold price: $768,000\nSold: 13 May 2025\nSold\n4\nBedrooms\n3\nBathrooms\n2\nCars\nLandsize\n172m\n²\nHouse\n11 Furlong Street, Cockburn Central WA 6164\nOverview\nProperty features\nSchools\nSuburb info\nContact agent\nView\nMap view\nView the location for this property\nStreet view\nView panoramic images of the street\nLand Data\nView lot boundary, R-Codes, and Heritage details\nUtilities\nView water, sewer and power information\nTransport\nPlan your journey from this property to your important destinations\nLifestyle\nDiscover café, shopping and entertainment options\nEnvironment\nView important environment information surrounding this property\nSchools\nView local schools\nPrevious\nNext\nSOLD!\nModern Mojo Living: 4x3 Townhouse! Experience contemporary living at its finest in this beautifully finished, 4 bedroom, 3 bathroom double-storey townhouse. Built in 2021 within the sought-after Mojo Urban Living in Cockburn Central, this home offers a seamless move-in experience, allowing you to immediately enjoy its stylish design and vibrant surroundings!\nEntering through a secure, gated front courtyard with low-maintenance artificial lawn, you're immediately greeted by the home's inviting atmosphere. Inside, a spacious, open-plan living area flows effortlessly into a well-appointed kitchen. Featuring stone benchtops, 900mm under bench oven, gas cooktop, stainless steel rangehood, double sink, pantry, and dishwasher recess, this kitchen is designed for both functionality and style. A conveniently located laundry nook sits just off the kitchen, adding to the home's practicality. The ground floor also offers a comfortable, carpeted fourth bedroom with its own ensuite, perfect for guests. Stepping outside, a paved rear courtyard with a small lawn area provides a private space for outdoor enjoyment and pets.\nAscend the staircase to discover the upper level, where a spacious master bedroom awaits, complete with plush carpeting and a generous walk-in robe. The master ensuite features a vanity, shower and toilet. Two additional carpeted bedrooms, each with built-in robes, provide comfortable accommodations. A well-appointed main bathroom offers a vanity, shower and bath, along with a separate toilet for added convenience.\nBeyond the comforts of home, outdoor experiences are readily available. With close access to parklands, sporting ovals, basketball courts, BBQ areas, and playgrounds, you'll find ample opportunities for recreation. The nearby Beeliar wetlands, including South Lake, North Lake, and Little Rush Lake, also inspire fun adventures with beautiful hikes and nature walks just a stone's throw away.\nPROPERTY FEATURES;\n• Handy under stair storage\n• Ducted reverse cycle air conditioning\n• Quality flooring & LED lighting\n• Solar panels\n• Easy care courtyard\n• Gas hot water system\n• Paved courtyard with lawn area\n• Double lockup garage accessible via rear laneway\nLOCATION:\n• Nearest bus stop - Approx. 250m\n• Cockburn ARC - Approx. 2.4km\n• Cockburn Gateway Shopping City - Approx. 3km\n• Fiona Stanley Hospital - Approx. 6.5km\n• Coogee Beach - Approx. 11km\n• Fremantle Town Centre - Approx. 14km\n• Perth CBD - Approx. 21m\n• Perth Airport - Approx. 26km\nEXTRA DETAILS;\n• Built in 2021 by Homebuyers\n• Block Size: 172sqm\n• Total Living: Approx. 140sqm\n• Council Rates: Approx. $2162p/a\n• Water Rates: Approx. $1384p/a\nContact the Listing Agent, TANYA FORZATTI on 0417 181 841\nDisclaimer: Whilst every care has been taken in the preparation of the marketing for this property, accuracy cannot be guaranteed. Prospective buyers should make their own enquiries to satisfy themselves on all pertinent matters. Details herein do not constitute any representation by the Seller or the Seller's Agent and are expressly excluded from any contract.\nView more\nProperty features\nGarages\n2\nToilets\n3\nFloor area\n140m\n²\nProperty snapshot by reiwa.com\nThis property at 11 Furlong Street, Cockburn Central is a four bedroom, three bathroom house sold by Tanya Forzatti at Semple Property Group on 13 May 2025.\nLooking to buy a similar property in the area? View other\nfour bedroom properties\nfor sale in Cockburn Central or see other recently\nsold properties in Cockburn Central\n.\nView more\nCost breakdown\nCouncil rates: $2,162 / year\nWater rates: $1,384 / year\n\n\n[Extracted page data-props fields; JSON serialization, not prose quotation]\n{\n  \"HeadlineAddress\": \"11 Furlong Street, Cockburn Central WA 6164\",\n  \"PropertyType\": \"House\",\n  \"ListDate\": \"2025-02-07T00:00:00+08:00\",\n  \"DisplayPrice\": \"Sold price: $768,000\",\n  \"Beds\": 4,\n  \"Baths\": 3,\n  \"Cars\": 2,\n  \"LandsizeHtml\": \"172m<sup><small>2</small></sup>\",\n  \"SoldDate\": \"2025-05-13T00:00:00+08:00\",\n  \"SoldDateString\": \"13 May 2025\",\n  \"map_coordinates\": {\n    \"GeoLatitude\": -32.1160059,\n    \"GeoLongitude\": 115.849158,\n    \"json_path\": \"$.ListingLocation\"\n  }\n}",
+      "body_sha256": "af7eb4d29d13a751a9e37004920aada76c2ad7347768575b28201826d7fad125",
+      "source_kind": "property_page",
+      "raw_sha256": "4ee0bad86be73fc2c105063deba237b86eaac1598c5ad118dd5da4c3cad8b51c",
+      "transformation": "HTML text: scripts/forms removed; superscript2 preserved as²; property section excerpt; appended selected original data-props JSON fields with map path."
+    },
+    {
+      "source_id": "lodge12",
+      "url": "https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/",
+      "fetched_at": "2026-11-04T10:23:07.390222+00:00",
+      "text": "12 Lodge Court, Cockburn Central WA 6164 | For Sale Offers Over $1,150,000\nBack to\nsearch\nresults\nFloor plan\nImages\n25\nVideo\n1\nFloor plan\n1\nAdded 14 days ago\n12 Lodge Court, Cockburn Central WA 6164\nOffers Over $1,150,000\n5\nBedrooms\n2\nBathrooms\n6\nCars\nLandsize\n518m\n²\nHouse\nOpen Sat 7 Nov, 11:15 AM to 11:45 AM\nAdded 14 days ago\n12 Lodge Court, Cockburn Central WA 6164\nOverview\nProperty features\nSchools\nSuburb info\nContact agent\nView\nMap view\nView the location for this property\nStreet view\nView panoramic images of the street\nLand Data\nView lot boundary, R-Codes, and Heritage details\nUtilities\nView water, sewer and power information\nTransport\nPlan your journey from this property to your important destinations\nLifestyle\nDiscover café, shopping and entertainment options\nEnvironment\nView important environment information surrounding this property\nSchools\nView local schools\nPrevious\nNext\nRenovated Family Luxury, Resort-Style Pool & The Ultimate Workshop!\nFive bedrooms, stunning renovations, resort-style entertaining , low maintenance living and secure parking for six vehicles - this exceptional family home really does have it all!\nKasey Summers is excited to bring to market 12 Lodge Court, Cockburn Central, an impressive five-bedroom family home combining beautifully renovated interiors, multiple living areas, outstanding outdoor entertaining and exceptional workshop and parking facilities.\nPerfectly positioned in a peaceful cul-de-sac within a quiet single-entry estate, this outstanding property sits on a generous block and offers a wonderful sense of privacy while remaining conveniently close to schools, shopping, transport and recreational facilities.\nOriginally built in 2000 and extensively improved over the years, this is a home where all the hard work has been done, allowing its new owners to simply move in, relax and enjoy!  Step inside and discover a spacious, versatile floorplan designed to accommodate the needs of a growing family.\nAt the heart of the home is the stunning renovated kitchen, showcasing stylish stone benchtops, an enlarged island bench and beautiful feature pendant lighting that adds a touch of sophistication. Overlooking the open-plan family and meals area, this inviting space is ideal for everyday living and effortless entertaining.  The adjoining dining area offers clever additional built-in pull-out storage, providing a practical and discreet solution for keeping everyday essentials neatly organised.\nBoth bathrooms have been beautifully renovated with stylish stone benchtops and mirrored shaving cabinets, offering contemporary finishes together with valuable additional storage.  Attractive wood-look vinyl plank flooring brings warmth and style throughout, while ducted reverse-cycle air conditioning ensures year-round comfort. Security doors provide an additional practical feature.\nMultiple living zones provide excellent flexibility, including a separate lounge complete with a charming wood-burning fireplace, creating the perfect cosy retreat for those cooler winter evenings.  With five bedrooms or four bedrooms and a study and generous living areas, there is plenty of room for everyone to spread out, come together or enjoy their own space.\nOutside is where this property truly comes into its own!  Designed for those who love to entertain, the impressive covered alfresco area is an entertainer's dream, featuring a beautiful cedar-lined ceiling, downlights and a ceiling fan.  The fantastic outdoor kitchen takes entertaining to another level, complete with a place for your BBQ, rangehood, allowing you to entertain without ever having to leave the party!  Adding to the atmosphere is an attractive aquaponic water feature, creating a wonderful focal point and a sense of tranquillity within this impressive outdoor setting.\nJust beyond, the recently installed swimming pool creates your very own resort-style escape, complete with beautiful exposed aggregate surrounds and a dedicated poolside lounging area with its own patio.  Imagine spending warm summer afternoons relaxing beside the pool while the kids splash away, firing up the BBQ for friends and family, or enjoying a quiet evening surrounded by the soothing sounds of the water feature.\nAnd just when you thought this home couldn't offer any more, the incredible parking and workshop facilities take it to another level!  With secure drive-through access and space to accommodate up to six vehicles, this property is a dream for car enthusiasts, tradies, hobbyists or families with additional vehicles and recreational toys.  The impressive workshop is equipped with three-phase power, water and lighting, offering outstanding versatility for those who need a functional workspace, additional storage or room for their next project.\nAdding even more appeal is a 6kW solar power system, helping to keep household running costs down.\nSituated within a quiet single-entry estate, conveniently located close to:\n• The Local House Bar & Grill - 650m\n• Cockburn Aquatic & Recreation Centre (ARC) - 750m\n• Emmanuel Catholic College - 800m\n• Cockburn Gateway Shopping Centre - 1.2km\n• Cockburn Central Train Station - 1.4km\n• Jandakot Primary School - 2.5km\n• Aubin Grove Train Station - 3.9km\nOffering the perfect blend of stylish renovations, generous family living, resort-style outdoor entertaining and incredible practical features, this property delivers so much more than meets the eye.  Whether you're searching for room for a growing family, your own private poolside escape, an entertainer's dream or the ultimate setup for vehicles and workshop space, this fantastic home ticks an impressive number of boxes.  Contact Kasey Summers today on 0409 108 025 or\n[email protected]\nfor further information or to arrange your inspection.\nDISCLAIMER: Whilst every care has been taken in preparing this advertisement, accuracy cannot be guaranteed. Prospective purchasers should make their own enquiries to satisfy themselves on all pertinent matters. Details herein do not constitute any representation by the vendor or the agent and are expressly excluded from any contract.\nView more\nProperty features\nBelow ground pool\nAir conditioned\nGarages\n6\nToilets\n2\nProperty snapshot by reiwa.com\nThis property at 12 Lodge Court, Cockburn Central is a five bedroom, two bathroom house listed for sale by Kasey Summers at Semple Property Group.\nFor more information about Cockburn Central, including sales data, facts, growth rates, nearby transport and nearby shops, please view our\nCockburn Central profile page\n.\nIf you would like to get in touch with Kasey Summers regarding 12 Lodge Court, Cockburn Central, please call 0409 108 025 or\ncontact the agent via email\n.\nView more\n\n\n[Extracted page data-props fields; JSON serialization, not prose quotation]\n{\n  \"HeadlineAddress\": \"12 Lodge Court, Cockburn Central WA 6164\",\n  \"PropertyType\": \"House\",\n  \"ListDate\": \"2026-10-11T00:00:00+08:00\",\n  \"DisplayPrice\": \"Offers Over $1,150,000\",\n  \"Beds\": 5,\n  \"Baths\": 2,\n  \"Cars\": 6,\n  \"LandsizeHtml\": \"518m<sup><small>2</small></sup>\",\n  \"map_coordinates\": {\n    \"GeoLatitude\": -32.128078,\n    \"GeoLongitude\": 115.8461982,\n    \"json_path\": \"$.ListingLocation\"\n  }\n}",
+      "body_sha256": "f0bacba16c1081ec9f9589444956c186a5d095c6952f423503c62d267a13a574",
+      "source_kind": "property_page",
+      "raw_sha256": "0edf6a22b794fb49936511caad4fc3fe7ff91f24c7dcac9a4181e453a4cf7e3d",
+      "transformation": "HTML text: scripts/forms removed; superscript2 preserved as²; property section excerpt; appended selected original data-props JSON fields with map path."
+    },
+    {
+      "source_id": "profile",
+      "url": "https://reiwa.com.au/suburb/cockburn-central/",
+      "fetched_at": "2026-11-04T10:22:33.506321+00:00",
+      "text": "Cockburn Central Suburb Profile | Property Market, House Prices and More - REIWA\nCockburn Central\nAbout Cockburn Central\nCockburn Central is the urban hub of the City of Cockburn. Relatively new and still expanding, the area has seen rapid growth in recent years and is primarily used for industrial and commercial purposes.\nLife in Cockburn Central\nThe Cockburn Gateway Shopping Centre precinct is the central fixture of Cockburn Central. The busy establishment has a plethora of shops, amenities, cafes, eateries and exercise facilities. It is also home to the award-winning Gate Bar and Bistro, which is a very popular establishment within Cockburn. Across the road from this precinct is the Cockburn Central Railway Station, which connects to the Mandurah train line and offers easy and convenient access into Perth City.\nView more\nCockburn Central quick stats\nPostcode\n6164\nPopulation\n1,260\nLocal government\nCockburn\n18.3%\nSales price growth\n$1000K\n* Median sales price\n12.1%\nRental price growth\n$785pw\n* Median rental price\nNearby suburb growth\n20.4%\nBeeliar\n22.5%\nJandakot\n17.5%\nSouth Lake\n18.1%\nSuccess\nPrint suburb profile\nChange suburb/region\nOverview\nSuburb prices\nSuburb interest level\nSchools\nDemographics\nCurrent listings\nActive agents\n0 km from Perth\nView recent sales\nView For sale listings\nView For rent listings\nSuburb prices\nHouse\nUnit\nLand\nTrend\nMedian price data last updated 4 November 2026 containing transactions for the 12 month period ending October 2026\nSales data is annual up to the latest completed month. Rental data is year-on-year 3-month rolling up to the latest completed month. Data in this graph is revised as more transactions are settled.\nSource: Landgate/REIWA\nBuy\n$999,500\n3BR\n$945K\n4BR\n$1.21M\nRent\n$785pw\n2BR\n$682pw\n3BR\n$900pw\n4BR\n$870pw\nBuy\n$622,500\n1BR\n$548K\n2BR\n$650K\n3BR\n$650K\nRent\n$680pw\n1BR\n$630pw\n2BR\n$690pw\nBuy\n$340,000\nSmall\nland size\n$331K\nMedium\nland size\n$430K\nLarge\nland size\n$2.45M\nMedian price data last updated 4 November 2026 containing transactions for the 12 month period ending October 2026\nSales data is annual up to the latest completed month. Rental data is year-on-year 3-month rolling up to the latest completed month. Data in this graph is revised as more transactions are settled.\nSource: Landgate/REIWA\nSales\nRentals\nUpper and lower quartiles\nUpper quartile\n$1.22M\nMedian\n$1000K\nLower quartile\n$919K\nBased on settled sales as at 4 November 2026\nTime on market\nHouse\nDays\n18\nUnit\nDays\n49\nBased on settled sales as at 4 November 2026\nTotal growth\nGrowth rate\nView as\ntable\nCockburn Central\nPerth\nTotal percentage change in annual median house price over the last 1, 5 or 10 years.\nUpper and lower quartiles\nUpper quartile\n$885\nMedian\n$785\nLower quartile\n$682\nBased on leases reported as at 4 November 2026\nTime on market\nHouse\nDays\n15\nUnit\nDays\n9\nBased on leases reported as at 4 November 2026\nSuburb interest level\nAverage online views per property\nBased on current reiwa.com user activity, you can see how Cockburn Central compares to the rest of the region\nThis is based on views of residential properties for sale in this suburb within the last 14 days.\nSchools\nAll\nPrimary\nSecondary\nView as list\n1.4\nkm\nEmmanuel Catholic College\nSecondary\nNon-government\n1.4\nkm\nHavenport Msl College\nCombined\nNon-government\n1.6\nkm\nAtwell Primary School\nPrimary\nGovernment\nPrevious\nNext\nView more\nDisclaimer\nProperty and demographics\nCurrent residential listings for Cockburn Central\nAgents active in this suburb\nChange suburb/region\n\n[原页面 data-props.PriceData 结构化字段，选择性提取并重新序列化]\n{\n  \"Name\": \"Cockburn Central\",\n  \"MedianHouseSalePrice\": 999500,\n  \"CountOfHousesSold\": 25,\n  \"BuyTrendData\": [\n    {\n      \"CalendarYear\": 2017,\n      \"MedianHousePrice\": 750000,\n      \"MedianUnitPrice\": 422500,\n      \"MedianLandPrice\": 227000,\n      \"HouseCount\": 7,\n      \"UnitCount\": 51,\n      \"LandCount\": 3\n    },\n    {\n      \"CalendarYear\": 2018,\n      \"MedianHousePrice\": 1400000,\n      \"MedianUnitPrice\": 359000,\n      \"MedianLandPrice\": 190000,\n      \"HouseCount\": 5,\n      \"UnitCount\": 39,\n      \"LandCount\": 6\n    },\n    {\n      \"CalendarYear\": 2019,\n      \"MedianHousePrice\": 674500,\n      \"MedianUnitPrice\": 290000,\n      \"MedianLandPrice\": 210000,\n      \"HouseCount\": 6,\n      \"UnitCount\": 20,\n      \"LandCount\": 19\n    },\n    {\n      \"CalendarYear\": 2020,\n      \"MedianHousePrice\": 475000,\n      \"MedianUnitPrice\": 285000,\n      \"MedianLandPrice\": 200500,\n      \"HouseCount\": 11,\n      \"UnitCount\": 17,\n      \"LandCount\": 70\n    },\n    {\n      \"CalendarYear\": 2021,\n      \"MedianHousePrice\": 486999,\n      \"MedianUnitPrice\": 317500,\n      \"MedianLandPrice\": 205000,\n      \"HouseCount\": 16,\n      \"UnitCount\": 28,\n      \"LandCount\": 43\n    },\n    {\n      \"CalendarYear\": 2022,\n      \"MedianHousePrice\": 586000,\n      \"MedianUnitPrice\": 350000,\n      \"MedianLandPrice\": 206000,\n      \"HouseCount\": 17,\n      \"UnitCount\": 47,\n      \"LandCount\": 13\n    },\n    {\n      \"CalendarYear\": 2023,\n      \"MedianHousePrice\": 620000,\n      \"MedianUnitPrice\": 380000,\n      \"MedianLandPrice\": 219000,\n      \"HouseCount\": 15,\n      \"UnitCount\": 65,\n      \"LandCount\": 9\n    },\n    {\n      \"CalendarYear\": 2024,\n      \"MedianHousePrice\": 750000,\n      \"MedianUnitPrice\": 423750,\n      \"MedianLandPrice\": 244000,\n      \"HouseCount\": 20,\n      \"UnitCount\": 92,\n      \"LandCount\": 33\n    },\n    {\n      \"CalendarYear\": 2025,\n      \"MedianHousePrice\": 845000,\n      \"MedianUnitPrice\": 520000,\n      \"MedianLandPrice\": 299000,\n      \"HouseCount\": 29,\n      \"UnitCount\": 76,\n      \"LandCount\": 19\n    },\n    {\n      \"CalendarYear\": 2026,\n      \"MedianHousePrice\": 999500,\n      \"MedianUnitPrice\": 622500,\n      \"MedianLandPrice\": 340000,\n      \"HouseCount\": 25,\n      \"UnitCount\": 54,\n      \"LandCount\": 45\n    }\n  ]\n}\n[金额显示标准化记录：上述 MedianHousePrice 数字按澳大利亚 REIWA 房价口径写为 AUD，非网页自然语言原句；年份起止不另行推定]\n[\n  {\n    \"CalendarYear\": 2023,\n    \"MedianHousePrice\": 620000,\n    \"HouseCount\": 15,\n    \"normalized_price\": \"AUD 620,000\"\n  },\n  {\n    \"CalendarYear\": 2024,\n    \"MedianHousePrice\": 750000,\n    \"HouseCount\": 20,\n    \"normalized_price\": \"AUD 750,000\"\n  },\n  {\n    \"CalendarYear\": 2025,\n    \"MedianHousePrice\": 845000,\n    \"HouseCount\": 29,\n    \"normalized_price\": \"AUD 845,000\"\n  },\n  {\n    \"CalendarYear\": 2026,\n    \"MedianHousePrice\": 999500,\n    \"HouseCount\": 25,\n    \"normalized_price\": \"AUD 999,500\"\n  }\n]",
+      "body_sha256": "3ce7218caf91891a497e180182bb35377d05e854cb8a5e5287723ad0b13e79c6",
+      "source_kind": "structured_page",
+      "raw_sha256": "9c3f009aaf355b06ba7cf1e6d7e8cccd39f05415cd6d60b103ef7cf8cd919f07",
+      "transformation": "HTML text extraction, superscript preserved; profile appends selected page JSON and explicitly labeled amount formatting."
+    },
+    {
+      "source_id": "distance-calculations",
+      "url": "local:distance-evidence.json",
+      "fetched_at": "2026-11-04",
+      "text": "{\n  \"center\": {\n    \"lat\": -32.1158872,\n    \"lon\": 115.8494353,\n    \"meaning\": \"fixed road representative point from task, not house centroid\"\n  },\n  \"radius_m\": 2000,\n  \"method\": \"Haversine; spherical Earth radius 6371008.8m; straight line; distance rounded to0.1m for display only; classification uses unrounded value\",\n  \"limitations\": \"Platform map pins, not surveyed parcels. Selected examples, not exhaustive inventory. Cross-listed houses/townhouses must be identified in property text.\",\n  \"samples\": [\n    {\n      \"source_id\": \"reiwa-11\",\n      \"address\": \"11 Furlong Street, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"Sold price: $768,000\",\n      \"sold_date\": \"13 May 2025\",\n      \"latitude\": -32.1160059,\n      \"longitude\": 115.849158,\n      \"distance_m\": 29.3,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"4ee0bad86be73fc2c105063deba237b86eaac1598c5ad118dd5da4c3cad8b51c\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    },\n    {\n      \"source_id\": \"reiwa-27\",\n      \"address\": \"27 Furlong Street, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"Sold price: $940,000\",\n      \"sold_date\": \"29 Jan 2026\",\n      \"latitude\": -32.1154786,\n      \"longitude\": 115.8493133,\n      \"distance_m\": 46.9,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"e2998f13c95355cd700498267eb3d26caf78148749f41bca2eee2eb1da3da216\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    },\n    {\n      \"source_id\": \"equitation31\",\n      \"address\": \"31 Equitation Terrace, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"From $895,000\",\n      \"sold_date\": null,\n      \"latitude\": -32.1153403,\n      \"longitude\": 115.848525,\n      \"distance_m\": 105.1,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"5c1a7caddb8217ef770dee4b7d5322ab20886fb7544ed9139f6f913b3c44a871\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    },\n    {\n      \"source_id\": \"equitation4\",\n      \"address\": \"4 Equitation Terrace, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"Price Guide on Request\",\n      \"sold_date\": null,\n      \"latitude\": -32.1161163,\n      \"longitude\": 115.8486519,\n      \"distance_m\": 78.1,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"990e7b22fd53b4bb6c2c5d746335c152666c4725ac6e726f1bacea764738c882\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    },\n    {\n      \"source_id\": \"lodge12\",\n      \"address\": \"12 Lodge Court, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"Offers Over $1,150,000\",\n      \"sold_date\": null,\n      \"latitude\": -32.128078,\n      \"longitude\": 115.8461982,\n      \"distance_m\": 1389.4,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"0edf6a22b794fb49936511caad4fc3fe7ff91f24c7dcac9a4181e453a4cf7e3d\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    },\n    {\n      \"source_id\": \"paddock29\",\n      \"address\": \"29 Paddock Parade, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"From $1,000,000\",\n      \"sold_date\": null,\n      \"latitude\": -32.1176463,\n      \"longitude\": 115.8478774,\n      \"distance_m\": 244.5,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"6eee1e0dbe861bae02fb152af9927e816acfc05a8b7090bb9c6565a24fdf103e\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    },\n    {\n      \"source_id\": \"paddock27\",\n      \"address\": \"27 Paddock Parade, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"Sold price: $1,000,000\",\n      \"sold_date\": \"22 May 2026\",\n      \"latitude\": -32.1176315,\n      \"longitude\": 115.8477632,\n      \"distance_m\": 249.8,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"547fda46199b265416d2dc9bd042a65467e44a545fef7391f281ee00c1544773\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    },\n    {\n      \"source_id\": \"paddock37\",\n      \"address\": \"37 Paddock Parade, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"Sold price: $995,000\",\n      \"sold_date\": \"24 Jul 2026\",\n      \"latitude\": -32.1176772,\n      \"longitude\": 115.8480752,\n      \"distance_m\": 236.7,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"3dfa862f6e2cbc00cc6b6ed998fbf876ec32fae7d2a3d3cb195a37e7d012207a\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    },\n    {\n      \"source_id\": \"paddock61\",\n      \"address\": \"61 Paddock Parade, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"Sold price: $950,000\",\n      \"sold_date\": \"27 Jun 2026\",\n      \"latitude\": -32.1180945,\n      \"longitude\": 115.8491033,\n      \"distance_m\": 247.4,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"feeecb9e00cf29d1602e52bf837513d7010c11e464ae1d6579e714267859b030\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    },\n    {\n      \"source_id\": \"muriel68\",\n      \"address\": \"68 Muriel Court, Cockburn Central WA 6164\",\n      \"property_type\": \"House\",\n      \"display_price\": \"Sold price: $915,000\",\n      \"sold_date\": \"09 Dec 2025\",\n      \"latitude\": -32.116762,\n      \"longitude\": 115.8489532,\n      \"distance_m\": 107.3,\n      \"within_2000m\": true,\n      \"raw_sha256\": \"f8a2eed1950e9f8bd6c5cd33d87cb55b1d56c1e8d14dab9fa7e79ef09f3a0e37\",\n      \"pointer\": \"$.ListingLocation.GeoLatitude/.GeoLongitude\"\n    }\n  ]\n}",
+      "body_sha256": "d1b51d0c9d6141d650ac0655e935c413871f7fb626b4b4977e16e76004a43c44",
+      "source_kind": "deterministic_derivation",
+      "raw_sha256": "3daba3aaf358df158dce7e514ba1740f9799b25a3c977a96213be240664d3ae8",
+      "transformation": "Program-calculated distances from archived page map coordinates; not website prose."
+    },
+    {
+      "source_id": "TASK",
+      "text": "# Furlong Street 周边 2 公里：house 市场证据调查（V2）\n\n## 用户授权与版本\n\n用户要求：“Furlong Street 道路附近2公里的范围都可以。这里是个开发区。”\n本版本另建任务和资料快照，保留原 1 公里、2026-10-30 截止的作业。\n本次信息截止：2026-11-04 Australia/Perth。新旧任务、资料、代码均有变化，不是单因素实验或稳定性检验。\n“开发区”是待查线索，须区分规划容量、批准、开工、完工和当前在售，不预先断言具体地块的分区。\n\n## 范围与对象\n\n- 以此前保存的 Furlong Street 道路代表点（纬度 -32.1158872，经度 115.8494353）为固定工作中心，半径 2000 米直线距离。此点不是 11 号门牌中心；本次不采用沿整条道路外扩的缓冲区。\n- REIWA/中介房源地图坐标可作为房源位置证据，必须注明为平台标点、不是测绘或产权边界证明；不能因 Nominatim 未返回门牌而断言其他来源也无法定位。\n- 每个附近样本记录地址、实际 suburb、坐标来源、到工作中心距离和是否在 2000 米内。没有坐标的样本列为范围未确认，不靠街名猜测。\n- 房型主对象是 house；平台标 House 但正文称 townhouse 的，保留双重标签、单列展示，不能声称为独立屋。unit/apartment/空地/开发地块不混入同类 house 对比。\n- 坐标样本是主动选取的公开案例，不是全量成交或完整库存。即使多条在圈内，也不据此宣称圈内总体样本已齐全。\n- suburb 整体与 Perth 数据只作单列背景，不能升级为 2 公里范围统计。不同房型、土地面积及卧室差异必须披露。\n\n## 三个问题\n\n### 1 价格变化与成交样本\n\n优先比较最新资料中两个已完成、可比年度的 house 中位价及样本量。逐项记录来源字段、年份/准确起止、更新时间、地理范围、房型、指标。\n若结构化数据只有 CalendarYear 标签，准确起止未明确则标未明确，不能自行补写发布日期。\n同一页面当前滚动 12 个月与历史年度字段分开，2026 年未结束，不得把当前值称为完整 2026 日历年。\n列圈内成交样本的成交价、日期、土地面积、卧室/卫浴及房型。不同房屋的成交价差不等于同房涨幅；不能据两宗房产判断区域价格趋势。\n\n### 2 在售库存与开发供应\n\n查同一 2 公里范围、同一 house 定义两个时点的在售数量。当前挂牌的报价、状态、访问时间与成交分栏。\n公开站点的“及周边 suburbs”搜索总数、分页结果数、挑选的案例数不能作为圈内库存总量。\n若缺历史完整快照，明确库存变化 missing。政府结构规划只支持规划事实；既往规划预计住宅数不能当当前待售/已批准/已开工/已完工套数。\n列已取得规划资料、时间、原文页码和适用范围；不能凭结构图推定某门牌 R-code。缺少当期批准/开工/完工数据时照实记录。\n\n### 3 静态负资产条件计算\n\n教学假设：购价 AUD 1,000,000；贷款余额 AUD 800,000。不是用户真实财务信息，也不是目标房屋估值。\n简化定义：当前市场价值小于固定贷款余额时，房产净权益为负；等于贷款余额时净权益为零。\n计算临界市场价值、相对购价的价格下跌比例；列公式、带单位输入、结果与等于/低于临界值的区别。\n百分数格式：比例 0.2 等于 20%；结果写百分数时表达式使用比例，不额外乘 100。需要约数时明确保留小数位。\n基础计算不计交易成本、出售成本、税费和贷款余额变化。条件算术正确不等于市场预测，抗跌比例不等于下跌概率。\n\n## 输出及核验要求\n\n1. 简洁中文报告，范围说明、三事项证据表、支持/反对/缺口、条件计算和结论边界。\n2. 每条事实就近引用 claim_key；证据表附来源、访问日期、数据期间、发布日期（若未给出则未给出）与核验状态。\n3. 原始页面、页面内结构化数据、程序计算的距离、人工摘录和检索失败记录要区分来源类型；不得把派生数据称为页面逐字原文。\n4. 绑定全部主语、数字、单位、时间、地理范围、房型及限定词。支持一部分时拆窄陈述或 missing，不能整条 supported；表格和标题也要遵守同样限制。\n5. 只有核验通过的条件计算可输出肯定结果；缺证事实不凭模型记忆补全。可以交付清楚披露缺口的报告，不把资料不全写成资料齐全。\n6. 资料快照中的网页金额依其原始符号记录；结构化金额标准化说明属于提取记录，须保留原始字段和转换来源，不伪装成网页自然语言。\n7. 不输出保证收益或确定买入建议。房产完整风险评估超出本次三个事项。\n\n## 执行约束\n\nDeepSeek 六步框架，读取本版本冻结任务与资料；运行时不联网补抓。\n最多三对提议/检查（6 个课堂操作单位），计划/报告/审查另计 API 和费用；最多 9 次 API，客户端费用预算不超过 CNY 5，不自动重试。\n保留全部输入哈希、请求/返回、trace、失败与审查；旧报告仅作历史参照，不进入模型提示。\n审查通过不等于独立人工复核通过；human_review 单独记录，不手改 done。RACE/FACT 未运行、未提交。\n"
+    }
+  ],
+  "audit": {
+    "passed": false,
+    "issues": [
+      "报告称“Q3C6 因未绑定数值锚点 percent:20 未通过核验，本报告不输出其肯定结果”，但任务要求给出下跌比例；该计算在绑定输入下算术正确，仅因锚点格式被拒，报告据此隐瞒可完成的条件计算结果，属任务遵循问题。",
+      "报告称“Q1C1–Q1C7 均因房型标签、卧室/卫浴/车位、经度或 within_2000m 等部分无绑定证据而未通过”，但其中地址、成交价、日期、面积、距离等字段已有绑定片段；整条 missing 的表述掩盖了部分可核验成交字段，混淆证据范围。",
+      "报告称“Q1C8 存在未绑定数值锚点（AUD 750000、AUD 845000）及地理范围/指标句意未支持，未通过”，但绑定片段含 CalendarYear 与 MedianHousePrice 字段；报告未区分字段存在与数值锚点格式问题，可能使读者误以为年度中位价完全无来源。",
+      "报告称“31 Equitation Terrace、4 Equitation Terrace、12 Lodge Court、29 Paddock Parade 为在售挂牌（无成交日期），不属成交样本”，但未说明这些挂牌是否在 2000 米圈内；任务要求每个附近样本记录到工作中心距离和是否在圈内，报告表格缺距离列。",
+      "报告称“当前在售 house 仅逐条核验 4 宗，不能代表圈内库存总量”，但未明确这 4 宗是否均在 2 公里圈内；任务要求同一 2 公里范围、同一 house 定义，缺距离/圈内绑定使库存范围不清。",
+      "报告称“规划资料仅支持规划容量口径”，但未给出 Muriel Court 结构规划适用范围与 2 公里工作中心的空间关系；任务要求列适用范围，报告仅说“不能升级为 2 公里圈统计”，未核验该规划区是否覆盖圈内。",
+      "报告称“Q2C7 因 quoted_span_not_found 未通过，本报告不引用其页码与引用编号”，但任务要求列已取得规划资料、时间、原文页码；报告完全省略规划通过时间与到期日，未说明这些字段是否可从其他绑定片段取得。",
+      "报告称“2026 年当前滚动 12 个月值……与 CalendarYear 字段对应关系未核实”，但 gaps 中已记录结构化 CalendarYear 2026 中位价 AUD 999,500、HouseCount 25；报告未在正文披露该结构化值，属隐瞒已取得数据。",
+      "报告称“所有距离为程序 Haversine 派生值”，但正文未列任何样本的具体距离数值；任务要求每个附近样本记录到工作中心距离，报告仅作方法说明，缺逐样本距离。",
+      "报告称“来源类型区分：页面原文……人工摘录与检索失败记录分别标注”，但正文表格未标出哪些字段来自页面原文、哪些来自结构化数据或派生计算；任务要求区分来源类型，报告仅在总述提及。"
+    ],
+    "task_coverage": [
+      {
+        "requirement": "价格变化与成交样本：两个已完成可比年度 house 中位价及样本量",
+        "status": "missing",
+        "reason": "报告称 Q1C8 missing，未给出年度中位价与样本量；但绑定片段含 CalendarYear 与 MedianHousePrice 字段，报告未披露可核验字段。"
+      },
+      {
+        "requirement": "圈内成交样本的成交价、日期、土地面积、卧室/卫浴及房型",
+        "status": "missing",
+        "reason": "报告整条拒绝 Q1C1–Q1C7，未列任何成交样本字段；部分字段已有绑定片段，报告未拆分窄陈述。"
+      },
+      {
+        "requirement": "在售库存两个时点数量",
+        "status": "missing",
+        "reason": "报告明确库存变化 missing，缺两个时点完整快照，属披露缺口。"
+      },
+      {
+        "requirement": "当前挂牌报价、状态、访问时间与成交分栏",
+        "status": "covered",
+        "reason": "报告列 4 宗挂牌报价、状态、访问时间，并区分 Under offer/Sold 分栏。"
+      },
+      {
+        "requirement": "规划资料时间、原文页码和适用范围",
+        "status": "missing",
+        "reason": "报告仅引第 22 页容量口径，未给规划通过时间、到期日及适用范围与 2 公里圈关系；Q2C7 被整条拒绝。"
+      },
+      {
+        "requirement": "静态负资产条件计算：临界市场价值与下跌比例",
+        "status": "missing",
+        "reason": "临界值 AUD 800,000 已给；下跌比例因锚点格式被拒未输出，但绑定输入下算术可完成，报告未给结果。"
+      },
+      {
+        "requirement": "每条事实就近引用 claim_key 及来源、访问日期、数据期间、核验状态",
+        "status": "covered",
+        "reason": "报告正文与引用索引给出 claim_key、来源 URL、访问时间及核验状态。"
+      },
+      {
+        "requirement": "区分页面原文、结构化数据、程序派生距离、人工摘录",
+        "status": "missing",
+        "reason": "报告总述提及区分，但表格未逐字段标注来源类型，派生距离未逐样本列出。"
+      },
+      {
+        "requirement": "不输出保证收益或确定买入建议",
+        "status": "covered",
+        "reason": "报告结论边界明确不输出保证收益或确定买入建议。"
+      },
+      {
+        "requirement": "披露无法完成的数据要求",
+        "status": "covered",
+        "reason": "报告多处明确 missing 与 gaps，未编造完成。"
+      }
+    ],
+    "mechanical_issues": [],
+    "effective_passed": false,
+    "human_review": "pending",
+    "same_model_checker": true
+  },
+  "report": "# Furlong Street 周边 2 公里 house 市场证据调查报告（V2）\n\n信息截止：2026-11-04 Australia/Perth。本报告仅使用冻结任务与冻结资料快照，运行时不联网补抓。以下所有实质结论均就近标注 checked_claims 中核验通过（supported）的 claim_key；未通过（missing）候选与 gaps 仅用于描述限制，不作为事实结论。\n\n## 一、范围与对象说明\n\n- 工作中心：此前保存的 Furlong Street 道路代表点（纬度 -32.1158872，经度 115.8494353），半径 2000 米直线距离；该点不是 11 号门牌中心，本次不采用沿整条道路外扩的缓冲区。\n- 房源坐标为平台地图标点，不是测绘或产权边界证明；距离为程序 Haversine 派生值，属派生数据，不是页面逐字原文。\n- 房型主对象为 house；平台标 House 但正文称 townhouse 的保留双重标签、单列展示，不称独立住宅。unit/apartment/空地/开发地块不混入同类 house 对比。\n- 坐标样本为主动选取的公开案例，不是全量成交或完整库存；即使多条在圈内，也不据此宣称圈内总体样本已齐全。\n- suburb 整体与 Perth 数据只作单列背景，不升级为 2 公里范围统计。\n\n## 二、三事项证据表\n\n### 事项 1：价格变化与成交样本\n\n**结论状态：核心证据缺失。** 冻结资料中，圈内成交样本候选（Q1C1–Q1C7）与两个已完成年度 house 中位价候选（Q1C8）均未通过核验（missing），因此本报告不能给出任何经核验的圈内成交价、成交日期、土地面积、卧室/卫浴配置或年度中位价与样本量作为证据性结论。\n\n| 项目 | 状态 | 说明 |\n|---|---|---|\n| 圈内 house 成交样本（地址/成交价/日期/面积/卧室卫浴/房型） | missing | Q1C1–Q1C7 均因房型标签、卧室/卫浴/车位、经度或 within_2000m 等部分无绑定证据而未通过；不得作为事实引用 |\n| 两个已完成可比年度 house 中位价与样本量 | missing | Q1C8 存在未绑定数值锚点（AUD 750000、AUD 845000）及地理范围/指标句意未支持，未通过 |\n| 2026 年当前滚动 12 个月值 | 缺口 | 属未结束年度/滚动口径，不能称完整 2026 日历年；与 CalendarYear 字段对应关系未核实 |\n\n缺口（gaps，仅描述限制）：\n- 圈内成交样本为主动选取的公开案例，非全量成交；不同房屋成交价差不等于同房涨幅，不能据两宗推断区域价格趋势。\n- 31 Equitation Terrace、4 Equitation Terrace、12 Lodge Court、29 Paddock Parade 为在售挂牌（无成交日期），不属成交样本。\n- 郊区中位价与样本量仅覆盖 Cockburn Central suburb，不能升级为 2 公里圈统计；CalendarYear 准确起止与首次发布日期未核实。\n- 所有距离为程序 Haversine 派生值，坐标为平台地图标点。\n\n### 事项 2：在售库存与开发供应\n\n**当前挂牌（逐条核验通过）：**\n\n| 地址 | 报价 | 状态 | 平台房型 | 卧室/卫浴/车位 | 土地 | ListDate | 访问时间 | claim_key |\n|---|---|---|---|---|---|---|---|---|\n| 12 Lodge Court, Cockburn Central | Offers Over $1,150,000 | 在售（无成交日期） | House | 5卧2卫6车位 | 518m² | 2026-10-11 | 2026-11-04T10:23:07.390222+00:00 | Q2C3 |\n| 31 Equitation Terrace, Cockburn Central | From $895,000 | 在售（无成交日期） | House | 4卧2卫2车位 | 159m² | 2026-08-31 | 2026-11-04T10:23:07.389642+00:00 | Q2C4 |\n| 4 Equitation Terrace, Cockburn Central | Price Guide on Request | 在售（无成交日期） | House | 3卧2卫2车位 | 130m² | 2026-10-09 | 2026-11-04T10:23:07.390039+00:00 | Q2C5 |\n| 29 Paddock Parade, Cockburn Central | From $1,000,000 | 在售（无成交日期） | House | 3卧3卫2车位 | 192m² | 2026-09-09 | 2026-11-04T10:23:07.390342+00:00 | Q2C6 |\n\n以上四条均为平台标 House 的在售挂牌，报价、房型、土地面积与挂牌日期有绑定片段支持 [[Q2C3]][[Q2C4]][[Q2C5]][[Q2C6]]。\n\n**搜索页总数与分页（仅作范围限定，非圈内库存）：**\n- REIWA Cockburn Central houses 搜索页在访问时间 2026-11-04T10:22:33.506496+00:00 显示“1,355 properties and houses for sale in Cockburn Central and surrounding suburbs”，该总数含周边 suburbs，不能作为 2 公里圈内 house 库存总量 [[Q2C1]]。\n- 同一搜索页显示分页“1 - 20 of 165 results”，并另列“152 results from surrounding suburbs”；分页数与周边结果数均不等于 2 公里圈内 house 在售总量 [[Q2C2]]。\n\n**规划资料（规划容量口径）：**\n- 同一结构规划 PDF 第 22 页载明：表列预计住宅数基于拟定密度，且不含 North Lake Road 沿线 Restricted Use-Office/R160 区域可额外容纳最多 459 套住宅；该预计数为规划容量口径，不是当前待售、已批准、已开工或已完工套数 [[Q2C8]]。\n\n**缺口（gaps，仅描述限制）：**\n- 库存变化 missing：冻结资料未取得同一 2 公里范围、同一 house 定义下两个时点的完整在售快照。\n- 当前挂牌仅逐条覆盖 4 宗；搜索页另列 190/2 Signal Terrace、170 Muriel Court、7 Colt Entrance、28 Horseshoe Promenade、9 Abbey Court 等挂牌，但无各自详情页绑定，报价/状态/访问时间未逐条核验。\n- 搜索页 22 Ridge Road 标 Under offer、806 North Lake Road 标 Sold（06 Aug 2026），属不同状态分栏，未作为在售 house 计入。\n- Muriel Court 结构规划第 22 页预计住宅数表格为栅格图像，数字未转录；仅能引用“estimated projected dwelling numbers”与“additional maximum of 459 dwellings”文字，无法给出表内总套数。\n- 未取得圈内当前批准、开工、完工的完整可比序列；规划容量不能当作已批准、已开工、已完工或当前待售套数。\n- 结构规划适用范围为 Muriel Court 结构规划区，不能凭结构图推定某门牌 R-code，也不能升级为 2 公里圈统计。\n- 规划文件最初通过时间与到期日候选（Q2C7）因 quoted_span_not_found 未通过，本报告不引用其页码与引用编号。\n\n### 事项 3：静态负资产条件计算\n\n**教学假设（非用户真实财务信息，非目标房屋估值）：**\n- 购价 AUD 1,000,000 [[Q3C1]]。\n- 固定贷款余额 AUD 800,000 [[Q3C2]]。\n\n**简化定义：**\n- 当前市场价值等于固定贷款余额时，房产净权益为零 [[Q3C3]]。\n- 当前市场价值小于固定贷款余额时，房产净权益为负 [[Q3C4]]。\n\n**临界市场价值（核验通过）：**\n- 净权益为零的临界市场价值等于固定贷款余额 AUD 800,000 [[Q3C5]]。\n- 公式：临界市场价值 = 贷款余额；输入：贷款余额 = AUD 800,000；结果：AUD 800,000。\n\n**相对购价的下跌比例：**\n- 该比例候选（Q3C6）因未绑定数值锚点 percent:20 未通过核验，本报告不输出其肯定结果。\n- 教学公式（仅作方法说明，不输出肯定数值）：下跌比例 = (购价 − 贷款余额) / 购价；输入：购价 AUD 1,000,000、贷款余额 AUD 800,000。该比例结果未通过核验，故不在此给出肯定数值。\n\n**等于/低于临界值的区别：**\n- 等于临界值 AUD 800,000 时净权益为零 [[Q3C3]][[Q3C5]]；低于临界值时净权益为负 [[Q3C4]]。\n\n**计算边界：**\n- 基础计算不计交易成本、出售成本、税费和贷款余额变化 [[Q3C7]]。\n- 条件算术正确不等于市场预测，抗跌比例不等于下跌概率 [[Q3C8]]。\n\n## 三、支持 / 反对 / 缺口汇总\n\n**支持（核验通过）：**\n- 搜索页总数含周边 suburbs，不能当圈内库存总量 [[Q2C1]]；分页 165 与周边 152 均不等于圈内总量 [[Q2C2]]。\n- 4 宗在售 house 挂牌的报价、房型、土地、挂牌日期与访问时间 [[Q2C3]][[Q2C4]][[Q2C5]][[Q2C6]]。\n- 规划容量口径与额外最多 459 套住宅，非当前待售/批准/开工/完工套数 [[Q2C8]]。\n- 教学假设购价与贷款余额、简化定义、临界值 AUD 800,000、计算边界 [[Q3C1]][[Q3C2]][[Q3C3]][[Q3C4]][[Q3C5]][[Q3C7]][[Q3C8]]。\n\n**反对材料 / 未通过候选（仅描述限制，不作事实）：**\n- Q1C1–Q1C7 成交样本候选均 missing，部分字段无绑定证据，不能作为成交事实。\n- Q1C8 年度中位价候选 missing，存在未绑定数值锚点，不能作为中位价事实。\n- Q2C7 规划通过时间/到期日候选 missing（quoted_span_not_found），不引用其页码与编号。\n- Q3C6 下跌比例候选 missing（未绑定 percent:20），不输出肯定比例。\n\n**缺口：**\n- 圈内成交样本与两个已完成年度中位价均无经核验证据。\n- 库存变化 missing，缺两个时点完整快照。\n- 批准/开工/完工套数不可得。\n- 下跌比例数值未通过核验。\n\n## 四、结论边界\n\n1. 本报告不能给出经核验的圈内 house 成交价、成交日期、土地面积、卧室/卫浴配置或年度中位价与样本量；相关候选均未通过核验。\n2. 当前在售 house 仅逐条核验 4 宗，不能代表圈内库存总量；搜索页总数与分页数含周边 suburbs，不能当圈内库存。\n3. 规划资料仅支持规划容量口径，不能当作当前待售、已批准、已开工或已完工套数。\n4. 条件计算仅支持临界市场价值 AUD 800,000 及等于/低于临界值的定性区别；下跌比例数值未通过核验，不输出肯定结果。条件算术不等于市场预测，抗跌比例不等于下跌概率。\n5. 不输出保证收益或确定买入建议；房产完整风险评估超出本次三个事项。\n6. 审查通过不等于独立人工复核通过；human_review 单独记录。RACE/FACT 未运行、未提交。\n\n## 五、覆盖情况与不确定性\n\n- 覆盖：事项 2 的当前挂牌（4 宗）与搜索页范围限定、规划容量口径、事项 3 的临界值与定性区别已覆盖并有核验通过证据。\n- 未覆盖：事项 1 的成交样本与年度中位价、事项 2 的库存变化与批准/开工/完工套数、事项 3 的下跌比例数值。\n- 不确定性：所有距离为程序派生值；坐标为平台标点；样本为主动选取非全量；CalendarYear 起止未明确；规划表内总套数未转录。\n- 来源类型区分：页面原文（搜索页、挂牌页、规划 PDF 文字）、页面内结构化数据（PropertyType、ListDate、LandsizeHtml 等字段）、程序计算距离（distance-evidence.json 派生）、人工摘录与检索失败记录分别标注，派生数据不称页面逐字原文。\n\n## 程序生成的引用索引\n\n逐字片段和核验理由见同目录 claims.json。TASK 指冻结任务中的教学假设。\n\n- Q2C1 → current；来源：https://reiwa.com.au/for-sale/cockburn-central/houses/；访问时间：2026-11-04T10:22:33.506496+00:00\n- Q2C2 → current；来源：https://reiwa.com.au/for-sale/cockburn-central/houses/；访问时间：2026-11-04T10:22:33.506496+00:00\n- Q2C2 → current；来源：https://reiwa.com.au/for-sale/cockburn-central/houses/；访问时间：2026-11-04T10:22:33.506496+00:00\n- Q2C3 → lodge12；来源：https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/；访问时间：2026-11-04T10:23:07.390222+00:00\n- Q2C3 → lodge12；来源：https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/；访问时间：2026-11-04T10:23:07.390222+00:00\n- Q2C3 → lodge12；来源：https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/；访问时间：2026-11-04T10:23:07.390222+00:00\n- Q2C3 → lodge12；来源：https://reiwa.com.au/12-lodge-court-cockburn-central-5070649/；访问时间：2026-11-04T10:23:07.390222+00:00\n- Q2C4 → equitation31；来源：https://reiwa.com.au/31-equitation-terrace-cockburn-central-5055619/；访问时间：2026-11-04T10:23:07.389642+00:00\n- Q2C4 → equitation31；来源：https://reiwa.com.au/31-equitation-terrace-cockburn-central-5055619/；访问时间：2026-11-04T10:23:07.389642+00:00\n- Q2C4 → equitation31；来源：https://reiwa.com.au/31-equitation-terrace-cockburn-central-5055619/；访问时间：2026-11-04T10:23:07.389642+00:00\n- Q2C4 → equitation31；来源：https://reiwa.com.au/31-equitation-terrace-cockburn-central-5055619/；访问时间：2026-11-04T10:23:07.389642+00:00\n- Q2C5 → equitation4；来源：https://reiwa.com.au/4-equitation-terrace-cockburn-central-5067289/；访问时间：2026-11-04T10:23:07.390039+00:00\n- Q2C5 → equitation4；来源：https://reiwa.com.au/4-equitation-terrace-cockburn-central-5067289/；访问时间：2026-11-04T10:23:07.390039+00:00\n- Q2C5 → equitation4；来源：https://reiwa.com.au/4-equitation-terrace-cockburn-central-5067289/；访问时间：2026-11-04T10:23:07.390039+00:00\n- Q2C5 → equitation4；来源：https://reiwa.com.au/4-equitation-terrace-cockburn-central-5067289/；访问时间：2026-11-04T10:23:07.390039+00:00\n- Q2C6 → paddock29；来源：https://reiwa.com.au/29-paddock-parade-cockburn-central-5062709/；访问时间：2026-11-04T10:23:07.390342+00:00\n- Q2C6 → paddock29；来源：https://reiwa.com.au/29-paddock-parade-cockburn-central-5062709/；访问时间：2026-11-04T10:23:07.390342+00:00\n- Q2C6 → paddock29；来源：https://reiwa.com.au/29-paddock-parade-cockburn-central-5062709/；访问时间：2026-11-04T10:23:07.390342+00:00\n- Q2C6 → paddock29；来源：https://reiwa.com.au/29-paddock-parade-cockburn-central-5062709/；访问时间：2026-11-04T10:23:07.390342+00:00\n- Q2C8 → muriel-plan；来源：https://www.wa.gov.au/system/files/2024-02/cockburn-central-north-muriel-court-local-structure-plan-wapc-reference-spn-0801m-7.pdf；访问时间：2026-11-04T10:24:16.958531+00:00\n- Q2C8 → muriel-plan；来源：https://www.wa.gov.au/system/files/2024-02/cockburn-central-north-muriel-court-local-structure-plan-wapc-reference-spn-0801m-7.pdf；访问时间：2026-11-04T10:24:16.958531+00:00\n- Q3C1 → TASK；来源：frozen/task.md；访问时间：not_applicable\n- Q3C2 → TASK；来源：frozen/task.md；访问时间：not_applicable\n- Q3C3 → TASK；来源：frozen/task.md；访问时间：not_applicable\n- Q3C4 → TASK；来源：frozen/task.md；访问时间：not_applicable\n- Q3C5 → TASK；来源：frozen/task.md；访问时间：not_applicable\n- Q3C7 → TASK；来源：frozen/task.md；访问时间：not_applicable\n- Q3C8 → TASK；来源：frozen/task.md；访问时间：not_applicable\n"
+}

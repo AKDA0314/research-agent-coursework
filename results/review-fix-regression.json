@@ -1,0 +1,17 @@
+{
+  "tests_passed": 58,
+  "new_regression_tests": 12,
+  "paid_api_calls": 0,
+  "historical_files_checked": 231,
+  "historical_files_changed": [],
+  "fixture_source_run": ".local-runs/furlong-2km-run-20261104-184811",
+  "task_sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a",
+  "corpus_sha256": "0babe546e045e7c192cf7e63b1a1a15bd1106b869805ffbe7cc870d398641d3f",
+  "code_sha256": {
+    "src/six_step.py": "29991b8eb6fbc809beadf72f319731906347174de97d70f21bb13dfc4d20567c",
+    "scripts/retry_audit.py": "07fe353a27b7984223eb58ab5ce0fc9a1ff6b6191f2962aa3a6caa94946cf084",
+    "tests/test_furlong_failure.py": "04be756f453fbae64850e14bb78b26d78d6a31354b419a2ab4bc77c63a92cb7c"
+  },
+  "live_repeat_status": "not_run_by_assistant",
+  "limits": "Offline deterministic regression, not live stability or independent research quality evaluation."
+}

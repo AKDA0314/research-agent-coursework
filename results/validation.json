@@ -1,22 +1,34 @@
 {
   "passed": true,
   "test_exit_code": 0,
-  "test_output": "test_ablation_same_budget_and_different_selection (test_framework.FrameworkTests) ... ok\ntest_binding_not_only_citation (test_framework.FrameworkTests) ... ok\ntest_budget_never_negative_or_half_pair (test_framework.FrameworkTests) ... ok\ntest_no_mutation_or_scoring_labels (test_framework.FrameworkTests) ... ok\ntest_property_gaps_preserved (test_framework.FrameworkTests) ... ok\ntest_react_body_under_30_physical_lines (test_framework.FrameworkTests) ... ok\ntest_react_empty_and_illegal (test_framework.FrameworkTests) ... ok\ntest_react_error_is_recorded (test_framework.FrameworkTests) ... ok\ntest_react_inverted_value (test_framework.FrameworkTests) ... ok\ntest_react_limits (test_framework.FrameworkTests) ... ok\ntest_react_success (test_framework.FrameworkTests) ... ok\ntest_same_frozen_reiwa_task_two_outcomes (test_framework.FrameworkTests) ... ok\ntest_six_conflict (test_framework.FrameworkTests) ... ok\ntest_six_success_full_six_units (test_framework.FrameworkTests) ... ok\ntest_wrong_field_even_with_same_number (test_framework.FrameworkTests) ... ok\ntest_wrong_numeric_threshold_rejected (test_framework.FrameworkTests) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.003s\n\nOK\n",
+  "test_output": "API 1/1: report_audit\nAPI 1/9: test\ntest_boundaries_and_malformed_structure (test_atom_overflow.OverflowTests) ... ok\ntest_deferred_citation_blocks_even_if_model_audit_passes (test_atom_overflow.OverflowTests) ... ok\ntest_full_run_persists_overflow_separately_with_no_extra_calls (test_atom_overflow.OverflowTests) ... ok\ntest_overflow_survives_checker_failure (test_atom_overflow.OverflowTests) ... ok\ntest_saved_response_partition_is_lossless_stable_and_bounded (test_atom_overflow.OverflowTests) ... ok\ntest_incomplete_or_issue_bearing_audit_cannot_pass (test_audit_retry.AuditRetryTests) ... ok\ntest_one_call_cap_even_if_called_again (test_audit_retry.AuditRetryTests) ... ok\ntest_saved_data_preserved_and_only_requested_factors_change (test_audit_retry.AuditRetryTests) ... ok\ntest_unknown_report_citation_blocks_even_when_model_approves (test_audit_retry.AuditRetryTests) ... ok\ntest_lying_checker_cannot_approve_bad_bindings_or_hide_gaps (test_binding.BindingIntegrationTests) ... ok\ntest_repaired_binding_reaches_report_subject_to_semantic_review (test_binding.BindingIntegrationTests) ... ok\ntest_calculations_need_bound_inputs_and_recomputed_result (test_binding.BindingTests) ... ok\ntest_complete_real_spans_pass_binding_gate_and_have_valid_pointers (test_binding.BindingTests) ... ok\ntest_forged_wrong_source_and_unknown_source_quotes (test_binding.BindingTests) ... ok\ntest_multiple_bound_spans_can_jointly_cover_a_claim (test_binding.BindingTests) ... ok\ntest_no_or_invalid_binding_cannot_pass (test_binding.BindingTests) ... ok\ntest_normalization_preserves_units_scale_and_currency (test_binding.BindingTests) ... ok\ntest_number_presence_is_not_semantic_proof (test_binding.BindingTests) ... ok\ntest_per_cent_variants_are_equivalent_but_not_percentile (test_binding.BindingTests) ... ok\ntest_real_per_cent_quote_does_not_trigger_false_missing (test_binding.BindingTests) ... ok\ntest_two_real_bad_bindings_are_rejected_despite_original_approval (test_binding.BindingTests) ... ok\ntest_unrelated_full_source_or_other_claim_cannot_fill_binding (test_binding.BindingTests) ... ok\ntest_ablation_same_budget_and_different_selection (test_framework.FrameworkTests) ... ok\ntest_binding_not_only_citation (test_framework.FrameworkTests) ... ok\ntest_budget_never_negative_or_half_pair (test_framework.FrameworkTests) ... ok\ntest_no_mutation_or_scoring_labels (test_framework.FrameworkTests) ... ok\ntest_property_gaps_preserved (test_framework.FrameworkTests) ... ok\ntest_react_body_under_30_physical_lines (test_framework.FrameworkTests) ... ok\ntest_react_empty_and_illegal (test_framework.FrameworkTests) ... ok\ntest_react_error_is_recorded (test_framework.FrameworkTests) ... ok\ntest_react_inverted_value (test_framework.FrameworkTests) ... ok\ntest_react_limits (test_framework.FrameworkTests) ... ok\ntest_react_success (test_framework.FrameworkTests) ... ok\ntest_same_frozen_reiwa_task_two_outcomes (test_framework.FrameworkTests) ... ok\ntest_six_conflict (test_framework.FrameworkTests) ... ok\ntest_six_success_full_six_units (test_framework.FrameworkTests) ... ok\ntest_wrong_field_even_with_same_number (test_framework.FrameworkTests) ... ok\ntest_wrong_numeric_threshold_rejected (test_framework.FrameworkTests) ... ok\ntest_actual_false_supported_bedrooms_now_vetoed (test_furlong_failure.FurlongFailureTests) ... ok\ntest_actual_gap_disclosure_separate_from_evidence_and_original_failure_preserved (test_furlong_failure.FurlongFailureTests) ... ok\ntest_area_cannot_be_inferred_from_m_without_superscript (test_furlong_failure.FurlongFailureTests) ... ok\ntest_atoms_never_inherit_parent_evidence_or_expand_without_limit (test_furlong_failure.FurlongFailureTests) ... ok\ntest_bare_structured_price_stays_rejected_explicit_normalized_record_works (test_furlong_failure.FurlongFailureTests) ... ok\ntest_bound_real_configuration_passes_counts_but_wrong_count_does_not (test_furlong_failure.FurlongFailureTests) ... ok\ntest_conflicting_malformed_and_text_only_calculations_fail_closed (test_furlong_failure.FurlongFailureTests) ... ok\ntest_end_to_end_three_pairs_trace_partial_atoms_calc_and_gap_policy (test_furlong_failure.FurlongFailureTests) ... ok\ntest_exact_saved_calculation_json_recomputed_without_mutation (test_furlong_failure.FurlongFailureTests) ... ok\ntest_generic_distance_boolean_needs_record_identity (test_furlong_failure.FurlongFailureTests) ... ok\ntest_legacy_json_does_not_bypass_math_units_or_bound_inputs (test_furlong_failure.FurlongFailureTests) ... ok\ntest_real_compound_is_rejected_but_explicit_narrow_atom_retained (test_furlong_failure.FurlongFailureTests) ... ok\ntest_budget_denies_before_network_and_redacts (test_live.LiveTests) ... ok\ntest_citation_exists_but_wrong_quote_is_rejected (test_live.LiveTests) ... ok\ntest_empty_search_is_recordable_and_does_not_drop_corpus (test_live.LiveTests) ... ok\ntest_freeze_exact_task_excludes_report_and_summary (test_live.LiveTests) ... ok\ntest_model_checker_cannot_override_missing_quote (test_live.LiveTests) ... ok\ntest_truncated_model_output_stops_without_retry (test_live.LiveTests) ... ok\ntest_explicit_percentage_rounding (test_review_contract.ReviewContractTests) ... ok\ntest_fetch_date_is_preserved_separately_from_content (test_review_contract.ReviewContractTests) ... ok\ntest_missing_or_malformed_semantic_contract_is_not_approval (test_review_contract.ReviewContractTests) ... ok\ntest_partial_supported_never_reaches_report (test_review_contract.ReviewContractTests) ... ok\ntest_ratio_and_currency_calculations (test_review_contract.ReviewContractTests) ... ok\ntest_wrong_scaling_currency_dimensions_and_unbound_inputs_rejected (test_review_contract.ReviewContractTests) ... ok\ntest_check_accepts_explicit_new_task_but_rejects_tampering_without_api (test_task_version.TaskVersionTests) ... ok\n\n----------------------------------------------------------------------\nRan 63 tests in 0.277s\n\nOK\n",
   "react_function_body_lines": 29,
   "problems": [],
   "scan_scope": "Submission text, heuristic credential-pattern checks, relative Markdown targets, exported hashes, original blocked status. Not a formal security audit or teacher acceptance.",
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "ee1b659d49a7adc416b318e8097bb64eaca0e0a442de25a3a141bc115e7033d6"
+      "sha256": "edd51114551b1ba19edf030f82aaa733c340f41870a21ee8f7c4c5d6ed7e14f5"
     },
     {
       "path": "README.md",
-      "sha256": "4ae5bb8e65df2165cc84c06bd652b76f7646d7701f399ab4fb07f3ef4e955c21"
+      "sha256": "c091e2efe941146cb08c431c21500b5fb0b0161d28b2150b74e5aa383d239720"
     },
     {
       "path": "docs/AI_USE.md",
-      "sha256": "85f2b7d7684007850a0abfe736c833c36d86ee7ce2753b97575addfe0ff5a6d7"
+      "sha256": "6d8364ac276757391c58cf3c40aa336cf1bf34127963ebb8b8fa282186aaef73"
+    },
+    {
+      "path": "docs/atom-overflow-fix.md",
+      "sha256": "f579f7bbc95e7ffede7d2ee95241e03ced23a5156f003b6fc2925ce5c0623f54"
+    },
+    {
+      "path": "docs/audit-retry.md",
+      "sha256": "4672ce0e73f10bf55543ded4664f7a1277d90a57284d78642f787a37e08675a0"
+    },
+    {
+      "path": "docs/binding-fix.md",
+      "sha256": "6e095e107318dee485312cff5e42be000daf5384f2bd2c81fca8a5284357de95"
     },
     {
       "path": "docs/dataflow.md",
@@ -25,6 +37,26 @@
     {
       "path": "docs/evaluation.md",
       "sha256": "5919300253f4af8e2393756415b067b2d24a5680c069d8a97d00e6e6ad1050ab"
+    },
+    {
+      "path": "docs/furlong-2km-v2.md",
+      "sha256": "ce8baab33c53721c85c99310e1f0dd645b9d96cc4f71869443e81266560fe0f8"
+    },
+    {
+      "path": "docs/furlong-review-fix.md",
+      "sha256": "f0d39bd855bfeed6d88e18c80517608f170778fb59e7e48f0a206a610313c81b"
+    },
+    {
+      "path": "docs/live-comparison-01.md",
+      "sha256": "5d120fc936b3c8beb0377119239ab615461306f7c3e5b73202de26367e992ab2"
+    },
+    {
+      "path": "docs/live-run.md",
+      "sha256": "f5d817ce5818ee17902417676e8e8373b55fc0eeadb39867baaa5423a8bd8c0f"
+    },
+    {
+      "path": "docs/practice-history.md",
+      "sha256": "7bc7124c84a5ba1353a779c86b2cdcb1c065066a2934882129989af26fd17772"
     },
     {
       "path": "docs/product-comparison.md",
@@ -39,12 +71,16 @@
       "sha256": "809ff09be51bc4abe6c30cd4321b53c796d5aa8f8fb4ee26c0365ac8662245e4"
     },
     {
+      "path": "docs/six-step-code-walkthrough.md",
+      "sha256": "6c048de80d3e4ed188baa30d61aacb3efc6e3e4d52c201d50c2cbab5831cff24"
+    },
+    {
       "path": "docs/six-step.md",
-      "sha256": "90c87d1a473f6ece9f6c48de7e2e7bee068a90d47b7b15d0a7543351d2c9ab89"
+      "sha256": "516b2c97fb9bc19cc4a8c3703a78f8cf39728593b9e0a813bafd2de2d4bd1504"
     },
     {
       "path": "docs/submission-status.md",
-      "sha256": "d38715d588ad0938949f148df80148b5d92b8ad8cfe972ab6383e195b6739226"
+      "sha256": "28cf4b125c150b9b78dff32cae6216bba7c3bb0923fc37893b4d90e71babe653"
     },
     {
       "path": "docs/verification-update.md",
@@ -93,6 +129,190 @@
     {
       "path": "evidence/lint-before.json",
       "sha256": "54346a312f48ce27d20067b05abb439f7ae75c5b65448ab6c21a731201260f7d"
+    },
+    {
+      "path": "evidence/live-runs/README.md",
+      "sha256": "7900dca8faade465f35becab509826f13c6011a0d3e0f9db56d01be888363898"
+    },
+    {
+      "path": "evidence/live-runs/audit-retry-20261101-152426/protocol.json",
+      "sha256": "e84be5551fd548facd88be954b4300a3579451e52438b152780cc8214b8e7e82"
+    },
+    {
+      "path": "evidence/live-runs/audit-retry-20261101-152426/report-audit.json",
+      "sha256": "8943ab5d1331629402abfd799888934334de3c0665086c87d6b966f8858c440c"
+    },
+    {
+      "path": "evidence/live-runs/audit-retry-20261101-152426/run.json",
+      "sha256": "fa39b4110e3079e3d8821480ee1724d71451c202cb9278d9637018215d3eefb9"
+    },
+    {
+      "path": "evidence/live-runs/audit-retry-20261101-152426/trace.jsonl",
+      "sha256": "8d6dd2dfc5a71e5912f5779b1168ac4804ee9a97bc456bba4ff249ccd702d18a"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/artifact-check.json",
+      "sha256": "fc36417f7ea4c41e0a2750c1bf7f4078cf6c018a303c2d43db72aff7d5af6325"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/claims.json",
+      "sha256": "ace46c408cdc122c2cb05d79618dfc02087ad25e0ab1d57b77a69389ace085b5"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/comparison-metrics.json",
+      "sha256": "7963950f5f9f38cb06e8f9375957c3741651a638f4291deec6eb5e65b6e70fd1"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/comparison.md",
+      "sha256": "5a53d66ba71a401d23e2fb747048f427b12b31e58c8b70888e581fb2b21d12e4"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/gaps.json",
+      "sha256": "2acc6330e24b699dc67d3fd3b1ec08826d5f81015e4cd35ead36ead62cf376de"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/plan.json",
+      "sha256": "fbba81320383970638559d630c9e57ce77f76e7736785ef4a0109d70794804eb"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/protocol.json",
+      "sha256": "1554509bcebe87113fa9f9ad760984ec70bcd586937e9f3457a08d0756117b2f"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/quality-review.md",
+      "sha256": "346561d2b75f69a3aad53fb019716bafbd15d2253e196f345c67b33eb3f46868"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/report-audit.json",
+      "sha256": "4973a8267b13872e392069e7ed5474bc0b11569819535a3845a46ef271ae2dc4"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/report.md",
+      "sha256": "766b0b100357a895025e3e03a3f3cbf4b9edb7ca4757aca596d20068b767d63d"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/run.json",
+      "sha256": "69632d1b5432cb5772ee81c38b177b3d5c41314eb6362567bc73ff71ea40a2d5"
+    },
+    {
+      "path": "evidence/live-runs/deepseek-flash-01/trace.jsonl",
+      "sha256": "5df5f16745abc79d50474de2af340044dfc1a8200183966c7c2af40ee5f69273"
+    },
+    {
+      "path": "evidence/live-runs/export-manifest.json",
+      "sha256": "f9344352c4b550b44c31f2ac6a6e26c7f1269190d79449e520caafb621316b54"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-fixed-20261104-190259/plan.json",
+      "sha256": "0f1992bed8c7589282b4682b3e60b9e327c812eb43217c1d5e7fe0d4b6a8aef3"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-fixed-20261104-190259/protocol.json",
+      "sha256": "60441c3d995e556c47236d1e1fe1c6a6815f4edab53c4980e423de231cc8fa93"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-fixed-20261104-190259/run.json",
+      "sha256": "ae83a847c0a50ba33c9771282628206581e76e710b177138833abd4914966437"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-fixed-20261104-190259/trace.jsonl",
+      "sha256": "efc1d96debff7f127b5aa88083906c823b39aba83ebf8e32391e4e12d7b1cc7d"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-run-20261104-184811/claims.json",
+      "sha256": "aba8475c5290d19db51cad37a4a31ff3ed86b9d0d970ab52a73ceb0718c12b16"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-run-20261104-184811/gaps.json",
+      "sha256": "5a07631892c8d934cbb6db09ad90ed2f95c704cbdbe6720bcc939ee9c566d272"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-run-20261104-184811/plan.json",
+      "sha256": "029e2c36ed02260c05c93c08afc31a3685889295b9910aefdaed4015685e1ffd"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-run-20261104-184811/protocol.json",
+      "sha256": "56461f5eeb8afba3403240c0a7825282274886bde2fc0cbc40f364c2b2825cb7"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-run-20261104-184811/report-audit.json",
+      "sha256": "86d1a768bb7278bd7b8f2151f69300a4b01b6a7f4118ff47d1736b47c0bb7f8f"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-run-20261104-184811/report.md",
+      "sha256": "6b205d75c14287ea0b89e3b22a4e9f11ca9315b9ff4743953880cd10b08c0fc0"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-run-20261104-184811/run.json",
+      "sha256": "c1d13359b56a1c0aa64f5680065e59397ebd63e77373e53c07b99ac67457c340"
+    },
+    {
+      "path": "evidence/live-runs/furlong-2km-run-20261104-184811/trace.jsonl",
+      "sha256": "daea8b2281e8b29db0ed7d3d2865180b7613e8f882fd1ef7fa9d413bce897ffe"
+    },
+    {
+      "path": "evidence/live-runs/my-run-20261101-144909/09-report_audit-error.json",
+      "sha256": "eabcc65e2b55b9719931033c57a6311aae801083fd7ffb561a664a8276c19cc7"
+    },
+    {
+      "path": "evidence/live-runs/my-run-20261101-144909/claims.json",
+      "sha256": "dce2430476ae6e72a14eb4cb97f245bf8712ad2a01f646dc625bcca62626f16f"
+    },
+    {
+      "path": "evidence/live-runs/my-run-20261101-144909/gaps.json",
+      "sha256": "b14690d3ec9938887bcf21c32b925571d249f49f6b87594603afd70ca8e75148"
+    },
+    {
+      "path": "evidence/live-runs/my-run-20261101-144909/plan.json",
+      "sha256": "4dee7d7d6e753abc2d3e98aba1d9ef136ad25f9b9c7e03d5e1a8ec465cbe6a65"
+    },
+    {
+      "path": "evidence/live-runs/my-run-20261101-144909/protocol.json",
+      "sha256": "723d9c0f502ec70eb0a2591a287f9464070202429986bc2541cecb69d2d1940b"
+    },
+    {
+      "path": "evidence/live-runs/my-run-20261101-144909/report.md",
+      "sha256": "904ba34f8fc460f4d9da0f62a69f6b5368d783b81f21e5cba48044adbfee9d44"
+    },
+    {
+      "path": "evidence/live-runs/my-run-20261101-144909/run.json",
+      "sha256": "72d0599bf4aca4cdd07633c3f0a867d5bfe2a00a189735e6b92fcab8709a0ab4"
+    },
+    {
+      "path": "evidence/live-runs/my-run-20261101-144909/trace.jsonl",
+      "sha256": "d17d0a043af191253f38a867f65a8aa5f6bc51c43ae65c75f2639727871e514b"
+    },
+    {
+      "path": "evidence/live-runs/repaired-run-20261104-180813/claims.json",
+      "sha256": "e51eb65ee4395182a06e56f204b06c87a2f6b6bc1b8ff84e23ce2a970a7671f0"
+    },
+    {
+      "path": "evidence/live-runs/repaired-run-20261104-180813/gaps.json",
+      "sha256": "11eff63c24db4d4395dfcfc12234b5a84f5e96f0feb7f32b2b72ed0c8b510f19"
+    },
+    {
+      "path": "evidence/live-runs/repaired-run-20261104-180813/plan.json",
+      "sha256": "82e94bef7f45f70e24240d0583b0c5b28ef2b48d4e2e6d231ab1340abf14e55b"
+    },
+    {
+      "path": "evidence/live-runs/repaired-run-20261104-180813/protocol.json",
+      "sha256": "4aab831037c5945a762ead0ad0fc290c5b79989fa4ebc16a244905c4469f916c"
+    },
+    {
+      "path": "evidence/live-runs/repaired-run-20261104-180813/report-audit.json",
+      "sha256": "0379cdac426d65667f471f65971874aabb50c926926cbd01d12049d10d8f50b1"
+    },
+    {
+      "path": "evidence/live-runs/repaired-run-20261104-180813/report.md",
+      "sha256": "528fc25bd0719c70812a88219570f4aa164821432a9bdef54c2a08708dad6aa9"
+    },
+    {
+      "path": "evidence/live-runs/repaired-run-20261104-180813/run.json",
+      "sha256": "9c79abf35f9470797c3c305afae1aa5a94d15cdd1fc7b0f1355f959c567a8ad3"
+    },
+    {
+      "path": "evidence/live-runs/repaired-run-20261104-180813/trace.jsonl",
+      "sha256": "e6b126836b84df9feb90c3af58953a72ed4c7b484e1f489b052ddd54d0d6734c"
     },
     {
       "path": "evidence/polish-log.json",
@@ -151,8 +371,20 @@
       "sha256": "77c8e11026cb638ddac81a05269df324fe91e4409a0f87733f2436a0b5c5900c"
     },
     {
+      "path": "results/atom-overflow-regression.json",
+      "sha256": "e2012ccb29f36cd3a8cdb1dae0abed4e0e111ac5c6520006cbab892904fdcccf"
+    },
+    {
+      "path": "results/binding-regression.json",
+      "sha256": "8bd6c24b505bf91ac36328e2ee15328526f1dce81e1a8a2b8327ffc295bf7c77"
+    },
+    {
       "path": "results/checker-ablation.json",
       "sha256": "7b05c28117b6d2010e3d76a0769c17269af80e0c6f105fdf379ef81196708267"
+    },
+    {
+      "path": "results/furlong-2km-preparation.json",
+      "sha256": "304c03d40d4d48650cc453faac6cc5ee35672e2cccf70e7d01c2f4c79f47e0fc"
     },
     {
       "path": "results/hyperresearch-binding-ablation.json",
@@ -179,6 +411,18 @@
       "sha256": "ed2ef8343747a7042eb08ed5f6d7b45de66c578eeb4b15bec2bed1bfabc7371c"
     },
     {
+      "path": "results/repaired-run-comparison-20261104.json",
+      "sha256": "1cc467b17cd7c9bc48496202755757680efce6e2b898729beba279eb37bd158f"
+    },
+    {
+      "path": "results/review-fix-regression.json",
+      "sha256": "8a4275f66a096e855145d68c27e3304b5e836dcd790f10413f7a781472eb30b9"
+    },
+    {
+      "path": "results/scope-update-20261104.json",
+      "sha256": "4c4ec69bea8a660f5d36651c5a51a52a67645caf00b18927b234993f2bf47e87"
+    },
+    {
       "path": "results/six-conflict.json",
       "sha256": "9fd415b3c04676bfc026278a74c3114f92e1dfea1f5185aeb2cc5a6bc9dc961e"
     },
@@ -203,20 +447,44 @@
       "sha256": "b01be64c3640dc16bf8759096855ef6566c0fd0868094b19ea1aed8453380f3f"
     },
     {
+      "path": "scripts/compare_live.py",
+      "sha256": "92b34cbdb7b643f5cf4778984aa636c4404a675cea33adcc495663808037ca98"
+    },
+    {
+      "path": "scripts/export_public_runs.py",
+      "sha256": "6b029be923aeabedc5e9f4a28e0cf09fa01204f3e7e4ba7471476d2cba92bd38"
+    },
+    {
       "path": "scripts/prepare_evidence.py",
       "sha256": "635ef9dc693a2f65ef5f1869c318e3a9a912d45609b2999e92783c74a1142d04"
     },
     {
+      "path": "scripts/retry_audit.py",
+      "sha256": "07fe353a27b7984223eb58ab5ce0fc9a1ff6b6191f2962aa3a6caa94946cf084"
+    },
+    {
+      "path": "scripts/run_live.py",
+      "sha256": "df5d96d77b2a6eca021ab970a493d9128f5cf3efbb02176640a70cf2dccffdcb"
+    },
+    {
       "path": "scripts/run_offline.py",
-      "sha256": "85aae939ae0bd1a75459ba17fd51d42f27a8a3f34f824f065510b6d283b5deab"
+      "sha256": "d3574e9eaef56f1ac03a0740a6663697b6761dd5d89e1a0b7aa6f4a9b99e8ba4"
     },
     {
       "path": "scripts/run_source_experiment.py",
-      "sha256": "2c4d09dc16728da75f9bf90c9c29fa4b57d9e8dbab4f22800908f77e84020c4a"
+      "sha256": "0051ee6383a896c497d7481ba70e499f394d90cf58ed5b10fdb21136471fe60e"
     },
     {
       "path": "scripts/validate_submission.py",
-      "sha256": "5eb62f25c7fcb4a9b3cc01d69605ba1bbaeb53bff6096c9a87ae601081480313"
+      "sha256": "fad0010053dc3f503b3727c5dc6910f4f1973f4ba667d2a21259607458cfd857"
+    },
+    {
+      "path": "src/deepseek_client.py",
+      "sha256": "90664097578b75ff7a87e0033f05856184e7933a3e3ed2a93c4a3455b1d0217d"
+    },
+    {
+      "path": "src/offline_rules.py",
+      "sha256": "c1ab7239098b6f23b4067e5cd7ee36c6882027b6158ccf277656820618556a49"
     },
     {
       "path": "src/react_loop.py",
@@ -224,11 +492,55 @@
     },
     {
       "path": "src/six_step.py",
-      "sha256": "eda13a68ec0b092485137e5a195690c526287ceebaeb8045241028a633008c6c"
+      "sha256": "f383b685435635253a4488c6b66e5bf388d5ecc3da491095ee3b99de07f016b5"
+    },
+    {
+      "path": "tasks/furlong-2km-v2/task.md",
+      "sha256": "5559615bee7d0d2c8d8ccb6c4c4ebe1a5678af873ae4fa7cc76f9eba2d6e7f4a"
+    },
+    {
+      "path": "tests/fixtures/atom-overflow-20261104.json",
+      "sha256": "b3ca00fb84f55aa01cc5ed226e4e1e8c56b84ca7315dce07448f0ccc9c54ee85"
+    },
+    {
+      "path": "tests/fixtures/binding-cases.json",
+      "sha256": "b5d1760fa9182eb5d6d4baccae6c482fa587bc8a8dbcd3b9237995f998dff802"
+    },
+    {
+      "path": "tests/fixtures/furlong-v2-failures.json",
+      "sha256": "beca92643314bf9f880697e56ef74aec9cf2dd98a2d0313388f2e2951e79a151"
+    },
+    {
+      "path": "tests/test_atom_overflow.py",
+      "sha256": "38caa57d03775211932c217be31ab72b535cfd01dd5db7a38cd0c94d14469c80"
+    },
+    {
+      "path": "tests/test_audit_retry.py",
+      "sha256": "514411353a73b50015ee1441a2796c5d70e0cf1781c72dbb7ce47878966f9125"
+    },
+    {
+      "path": "tests/test_binding.py",
+      "sha256": "028929992906f8d41fa22b3033a2ff742c6da5fe83e5daf371832ff0e325d5c9"
     },
     {
       "path": "tests/test_framework.py",
-      "sha256": "1000a072ddf10f39f2ceccbc9aca0482193a8e581a943b67639d201b0f427583"
+      "sha256": "4018c6be06488652c857213b3cefd3af87b8e408599959f763ed9eb846242417"
+    },
+    {
+      "path": "tests/test_furlong_failure.py",
+      "sha256": "854a605ffd42717c7c25b61adae02b825e55646d0b7cab90cba1d5050f00d206"
+    },
+    {
+      "path": "tests/test_live.py",
+      "sha256": "2e21286bd1d6632bfe0224ed4c01634f0aa2ed313fb1ca68ac1ce0ac876879c0"
+    },
+    {
+      "path": "tests/test_review_contract.py",
+      "sha256": "18cd369a4a154b45f9382eaf122acad4b42906fdfaefa4c3f97d1ee967c56a9a"
+    },
+    {
+      "path": "tests/test_task_version.py",
+      "sha256": "6abf6c77fa2992928ed9d6222553a0f8f5741707bd2040b71648f9d32c55500f"
     }
   ]
 }

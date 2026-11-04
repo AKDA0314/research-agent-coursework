@@ -1,0 +1,39 @@
+{
+  "started_utc": "2026-11-01T06:49:09.933146+00:00",
+  "model": "deepseek-flash",
+  "expected_serving_version": "DeepSeek-V4.1-Flash-1017 (official alias mapping; response recorded separately)",
+  "thinking": "disabled",
+  "temperature": 0,
+  "max_api_calls": 9,
+  "max_cny": 5.0,
+  "price_snapshot": {
+    "input_cny_per_million": 2.0,
+    "output_cny_per_million": 8.0,
+    "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "checked": "2026-11-01",
+    "method": "Peak, uncached Flash rates; conservative usage estimate, not a billing receipt"
+  },
+  "inputs": {
+    "task_sha256": "5203bace7a264be8dbdfc8b8ea1aa4a9bd47510300eb2ec961d1133b0f8d01e8",
+    "corpus_sha256": "f677d26e094f67e1e8195d0a68b9a8c2f56e6926bf114b59826795a628c7fcf3",
+    "source_count": 15,
+    "excluded_files": [
+      "final_report_cockburn-central-house-timing-3443a3.md"
+    ],
+    "transformation": "Original saved Markdown bodies; YAML summaries/tags and reports excluded. No new web fetch.",
+    "historical_exposure": "Post-run snapshot; does not prove identical material exposure during the earlier run."
+  },
+  "baseline_report_sha256": "b5c62e7e81dbeff177b86265c3a93c6802d78b8948f3be9df3c7c5b35e8c45ec",
+  "code_sha256": {
+    "src/six_step.py": "4a679a0d248d10f2dec0712fbda0671324e06becec9abb7677d944a69f59e0ff",
+    "src/deepseek_client.py": "b9081443876ab70c4821d2ec895d46e26d91c302947955021e93298e0fdc4883",
+    "scripts/run_live.py": "2dd312e5cee225ed9daac792044fe687140cb60f9a1cc25ba1c31ef2778f8ddc"
+  },
+  "operation_unit": "One proposal batch or one checker batch; planning/report/audit are extra API calls, counted in money.",
+  "retrieval": "Local only; all frozen source bodies read each round; no live search/fetch.",
+  "comparison": "One observational comparison with historical HyperResearch; different model and retrieval conditions. Not the one-factor experiment required elsewhere in task.md.",
+  "budget_limit": "Client-side conservative estimate from peak uncached rates, UTF-8 byte allowance and max output. Not a provider-enforced account spending cap.",
+  "retries": 0,
+  "repeat_runs": 1,
+  "human_review": "pending"
+}

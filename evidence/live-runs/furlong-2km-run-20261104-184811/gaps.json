@@ -1,0 +1,118 @@
+[
+  {
+    "question": {
+      "claim_key": "Q1",
+      "question": "在Furlong Street代表点（-32.1158872,115.8494353）半径2000米内，冻结资料中可核验的house成交样本有哪些（地址、实际suburb、坐标来源、到中心距离、是否在圈内、成交价、日期、土地面积、卧室/卫浴、房型标签），以及最新资料中两个已完成可比年度的house中位价与样本量各为多少（含来源字段、年份起止、更新时间、地理范围、房型、指标）？",
+      "completion_condition": "列出每个圈内/范围未确认样本的上述字段并标注来源类型（页面原文/结构化数据/派生距离）；对中位价给出两个已完成年度的数值、样本量、地理范围与年份起止，CalendarYear起止未明确则标未明确；2026年当前滚动12个月值单列且不称完整日历年；明确声明样本为主动选取、非全量成交，不据两宗推断趋势。",
+      "query": "REIWA Cockburn Central house sold median price annual sample size Furlong Street 2km",
+      "source_type": "房产门户房源页与suburb profile结构化数据"
+    },
+    "gaps": [
+      "2026 年当前滚动 12 个月值（页面：Median price data last updated 4 November 2026 containing transactions for the 12 month period ending October 2026；结构化 CalendarYear 2026 中位价 AUD 999,500、HouseCount 25）为未结束年度/滚动口径，不能称完整 2026 日历年；其与 CalendarYear 字段的对应关系未核实。",
+      "郊区中位价与样本量仅覆盖 Cockburn Central suburb，不能升级为 2 公里圈统计；CalendarYear 准确起止与首次发布日期未核实。",
+      "圈内成交样本为主动选取的公开案例，非全量成交；不同房屋成交价差不等于同房涨幅，不能据两宗推断区域价格趋势。",
+      "31 Equitation Terrace、4 Equitation Terrace、12 Lodge Court、29 Paddock Parade 为在售挂牌（无成交日期），不属成交样本，未列入成交陈述。",
+      "所有距离为程序 Haversine 派生值，坐标是平台地图标点，非测绘或产权边界证明。"
+    ]
+  },
+  {
+    "claim_key": "Q1C1",
+    "status": "missing",
+    "reason": "地址、成交价、日期、土地面积、坐标与距离均有绑定片段，但“House”标签、4卧3卫2车位及经度数值无绑定证据。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q1C2",
+    "status": "missing",
+    "reason": "正文 townhouse 与结构化 PropertyType House 有片段，但“双拼”“2021年建”“4卧3卫”无绑定证据。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q1C3",
+    "status": "missing",
+    "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、4卧2卫2车位、经度及 within_2000m 无绑定证据。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q1C4",
+    "status": "missing",
+    "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、4卧2卫2车位、经度及 within_2000m 无绑定证据。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q1C5",
+    "status": "missing",
+    "reason": "地址、价格、日期、面积、townhouse 与 House 标签、纬度、距离有片段；3卧2卫2车位、经度及 within_2000m 无绑定证据。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q1C6",
+    "status": "missing",
+    "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、4卧2卫2车位、经度及 within_2000m 无绑定证据。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q1C7",
+    "status": "missing",
+    "reason": "地址、价格、日期、面积、纬度、距离有片段；House 标签、3卧2卫2车位、经度及 within_2000m 无绑定证据。",
+    "binding_errors": []
+  },
+  {
+    "claim_key": "Q1C8",
+    "status": "missing",
+    "reason": "unbound_numeric_anchor:AUD:750000; unbound_numeric_anchor:AUD:845000",
+    "binding_errors": [
+      "unbound_numeric_anchor:AUD:750000",
+      "unbound_numeric_anchor:AUD:845000"
+    ]
+  },
+  {
+    "question": {
+      "claim_key": "Q2",
+      "question": "同一2公里范围、同一house定义下，冻结资料能支持哪些时点的在售数量与当前挂牌（报价、状态、访问时间）？已取得的政府规划资料（含Muriel Court地方结构规划）在何页码、何适用范围下支持哪些规划事实，以及批准/开工/完工/当前待售套数是否可得？",
+      "completion_condition": "给出当前挂牌逐条字段与访问时间；若缺历史完整快照则明确库存变化missing；区分规划容量/批准/开工/完工/在售，规划事实附来源、时间、原文页码与适用范围；不将'及周边suburbs'搜索总数或分页数当作圈内库存总量；不凭结构图推定门牌R-code。",
+      "query": "Cockburn Central Town Centre structure plan Muriel Court local structure plan dwelling yield REIWA houses for sale",
+      "source_type": "政府规划PDF/市政网页与房产门户在售列表"
+    },
+    "gaps": [
+      "库存变化 missing：冻结资料未取得同一 2 公里范围、同一 house 定义下两个时点的完整在售快照；当前搜索页总数含 surrounding suburbs，分页 165 与周边 152 均不能当圈内库存总量。",
+      "当前挂牌仅逐条覆盖 4 宗（12 Lodge Court、31 Equitation Terrace、4 Equitation Terrace、29 Paddock Parade）；搜索页另列 190/2 Signal Terrace、170 Muriel Court、7 Colt Entrance、28 Horseshoe Promenade、9 Abbey Court 等挂牌，但无各自详情页绑定，报价/状态/访问时间未逐条核验。",
+      "搜索页 22 Ridge Road 标 Under offer、806 North Lake Road 标 Sold（06 Aug 2026），属不同状态分栏，未作为在售 house 计入。",
+      "Muriel Court 结构规划第 22 页的预计住宅数表格为栅格图像，数字未转录；仅能引用“estimated projected dwelling numbers”与“additional maximum of 459 dwellings”文字，无法给出表内总套数。",
+      "未取得圈内当前批准、开工、完工的完整可比序列；规划容量/预计住宅数不能当作已批准、已开工、已完工或当前待售套数。",
+      "结构规划适用范围为 Muriel Court 结构规划区（含 800m 步行集水区密度讨论），不能凭结构图推定某门牌 R-code，也不能升级为 2 公里圈统计。",
+      "所有房源坐标为平台地图标点，非测绘或产权边界证明；距离为程序 Haversine 派生值。",
+      "city 来源仅有标题文本，未提供可核验的规划内容。"
+    ]
+  },
+  {
+    "claim_key": "Q2C7",
+    "status": "missing",
+    "reason": "quoted_span_not_found",
+    "binding_errors": [
+      "quoted_span_not_found"
+    ]
+  },
+  {
+    "question": {
+      "claim_key": "Q3",
+      "question": "在教学假设购价AUD 1,000,000、固定贷款余额AUD 800,000下，房产净权益为零与为负的临界市场价值及相对购价的下跌比例是多少（含公式、带单位输入、结果与等于/低于临界值的区别）？",
+      "completion_condition": "给出临界市场价值=AUD 800,000、下跌比例=(1,000,000-800,000)/1,000,000=0.2即20%（保留位数明确）；说明等于临界值时净权益为零、低于时净权益为负；声明不计交易成本、税费与贷款余额变化，且条件算术不等于市场预测或下跌概率。",
+      "query": "negative equity threshold loan balance property value decline ratio calculation",
+      "source_type": "程序化条件计算（非页面原文）"
+    },
+    "gaps": [
+      "临界值 AUD 800,000 与 20% 下跌比例均为教学假设下的条件算术结果，不是目标房屋估值或市场预测。",
+      "未计入交易成本、出售成本、税费与贷款余额变化；实际净权益临界点可能不同。",
+      "未提供任何房屋当前市场价值数据，无法判断实际是否触及或低于临界值。"
+    ]
+  },
+  {
+    "claim_key": "Q3C6",
+    "status": "missing",
+    "reason": "unbound_numeric_anchor:percent:20",
+    "binding_errors": [
+      "unbound_numeric_anchor:percent:20"
+    ]
+  }
+]

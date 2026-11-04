@@ -1,0 +1,35 @@
+{
+  "source_request_sha256": "e2d8af4a26863f01571bb4a221cc6dd1fa85e96eaa4aed68609c1618560e546c",
+  "report_sha256": "904ba34f8fc460f4d9da0f62a69f6b5368d783b81f21e5cba48044adbfee9d44",
+  "audit_data_sha256": "2a5ded8e789e2b3f9ebe003aa1e68a2b1955466426d082270b7a8c98a1fd15b0",
+  "task_sha256": "5203bace7a264be8dbdfc8b8ea1aa4a9bd47510300eb2ec961d1133b0f8d01e8",
+  "corpus_sha256": "f677d26e094f67e1e8195d0a68b9a8c2f56e6926bf114b59826795a628c7fcf3",
+  "style": "compact",
+  "old_max_tokens": 5000,
+  "new_max_tokens": 8000,
+  "instruction_changed": true,
+  "audit_data_unchanged": true,
+  "model_parameters_unchanged": true,
+  "prior_estimated_cost_cny": 0.767612,
+  "started_utc": "2026-11-01T07:24:26.802720+00:00",
+  "source_run_name": "my-run-20261101-144909",
+  "kind": "explicit_single_audit_retry",
+  "max_api_calls": 1,
+  "retry_budget_cny": 0.5,
+  "request_allowance_cny": 0.181382,
+  "price_snapshot": {
+    "input_cny_per_million": 2.0,
+    "output_cny_per_million": 8.0,
+    "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "checked": "2026-11-01",
+    "method": "Peak, uncached Flash rates; conservative usage estimate, not a billing receipt"
+  },
+  "automatic_retries": 0,
+  "preserve_source_run": true,
+  "scope": "Replay exactly the saved report-audit input; no new research or report generation. Known missing audit context remains unchanged.",
+  "comparison_limit": "One retry, not proof of causality or stability. Changing style and max_tokens together changes two factors.",
+  "code_sha256": {
+    "scripts/retry_audit.py": "7289061b7d2234dfb4ecae8fefa9546ee5f260dea9c3a32676983c34f2e1d3dc",
+    "src/deepseek_client.py": "90664097578b75ff7a87e0033f05856184e7933a3e3ed2a93c4a3455b1d0217d"
+  }
+}
